@@ -48,6 +48,14 @@
         <servlet-name>InvoiceServlet</servlet-name>
         <servlet-class>InvoiceServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InvoiceAdServlet</servlet-name>
+        <servlet-class>Dashboard.InvoiceAdServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InvoiceListServlet</servlet-name>
+        <servlet-class>Dashboard.InvoiceListServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndexControllers</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -95,6 +103,14 @@
     <servlet-mapping>
         <servlet-name>InvoiceServlet</servlet-name>
         <url-pattern>/invoice</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InvoiceAdServlet</servlet-name>
+        <url-pattern>/inad</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InvoiceListServlet</servlet-name>
+        <url-pattern>/inlist</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index</welcome-file>

@@ -69,7 +69,15 @@
                                 </ul>
                             </div>
                         </li>
-
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="inlist">Invoice List</a></li>
+                                    <li><a href="inad">Invoice</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <!--                        <li class="sidebar-dropdown">
                                                     <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
                                                     <div class="sidebar-submenu">

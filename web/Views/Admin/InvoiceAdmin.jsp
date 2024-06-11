@@ -1,3 +1,10 @@
+<%-- 
+    Document   : InvoiceAdmin.jsp
+    Created on : Jun 11, 2024, 10:52:32 AM
+    Author     : huyca
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,47 +20,36 @@
         <meta name="website" content="../../../index.html" />
         <meta name="Version" content="v1.2.0" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="../assets/images/favicon.ico.png">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.ico.png">
         <!-- Bootstrap -->
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- simplebar -->
-        <link href="../assets/css/simplebar.css" rel="stylesheet" type="text/css" />
+        <link href="${pageContext.request.contextPath}/css/simplebar.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
-        <link href="../assets/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../assets/css/remixicon.css" rel="stylesheet" type="text/css" />
+        <link href="${pageContext.request.contextPath}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="${pageContext.request.contextPath}/css/remixicon.css" rel="stylesheet" type="text/css" />
         <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
         <!-- Css -->
-        <link href="../assets/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="${pageContext.request.contextPath}/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
 
     </head>
 
     <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Loader -->
-
         <div class="page-wrapper doctris-theme toggled">
             <nav id="sidebar" class="sidebar-wrapper d-print-none">
                 <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
                     <div class="sidebar-brand">
-                        <a href="index.html">
-                            <img src="../assets/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                            <img src="../assets/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                        <a href="index">
+                            <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                            <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
                         </a>
                     </div>
                     
                     <ul class="sidebar-menu pt-3">
-                        <li><a href="index.html"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
-                        <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>
+                        <li><a href="dash"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
+<!--                        <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>-->
 
-                        <li class="sidebar-dropdown">
+<!--                        <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Doctors</a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -62,31 +58,30 @@
                                     <li><a href="dr-profile.html">Profile</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>-->
 
                         <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Patients</a>
+                            <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="patients.html">All Patients</a></li>
-                                    <li><a href="add-patient.html">Add Patients</a></li>
-                                    <li><a href="patient-profile.html">Profile</a></li>
+                                    <li><a href="patients">All Product</a></li>
+                                    <li><a href="add">Add Prodcut</a></li>
+<!--                                    <li><a href="patient-profile.html">Profile</a></li>-->
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
+                         <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="chat.html">Chat</a></li>
-                                    <li><a href="email.html">Email</a></li>
-                                    <li><a href="calendar.html">Calendar</a></li>
+                                   <li><a href="inlist">Invoice List</a></li>
+                                    <li><a href="inad">Invoice</a></li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li class="sidebar-dropdown">
+<!--                        <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Pharmacy</a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -96,9 +91,9 @@
                                     <li><a href="checkout.html">Checkout</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>-->
 
-                        <li class="sidebar-dropdown">
+<!--                        <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-flip-h me-2 d-inline-block"></i>Blogs</a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -106,9 +101,9 @@
                                     <li><a href="blog-detail.html">Blog Detail</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>-->
 
-                        <li class="sidebar-dropdown">
+<!--                        <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-file me-2 d-inline-block"></i>Pages</a>
                             <div class="sidebar-submenu">
                                 <ul>
@@ -122,24 +117,24 @@
                                     <li><a href="blank-page.html">Blank Page</a></li>
                                 </ul>
                             </div>
-                        </li>
+                        </li>-->
 
-                        <li class="sidebar-dropdown">
+                       <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="signup.html">Signup</a></li>
-                                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                                    <li><a href="lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="thankyou.html">Thank you...!</a></li>
+                                    <li><a href="login">Login</a></li>
+                                    <li><a href="signup">Signup</a></li>
+<!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>-->
+<!--                                    <li><a href="login">Lock Screen</a></li>-->
+<!--                                    <li><a href="thankyou.html">Thank you...!</a></li>-->
                                 </ul>
                             </div>
                         </li>
 
-                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>
+<!--                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>
 
-                        <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>
+                        <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>-->
                     </ul>
                     <!-- sidebar-menu  -->
                 </div>
@@ -160,10 +155,10 @@
                     <div class="header-bar d-flex justify-content-between border-bottom">
                         <div class="d-flex align-items-center">
                             <a href="#" class="logo-icon">
-                                <img src="../assets/images/logo-icon.png" height="30" class="small" alt="">
+                                <img src="${pageContext.request.contextPath}/images/logo-icon.png" height="30" class="small" alt="">
                                 <span class="big">
-                                    <img src="../assets/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                                    <img src="../assets/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
                                 </span>
                             </a>
                             <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2" href="#">
@@ -184,38 +179,38 @@
                         <ul class="list-unstyled mb-0">
                             <li class="list-inline-item mb-0">
                                 <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/language/american.png" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/language/american.png" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
                                     <div class="dropdown-menu dd-menu drop-ups dropdown-menu-end bg-white shadow border-0 mt-3 p-2" data-simplebar style="height: 175px;">
                                         <a href="javascript:void(0)" class="d-flex align-items-center">
-                                            <img src="../assets/images/language/chinese.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/language/chinese.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Chinese</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/european.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/language/european.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">European</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/indian.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/language/indian.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Indian</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/japanese.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/language/japanese.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Japanese</small>
                                             </div>
                                         </a>
         
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="../assets/images/language/russian.png" class="avatar avatar-client rounded-circle shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/language/russian.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Russian</small>
                                             </div>
@@ -238,42 +233,42 @@
                                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 px-2 py-2" data-simplebar style="height: 320px; width: 300px;">
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Janalia</b> <small class="text-muted fw-normal d-inline-block">1 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/Codepen.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/Codepen.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>codepen</b>  <small class="text-muted fw-normal d-inline-block">4 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Cristina</b> <small class="text-muted fw-normal d-inline-block">5 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/dribbble.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/dribbble.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Dribbble</b> <small class="text-muted fw-normal d-inline-block">24 hour ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Donald Aghori</b> <small class="text-muted fw-normal d-inline-block">1 day ago</small></small>
                                             </div>
                                         </a>
 
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
                                             <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="../assets/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                <img src="${pageContext.request.contextPath}/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
                                                 <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Calvin</b> <small class="text-muted fw-normal d-inline-block">2 day ago</small></small>
                                             </div>
                                         </a>
@@ -283,10 +278,10 @@
 
                             <li class="list-inline-item mb-0 ms-1">
                                 <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
                                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
                                         <a class="dropdown-item d-flex align-items-center text-dark" href="https://shreethemes.in/doctris/layouts/admin/profile.html">
-                                            <img src="../assets/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
                                             <div class="flex-1 ms-2">
                                                 <span class="d-block mb-1">Calvin Carlo</span>
                                                 <small class="text-muted">Orthopedic</small>
@@ -322,7 +317,7 @@
                                 <div class="card bg-white border-0 rounded shadow px-4 py-5">
                                     <div class="row mb-4">
                                         <div class="col-lg-8 col-md-6">
-                                            <img src="../assets/images/logo-dark.png" height="22" alt="">
+                                            <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="22" alt="">
                                             <h6 class="mt-4 pt-2">Address :</h6>
                                             <small class="text-muted mb-0">1419 Riverwood Drive, <br>Redding, CA 96001</small>
                                         </div><!--end col-->
@@ -477,8 +472,8 @@
         <div class="offcanvas offcanvas-end bg-white shadow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header p-4 border-bottom">
                 <h5 id="offcanvasRightLabel" class="mb-0">
-                    <img src="../assets/images/logo-dark.png" height="24" class="light-version" alt="">
-                    <img src="../assets/images/logo-light.png" height="24" class="dark-version" alt="">
+                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="light-version" alt="">
+                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="dark-version" alt="">
                 </h5>
                 <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times fs-4"></i></button>
             </div>
@@ -489,13 +484,13 @@
                         <div id="style-switcher">
                             <div>
                                 <ul class="text-center list-unstyled mb-0">
-                                    <li class="d-grid"><a href="javascript:void(0)" class="rtl-version t-rtl-light" onclick="setTheme('style-rtl')"><img src="../assets/images/layouts/light-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="ltr-version t-ltr-light" onclick="setTheme('style')"><img src="../assets/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-rtl-version t-rtl-dark" onclick="setTheme('style-dark-rtl')"><img src="../assets/images/layouts/dark-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="../assets/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-version t-dark mt-4" onclick="setTheme('style-dark')"><img src="../assets/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Dark Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="../assets/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Light Version</span></a></li>
-                                    <li class="d-grid"><a href="../landing/index.html" target="_blank" class="mt-4"><img src="../assets/images/layouts/landing-light.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Landing Demos</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="rtl-version t-rtl-light" onclick="setTheme('style-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="ltr-version t-ltr-light" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-rtl-version t-rtl-dark" onclick="setTheme('style-dark-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-version t-dark mt-4" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Dark Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Light Version</span></a></li>
+                                    <li class="d-grid"><a href="../landing/index.html" target="_blank" class="mt-4"><img src="${pageContext.request.contextPath}/images/layouts/landing-light.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Landing Demos</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -519,13 +514,13 @@
         <!-- Offcanvas End -->
 
         <!-- javascript -->
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
         <!-- simplebar -->
-        <script src="../assets/js/simplebar.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/simplebar.min.js"></script>
         <!-- Icons -->
-        <script src="../assets/js/feather.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
-        <script src="../assets/js/app.js"></script>
+        <script src="${pageContext.request.contextPath}/js/app.js"></script>
         
     </body>
 

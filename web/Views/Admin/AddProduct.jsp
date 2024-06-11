@@ -39,16 +39,7 @@
     </head>
 
     <body>
-        <!-- Loader -->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Loader -->
+
 
         <div class="page-wrapper doctris-theme toggled">
             <nav id="sidebar" class="sidebar-wrapper">
@@ -59,21 +50,21 @@
                             <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
                         </a>
                     </div>
-                    
+
                     <ul class="sidebar-menu pt-3">
                         <li><a href="dash"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
-<!--                        <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>-->
+                        <!--                        <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>-->
 
-<!--                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Doctors</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="doctors.html">Doctors</a></li>
-                                    <li><a href="add-doctor.html">Add Doctor</a></li>
-                                    <li><a href="dr-profile.html">Profile</a></li>
-                                </ul>
-                            </div>
-                        </li>-->
+                        <!--                        <li class="sidebar-dropdown">
+                                                    <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Doctors</a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul>
+                                                            <li><a href="doctors.html">Doctors</a></li>
+                                                            <li><a href="add-doctor.html">Add Doctor</a></li>
+                                                            <li><a href="dr-profile.html">Profile</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>-->
 
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
@@ -81,59 +72,68 @@
                                 <ul>
                                     <li><a href="patients">All Product</a></li>
                                     <li><a href="add">Add Product</a></li>
-<!--                                    <li><a href="patient-profile.html">Profile</a></li>-->
+                                    <!--                                    <li><a href="patient-profile.html">Profile</a></li>-->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li><a href="inlist">Invoice List</a></li>
+                                    <li><a href="inad">Invoice</a></li>
                                 </ul>
                             </div>
                         </li>
 
-<!--                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="chat.html">Chat</a></li>
-                                    <li><a href="email.html">Email</a></li>
-                                    <li><a href="calendar.html">Calendar</a></li>
-                                </ul>
-                            </div>
-                        </li>-->
+                        <!--                        <li class="sidebar-dropdown">
+                                                    <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul>
+                                                            <li><a href="chat.html">Chat</a></li>
+                                                            <li><a href="email.html">Email</a></li>
+                                                            <li><a href="calendar.html">Calendar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>-->
 
-<!--                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Pharmacy</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="shop.html">Shop</a></li>
-                                    <li><a href="product-detail.html">Shop Detail</a></li>
-                                    <li><a href="shopcart.html">Shopcart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                </ul>
-                            </div>
-                        </li>-->
+                        <!--                        <li class="sidebar-dropdown">
+                                                    <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Pharmacy</a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul>
+                                                            <li><a href="shop.html">Shop</a></li>
+                                                            <li><a href="product-detail.html">Shop Detail</a></li>
+                                                            <li><a href="shopcart.html">Shopcart</a></li>
+                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>-->
 
-<!--                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-flip-h me-2 d-inline-block"></i>Blogs</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="blogs.html">Blogs</a></li>
-                                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                                </ul>
-                            </div>
-                        </li>-->
+                        <!--                        <li class="sidebar-dropdown">
+                                                    <a href="javascript:void(0)"><i class="uil uil-flip-h me-2 d-inline-block"></i>Blogs</a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul>
+                                                            <li><a href="blogs.html">Blogs</a></li>
+                                                            <li><a href="blog-detail.html">Blog Detail</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>-->
 
-<!--                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-file me-2 d-inline-block"></i>Pages</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="faqs.html">FAQs</a></li>
-                                    <li><a href="review.html">Reviews</a></li>
-                                    <li><a href="invoice-list.html">Invoice List</a></li>
-                                    <li><a href="invoice.html">Invoice</a></li>
-                                    <li><a href="terms.html">Terms & Policy</a></li>
-                                    <li><a href="privacy.html">Privacy Policy</a></li>
-                                    <li><a href="error.html">404 !</a></li>
-                                    <li><a href="blank-page.html">Blank Page</a></li>
-                                </ul>
-                            </div>
-                        </li>-->
+                        <!--                        <li class="sidebar-dropdown">
+                                                    <a href="javascript:void(0)"><i class="uil uil-file me-2 d-inline-block"></i>Pages</a>
+                                                    <div class="sidebar-submenu">
+                                                        <ul>
+                                                            <li><a href="faqs.html">FAQs</a></li>
+                                                            <li><a href="review.html">Reviews</a></li>
+                                                            <li><a href="invoice-list.html">Invoice List</a></li>
+                                                            <li><a href="invoice.html">Invoice</a></li>
+                                                            <li><a href="terms.html">Terms & Policy</a></li>
+                                                            <li><a href="privacy.html">Privacy Policy</a></li>
+                                                            <li><a href="error.html">404 !</a></li>
+                                                            <li><a href="blank-page.html">Blank Page</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>-->
 
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
@@ -141,16 +141,16 @@
                                 <ul>
                                     <li><a href="login">Login</a></li>
                                     <li><a href="signup">Signup</a></li>
-<!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                                    <li><a href="lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="thankyou.html">Thank you...!</a></li>
-                                </ul>-->
+                                    <!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>
+                                                                        <li><a href="lock-screen.html">Lock Screen</a></li>
+                                                                        <li><a href="thankyou.html">Thank you...!</a></li>
+                                                                    </ul>-->
                             </div>
                         </li>
 
-<!--                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>
-
-                        <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>-->
+                        <!--                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>
+                        
+                                                <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>-->
                     </ul>
                     <!-- sidebar-menu  -->
                 </div>
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-        
+
                         <ul class="list-unstyled mb-0">
                             <li class="list-inline-item mb-0">
                                 <div class="dropdown dropdown-primary">
@@ -203,28 +203,28 @@
                                                 <small class="text-dark mb-0">Chinese</small>
                                             </div>
                                         </a>
-        
+
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
                                             <img src="${pageContext.request.contextPath}/images/language/european.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">European</small>
                                             </div>
                                         </a>
-        
+
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
                                             <img src="${pageContext.request.contextPath}/images/language/indian.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Indian</small>
                                             </div>
                                         </a>
-        
+
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
                                             <img src="${pageContext.request.contextPath}/images/language/japanese.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
                                                 <small class="text-dark mb-0">Japanese</small>
                                             </div>
                                         </a>
-        
+
                                         <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
                                             <img src="${pageContext.request.contextPath}/images/language/russian.png" class="avatar avatar-client rounded-circle shadow" alt="">
                                             <div class="flex-1 text-left ms-2 overflow-hidden">
@@ -245,7 +245,7 @@
                                 <div class="dropdown dropdown-primary">
                                     <button type="button" class="btn btn-icon btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="mail" class="fea icon-sm"></i></button>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">4 <span class="visually-hidden">unread mail</span></span>
-                                    
+
                                     <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 px-2 py-2" data-simplebar style="height: 320px; width: 300px;">
                                         <a href="#" class="d-flex align-items-center justify-content-between py-2">
                                             <div class="d-inline-flex position-relative overflow-hidden">
@@ -327,7 +327,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-lg-8 mt-4">
                                 <div class="card border-0 p-4 rounded shadow">
@@ -335,18 +335,18 @@
                                         <div class="col-lg-2 col-md-4">
                                             <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
                                         </div><!--end col-->
-            
+
                                         <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
                                             <h5 class="">Upload your picture</h5>
                                             <p class="text-muted mb-0">For best results, use an image at least 600px by 600px in either .jpg or .png format</p>
                                         </div><!--end col-->
-            
+
                                         <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
                                             <a href="#" class="btn btn-primary">Upload</a>
                                             <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
                                         </div><!--end col-->
                                     </div><!--end row-->
-            
+
                                     <form class="mt-4">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -355,21 +355,21 @@
                                                     <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
                                                 </div>
                                             </div><!--end col-->
-            
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Price</label>
                                                     <input name="name" id="name2" type="number" class="form-control" placeholder="Price:">
                                                 </div>
                                             </div><!--end col-->
-            
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Quantity</label>
                                                     <input name="email" id="email" type="number" class="form-control" placeholder="Quantity :">
                                                 </div> 
                                             </div><!--end col-->
-            
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Description</label>
@@ -377,13 +377,13 @@
                                                 </div>                                                                               
                                             </div><!--end col-->
 
-<!--                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label"> Date : </label>
-                                                    <input name="date" type="text" class="flatpickr flatpickr-input form-control" id="checkin-date">
-                                                </div>
-                                            </div>end col-->
-            
+                                            <!--                                            <div class="col-md-6">
+                                                                                            <div class="mb-3">
+                                                                                                <label class="form-label"> Date : </label>
+                                                                                                <input name="date" type="text" class="flatpickr flatpickr-input form-control" id="checkin-date">
+                                                                                            </div>
+                                                                                        </div>end col-->
+
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Category</label>
@@ -400,75 +400,75 @@
                                                 </div>
                                             </div><!--end col-->
                                         </div><!--end row-->
-            
+
                                         <button type="submit" class="btn btn-primary">Add Prodcut</button>
                                     </form>
                                 </div>
                             </div><!--end col-->
 
-<!--                            <div class="col-lg-4 mt-4">
-                                <div class="card rounded border-0 shadow">
-                                    <div class="p-4 border-bottom">
-                                        <h5 class="mb-0">Doctors List</h5>
-                                    </div>
-
-                                    <ul class="list-unstyled mb-0 p-4" data-simplebar style="height: 664px;">
-                                        <li class="d-md-flex align-items-center text-center text-md-start">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
-
-                                            <div class="ms-md-3 mt-4 mt-sm-0">
-                                                <a href="#" class="text-dark h6">Dr. Calvin Carlo</a>
-                                                <p class="text-muted my-1">Cardiologist</p>
-                                                <p class="text-muted mb-0">3 Years Experienced</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/02.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
-
-                                            <div class="ms-md-3 mt-4 mt-sm-0">
-                                                <a href="#" class="text-dark h6">Dr. Alex Smith</a>
-                                                <p class="text-muted my-1">Dentist</p>
-                                                <p class="text-muted mb-0">1 Years Experienced</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/03.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
-
-                                            <div class="ms-md-3 mt-4 mt-sm-0">
-                                                <a href="#" class="text-dark h6">Dr. Cristina Luly</a>
-                                                <p class="text-muted my-1">Orthopedic</p>
-                                                <p class="text-muted mb-0">5 Years Experienced</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/04.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
-
-                                            <div class="ms-md-3 mt-4 mt-sm-0">
-                                                <a href="#" class="text-dark h6">Dr. Dwayen Maria</a>
-                                                <p class="text-muted my-1">Gastrologist</p>
-                                                <p class="text-muted mb-0">2 Years Experienced</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="d-md-flex align-items-center text-center text-md-start mt-4">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/05.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
-
-                                            <div class="ms-md-3 mt-4 mt-sm-0">
-                                                <a href="#" class="text-dark h6">Dr. Jenelia Focia</a>
-                                                <p class="text-muted my-1">Psychotherapist</p>
-                                                <p class="text-muted mb-0">3 Years Experienced</p>
-                                            </div>
-                                        </li>
-
-                                        <li class="mt-4">
-                                            <a href="doctors.html" class="btn btn-primary">All Doctors</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>-->
+                            <!--                            <div class="col-lg-4 mt-4">
+                                                            <div class="card rounded border-0 shadow">
+                                                                <div class="p-4 border-bottom">
+                                                                    <h5 class="mb-0">Doctors List</h5>
+                                                                </div>
+                            
+                                                                <ul class="list-unstyled mb-0 p-4" data-simplebar style="height: 664px;">
+                                                                    <li class="d-md-flex align-items-center text-center text-md-start">
+                                                                        <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
+                            
+                                                                        <div class="ms-md-3 mt-4 mt-sm-0">
+                                                                            <a href="#" class="text-dark h6">Dr. Calvin Carlo</a>
+                                                                            <p class="text-muted my-1">Cardiologist</p>
+                                                                            <p class="text-muted mb-0">3 Years Experienced</p>
+                                                                        </div>
+                                                                    </li>
+                            
+                                                                    <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                                                        <img src="${pageContext.request.contextPath}/images/doctors/02.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
+                            
+                                                                        <div class="ms-md-3 mt-4 mt-sm-0">
+                                                                            <a href="#" class="text-dark h6">Dr. Alex Smith</a>
+                                                                            <p class="text-muted my-1">Dentist</p>
+                                                                            <p class="text-muted mb-0">1 Years Experienced</p>
+                                                                        </div>
+                                                                    </li>
+                            
+                                                                    <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                                                        <img src="${pageContext.request.contextPath}/images/doctors/03.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
+                            
+                                                                        <div class="ms-md-3 mt-4 mt-sm-0">
+                                                                            <a href="#" class="text-dark h6">Dr. Cristina Luly</a>
+                                                                            <p class="text-muted my-1">Orthopedic</p>
+                                                                            <p class="text-muted mb-0">5 Years Experienced</p>
+                                                                        </div>
+                                                                    </li>
+                            
+                                                                    <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                                                        <img src="${pageContext.request.contextPath}/images/doctors/04.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
+                            
+                                                                        <div class="ms-md-3 mt-4 mt-sm-0">
+                                                                            <a href="#" class="text-dark h6">Dr. Dwayen Maria</a>
+                                                                            <p class="text-muted my-1">Gastrologist</p>
+                                                                            <p class="text-muted mb-0">2 Years Experienced</p>
+                                                                        </div>
+                                                                    </li>
+                            
+                                                                    <li class="d-md-flex align-items-center text-center text-md-start mt-4">
+                                                                        <img src="${pageContext.request.contextPath}/images/doctors/05.jpg" class="avatar avatar-medium rounded-md shadow" alt="">
+                            
+                                                                        <div class="ms-md-3 mt-4 mt-sm-0">
+                                                                            <a href="#" class="text-dark h6">Dr. Jenelia Focia</a>
+                                                                            <p class="text-muted my-1">Psychotherapist</p>
+                                                                            <p class="text-muted mb-0">3 Years Experienced</p>
+                                                                        </div>
+                                                                    </li>
+                            
+                                                                    <li class="mt-4">
+                                                                        <a href="doctors.html" class="btn btn-primary">All Doctors</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>-->
                         </div><!--end row-->
                     </div>
                 </div><!--end container-->
@@ -639,7 +639,7 @@
         </div>
         <!-- Cancel Appointment End -->
         <!-- Modal end -->
-        
+
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
@@ -655,7 +655,7 @@
         <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
-        
+
     </body>
 
 </html>
