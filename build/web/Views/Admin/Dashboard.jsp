@@ -115,8 +115,11 @@
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="login">Login</a></li>
-                                    <li><a href="signup">Signup</a></li>
+<!--                                    <li><a href="login">Login</a></li>
+                                    <li><a href="signup">Signup</a></li>-->
+                                    <li><a href="aclist">Account</a></li>
+                                    <li><a href="addac">Add Account</a></li>
+                                     <li><a href="pro">Profile</a></li>
 <!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>-->
 <!--                                    <li><a href="login">Lock Screen</a></li>-->
 <!--                                    <li><a href="thankyou.html">Thank you...!</a></li>-->
@@ -295,7 +298,7 @@
                         <h5 class="mb-0">Dashboard</h5>
 
                         <div class="row">
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -307,9 +310,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                             
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -321,9 +324,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                             
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -335,9 +338,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                             
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -350,9 +353,9 @@
                                     </div>
                                     
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                             
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -364,9 +367,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                             
-                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
+<!--                            <div class="col-xl-2 col-lg-4 col-md-4 mt-4">
                                 <div class="card features feature-primary rounded border-0 shadow p-4">
                                     <div class="d-flex align-items-center">
                                         <div class="icon text-center rounded-md">
@@ -378,8 +381,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
-                        </div><!--end row-->
+                            </div>end col-->
+<!--                        </div>end row-->
 
                         <div class="row">
                             <div class="col-xl-8 col-lg-7 mt-4">
@@ -399,7 +402,7 @@
                                 </div>
                             </div><!--end col-->
 
-                            <div class="col-xl-4 col-lg-5 mt-4">
+<!--                            <div class="col-xl-4 col-lg-5 mt-4">
                                 <div class="card shadow border-0 p-4">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
                                         <h6 class="align-items-center mb-0">Patients by Department</h6>
@@ -413,10 +416,10 @@
                                     </div>
                                     <div id="department" class="apex-chart"></div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col-->
                         </div><!--end row-->
 
-                        <div class="row">
+<!--                        <div class="row">
                             <div class="col-xl-4 col-lg-6 mt-4">
                                 <div class="card border-0 shadow rounded">
                                     <div class="d-flex justify-content-between align-items-center p-4 border-bottom">
@@ -506,7 +509,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col
 
                             <div class="col-xl-4 col-lg-6 mt-4">
                                 <div class="card chat chat-person border-0 shadow rounded">
@@ -706,7 +709,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--end col-->
+                            </div>end col
 
                             <div class="col-xl-4 col-lg-12 mt-4">
                                 <div class="card border-0 shadow rounded">
@@ -830,8 +833,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div><!--end col-->
-                        </div><!--end row-->
+                            </div>end col
+                        </div>end row-->
                     </div>
                 </div><!--end container-->
 

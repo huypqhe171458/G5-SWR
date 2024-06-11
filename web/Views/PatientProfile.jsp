@@ -140,7 +140,7 @@
 <!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
                                 <li><a href="patient" class="sub-menu-item">My Account</a></li>
 <!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
-                                <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
+                                <li><a href="invoice" class="sub-menu-item">Order List</a></li>
                             </ul>
                         </li>
 
@@ -415,7 +415,6 @@
     
                                         <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
                                             <h6 class="">Upload your picture</h6>
-                                            <p class="text-muted mb-0">For best results, use an image at least 256px by 256px in either .jpg or .png format</p>
                                         </div><!--end col-->
     
                                         <div class="col-lg-5 col-md-12 text-lg-right text-center mt-4 mt-lg-0">
@@ -428,17 +427,12 @@
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label">First Name</label>
+                                                    <label class="form-label">Full Name</label>
                                                     <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
                                                 </div>
                                             </div><!--end col-->
     
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Last Name</label>
-                                                    <input name="name" id="name2" type="text" class="form-control" placeholder="Last Name :">
-                                                </div>
-                                            </div><!--end col-->
+                                           
     
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
@@ -454,12 +448,12 @@
                                                 </div>                                                                               
                                             </div><!--end col-->
     
-                                            <div class="col-md-12">
+                                           <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Your Bio Here</label>
-                                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Bio :"></textarea>
-                                                </div>
-                                            </div>
+                                                    <label class="form-label">Address</label>
+                                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                                </div> 
+                                            </div><!--end col-->
                                         </div><!--end row-->
                                         
                                         <div class="row">
@@ -490,7 +484,7 @@
             
                                                 <div class="col-lg-12">
                                                     <div class="mb-3">
-                                                        <label class="form-label">Re-type New password :</label>
+                                                        <label class="form-label">Confirm password :</label>
                                                         <input type="password" class="form-control" placeholder="Re-type New password" required="">
                                                     </div>
                                                 </div><!--end col-->
@@ -502,78 +496,7 @@
                                         </form>
                                     </div>
                                     
-                                    <div class="mt-4 pt-2">
-                                        <h5 class="mb-0">Account Notifications :</h5>
-        
-                                        <div class="d-flex justify-content-between mt-4">
-                                            <p class="mb-0">When someone mentions me</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">When someone follows me</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
-                                                <label class="form-check-label" for="flexCheckChecked1"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">When shares my activity</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                <label class="form-check-label" for="flexCheckDefault2"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">When someone messages me</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
-                                                <label class="form-check-label" for="flexCheckChecked3"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="mt-4 pt-2">
-                                        <h5 class="mb-0">Marketing Notifications :</h5>
-
-                                        <div class="d-flex justify-content-between mt-4">
-                                            <p class="mb-0">There is a sale or promotion</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
-                                                <label class="form-check-label" for="flexCheckChecked4"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">Company news</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
-                                                <label class="form-check-label" for="flexCheckDefault5"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">Weekly jobs</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
-                                                <label class="form-check-label" for="flexCheckDefault6"></label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <p class="mb-0">Unsubscribe News</p>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7" checked>
-                                                <label class="form-check-label" for="flexCheckChecked7"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="mt-4 pt-2">
-                                        <h5 class="mb-0 text-danger">Delete Account :</h5>
-        
-                                        <p class="mb-0 mt-4">Do you want to delete the account? Please press below "Delete" button</p>
-                                        <div class="mt-4">
-                                            <button class="btn btn-danger">Delete Account</button>
+                               
                                         </div><!--end col-->
                                     </div>
                                 </div>

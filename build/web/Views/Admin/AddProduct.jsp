@@ -139,12 +139,15 @@
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="login">Login</a></li>
-                                    <li><a href="signup">Signup</a></li>
-                                    <!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                                                                        <li><a href="lock-screen.html">Lock Screen</a></li>
-                                                                        <li><a href="thankyou.html">Thank you...!</a></li>
-                                                                    </ul>-->
+<!--                                    <li><a href="login">Login</a></li>
+                                    <li><a href="signup">Signup</a></li>-->
+                                    <li><a href="aclist">Account</a></li>
+                                    <li><a href="addac">Add Account</a></li>
+                                     <li><a href="pro">Profile</a></li>
+<!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>-->
+<!--                                    <li><a href="login">Lock Screen</a></li>-->
+<!--                                    <li><a href="thankyou.html">Thank you...!</a></li>-->
+                                </ul>
                             </div>
                         </li>
 

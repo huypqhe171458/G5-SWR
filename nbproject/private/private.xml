@@ -3,14 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/Cart.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/Shop.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/PatientProfile.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/Invoice.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/ShopDetail.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/src/java/InvoiceServlet.java</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/Checkout.jsp</file>
-            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/SWR/web/Views/Index.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/AddAccount.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/AddProduct.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/Profile.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/InvoiceList.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/InvoiceAdmin.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/Account.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/Patient.jsp</file>
+            <file>file:/C:/Users/huyca/OneDrive/Documents/NetBeansProjects/huydeptrai/web/Views/Admin/Dashboard.jsp</file>
         </group>
     </open-files>
 </project-private>

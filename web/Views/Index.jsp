@@ -239,7 +239,6 @@
                     <div class="col-12">
                         <div class="section-title text-center mb-4 pb-2">
                             <h4 class="title mb-4">Explore By Categories</h4>
-                            <p class="text-muted mx-auto para-desc mb-0">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -312,91 +311,11 @@
                 </div><!--end row-->
             </div><!--end container-->
 
-<!--            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6">
-                        <div class="section-title me-lg-5">
-                            <span class="badge badge-pill badge-soft-primary">About Doctris</span>
-                            <h4 class="title mt-3 mb-4">Good Services And Better <br> Health By Our Specialists</h4>
-                            <p class="para-desc text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                            <p class="para-desc text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.</p>
-                            <div class="mt-4">
-                                <a href="aboutus.html" class="btn btn-soft-primary">Read More</a>
-                            </div>
-                        </div>
-                    </div>end col
-
-                    <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="position-relative">
-                            <img src="${pageContext.request.contextPath}/images/about/about-2.png" class="img-fluid" alt="">
-                            <div class="play-icon">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#watchvideomodal" class="play-btn video-play-icon">
-                                    <i class="mdi mdi-play text-primary rounded-circle bg-white title-bg-dark shadow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>end col
-                </div>end row
-            </div>end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <!-- Cta Start -->
-<!--        <section class="section" style="background: url('${pageContext.request.contextPath}/images/cta.jpg') center center;">
-            <div class="bg-overlay bg-overlay-dark" style="opacity: 0.3;"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 offset-lg-7 col-md-7 offset-md-5">
-                        <div class="features feature-bg-primary d-flex bg-white p-4 rounded-md shadow position-relative overflow-hidden">
-                            <i class="uil uil-briefcase icons h2 mb-0 text-primary"></i>
-                            <div class="ms-3">
-                                <h5 class="titles">Our Mission</h5>
-                                <p class="text-muted para mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.</p>
-                            </div>
-                            <div class="big-icon">
-                                <i class="uil uil-briefcase"></i>
-                            </div>
-                        </div>
-
-                        <div class="features feature-bg-primary d-flex bg-white p-4 rounded-md shadow position-relative overflow-hidden mt-4">
-                            <i class="uil uil-airplay icons h2 mb-0 text-primary"></i>
-                            <div class="ms-3">
-                                <h5 class="titles">Our Vision</h5>
-                                <p class="text-muted para mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.</p>
-                            </div>
-                            <div class="big-icon">
-                                <i class="uil uil-airplay"></i>
-                            </div>
-                        </div>
-
-                        <div class="features feature-bg-primary d-flex bg-white p-4 rounded-md shadow position-relative overflow-hidden mt-4">
-                            <i class="uil uil-flip-v icons h2 mb-0 text-primary"></i>
-                            <div class="ms-3">
-                                <h5 class="titles">Who We Are ?</h5>
-                                <p class="text-muted para mb-0">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century.</p>
-                            </div>
-                            <div class="big-icon">
-                                <i class="uil uil-flip-v"></i>
-                            </div>
-                        </div>
-                    </div>end col
-                </div>end row
-            </div>end container
-        </section>end section-->
-        <!-- Cta End -->
 
         <!-- Start -->
         <section class="section">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <span class="badge badge-pill badge-soft-primary">Find Doctors</span>
-                            <h4 class="title mt-3 mb-4">Find Your Specialists</h4>
-                            <p class="text-muted mx-auto para-desc mb-0">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+               
 
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
@@ -761,88 +680,9 @@
                 </div><!--end row-->
             </div><!--end container-->
 
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-md-6 col-12">
-                        <div class="me-lg-5">
-                            <img src="${pageContext.request.contextPath}/images/svg/vaccine-development-amico.svg" class="img-fluid" alt="">
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item border rounded">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
-                                        How does it work ?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item border rounded mt-2">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        Do I need a designer to use Doctris ?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
+       
 
-                            <div class="accordion-item border rounded mt-2">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        What do I need to do to start selling ?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item border rounded mt-2">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        What happens when I receive an order ?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row mt-4 pt-2 justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title mb-4">Have Question ? Get in touch!</h4>
-                            <p class="text-muted para-desc mx-auto">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                            <a href="contact.html" class="btn btn-primary mt-4"><i class="mdi mdi-phone"></i> Contact us</a>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
+            
             </div><!--end container-->
         </section><!--end section-->
         <!-- End -->

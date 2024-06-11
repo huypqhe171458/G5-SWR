@@ -56,6 +56,18 @@
         <servlet-name>InvoiceListServlet</servlet-name>
         <servlet-class>Dashboard.InvoiceListServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddAccount</servlet-name>
+        <servlet-class>Dashboard.AddAccount</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>Dashboard.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountListServlet</servlet-name>
+        <servlet-class>Dashboard.AccountListServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndexControllers</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -111,6 +123,18 @@
     <servlet-mapping>
         <servlet-name>InvoiceListServlet</servlet-name>
         <url-pattern>/inlist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddAccount</servlet-name>
+        <url-pattern>/addac</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/pro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountListServlet</servlet-name>
+        <url-pattern>/aclist</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index</welcome-file>

@@ -129,7 +129,7 @@
 <!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
                                 <li><a href="patient" class="sub-menu-item">My Account</a></li>
 <!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
-                                <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
+                                <li><a href="invoice" class="sub-menu-item">Requested Invoice</a></li>
                             </ul>
                         </li>
 
@@ -204,7 +204,7 @@
                     </div><!--end col-->
 
                     <div class="col-xl-9 col-lg-8 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <h5 class="mb-0 text-center" >Invoice List</h5>
+                        <h5  >Requested Invoice List</h5>
                         <div class="row">
                             <div class="col-12 mt-4 pt-2 ">
                                 <div class="table-responsive shadow rounded">
@@ -228,12 +228,12 @@
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Howard Tanner</span>
+                                                            <span class="ms-2">Nguyen Thi Thuong</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$253</td>
+                                                <td class="text-center p-3">0933 123 456</td>
+                                                <td class="text-center p-3">$1150</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">
                                                     <div class="badge bg-soft-danger rounded px-3 py-1">
@@ -242,7 +242,6 @@
                                                 </td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -254,11 +253,11 @@
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Wendy Filson</span>
+                                                            <span class="ms-2">Nguyen Thi Thuong</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
+                                                <td class="text-center p-3">0933 123 456</td>
                                                 <td class="text-center p-3">$482</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">
@@ -268,7 +267,6 @@
                                                 </td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -280,11 +278,11 @@
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Faye Bridger</span>
+                                                            <span class="ms-2">Nguyen Thi Thuong</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
+                                                <td class="text-center p-3">0933 123 456</td>
                                                 <td class="text-center p-3">$546</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">
@@ -294,7 +292,6 @@
                                                 </td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -306,11 +303,11 @@
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Ronald Curtis</span>
+                                                            <span class="ms-2">Nguyen Thi Thuong</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
+                                                <td class="text-center p-3">0933 123 456</td>
                                                 <td class="text-center p-3">$154</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">
@@ -320,7 +317,6 @@
                                                 </td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -332,11 +328,11 @@
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Melissa Hibner</span>
+                                                           <span class="ms-2">Nguyen Thi Thuong</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
+                                               <td class="text-center p-3">0933 123 456</td>
                                                 <td class="text-center p-3">$458</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">
@@ -346,140 +342,11 @@
                                                 </td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
 
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d06</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Randall Case</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$548</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d07</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Jerry Morena</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$658</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d08</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/08.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Lester McNally</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$457</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d09</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Christopher Burrell</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$586</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d10</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/10.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Mary Skeens</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$325</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -490,7 +357,7 @@
                             <!-- PAGINATION START -->
                             <div class="col-12 mt-4">
                                 <div class="d-md-flex align-items-center text-center justify-content-between">
-                                    <span class="text-muted me-3">Showing 1 - 10 out of 50</span>
+                                    <span class="text-muted me-3">Showing 1 - 5 out of 50</span>
                                     <ul class="pagination justify-content-center mb-0 mt-3 mt-sm-0">
                                         <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous">Prev</a></li>
                                         <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
@@ -609,39 +476,35 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header border-bottom p-3">
-                        <h5 class="modal-title" id="exampleModalLabel">Patient Invoice</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Invoice Detail</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-3 pt-4">
                         <div class="row mb-4">
                             <div class="col-lg-8 col-md-6">
-                                <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="22" alt="">
+                                <h4>Nguyen Thi Thuong</h4>
                                 <h6 class="mt-4 pt-2">Address :</h6>
-                                <small class="text-muted mb-0">1419 Riverwood Drive, <br>Redding, CA 96001</small>
+                                <small class="text-muted mb-0">Thach Ha, Ha Tinh</small>
                             </div><!--end col-->
 
                             <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <ul class="list-unstyled">
                                     <li class="d-flex">
                                         <small class="mb-0 text-muted">Invoice no. : </small>
-                                        <small class="mb-0 text-dark">&nbsp;&nbsp;#54638990jnn</small>
+                                        <small class="mb-0 text-dark">&nbsp;&nbsp;#d01</small>
                                     </li>
                                     <li class="d-flex mt-2">
                                         <small class="mb-0 text-muted">Email : </small>
-                                        <small class="mb-0">&nbsp;&nbsp;<a href="mailto:contact@example.com" class="text-dark">info@doctris.com</a></small>
+                                        <small class="mb-0">&nbsp;&nbsp;<a href="mailto:contact@example.com" class="text-dark">thwww@gmail.com</a></small>
                                     </li>
                                     <li class="d-flex mt-2">
-                                        <small class="mb-0 text-muted">Phone : </small>
-                                        <small class="mb-0">&nbsp;&nbsp;<a href="tel:+152534-468-854" class="text-dark">(+12) 1546-456-856</a></small>
+                                        <small class="mb-0 text-muted">Phone :</small>
+                                        <small class="mb-0">&nbsp;&nbsp;<a href="tel:+152534-468-854" class="text-dark">0933 123 456 </a></small>
                                     </li>
-                                    <li class="d-flex mt-2">
-                                        <small class="mb-0 text-muted">Website : </small>
-                                        <small class="mb-0">&nbsp;&nbsp;<a href="#" class="text-dark">www.doctris.com</a></small>
-                                    </li>
-                                    <li class="d-flex mt-2">
-                                        <small class="mb-0 text-muted">Patient Name : </small>
-                                        <small class="mb-0">&nbsp;&nbsp;Mary Skeens</small>
-                                    </li>
+                                  <li class="d-flex mt-2">
+                                            <small class="mb-0 text-muted">Due Dt. : </small>
+                                            <small class="mb-0 text-dark">&nbsp;&nbsp;23th Dec 2020</small>
+                                        </li>
                                 </ul>
                             </div><!--end col-->
                         </div><!--end row-->
@@ -650,29 +513,10 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-6">
                                     <h5 class="text-muted fw-bold">Invoice <span class="badge badge-pill badge-soft-success fw-normal ms-2">Paid</span></h5>
-                                    <h6>Surgery (Gynecology)</h6>
+                                   
                                 </div><!--end col-->
 
-                                <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <ul class="list-unstyled">
-                                        <li class="d-flex mt-2">
-                                            <small class="mb-0 text-muted">Issue Dt. : </small>
-                                            <small class="mb-0 text-dark">&nbsp;&nbsp;25th Sep. 2020</small>
-                                        </li>
-
-                                        <li class="d-flex mt-2">
-                                            <small class="mb-0 text-muted">Due Dt. : </small>
-                                            <small class="mb-0 text-dark">&nbsp;&nbsp;11th Oct. 2020</small>
-                                        </li>
-
-                                        <li class="d-flex mt-2">
-                                            <small class="mb-0 text-muted">Dr. Name : </small>
-                                            <small class="mb-0 text-dark">&nbsp;&nbsp;Dr. Calvin Carlo</small>
-                                        </li>
-                                    </ul>
-                                </div><!--end col-->
-                            </div><!--end row-->
-                            
+                                
                             <div class="invoice-table pb-4">
                                 <div class="table-responsive shadow rounded mt-4">
                                     <table class="table table-center invoice-tb mb-0">
@@ -688,24 +532,24 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row" class="text-start p-3">1</th>
-                                                <td class="text-start p-3">Hospital Charges</td>
+                                                <td class="text-start p-3">Product 1</td>
                                                 <td class="text-center p-3">1</td>
-                                                <td class="p-3">$ 125</td>
-                                                <td class="p-3">$ 125</td>
+                                                <td class="p-3">$ 100</td>
+                                                <td class="p-3">$ 100</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row" class="text-start p-3">2</th>
-                                                <td class="text-start p-3">Medicine</td>
-                                                <td class="text-center p-3">1</td>
-                                                <td class="p-3">$ 245</td>
-                                                <td class="p-3">$ 245</td>
+                                                <td class="text-start p-3">Product 2</td>
+                                                <td class="text-center p-3">3</td>
+                                                <td class="p-3">$ 150</td>
+                                                <td class="p-3">$ 450</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row" class="text-start p-3">3</th>
-                                                <td class="text-start p-3">Special Visit Fee(Doctor)</td>
-                                                <td class="text-center p-3">1</td>
-                                                <td class="p-3">$ 150</td>
-                                                <td class="p-3">$ 150</td>
+                                                <td class="text-start p-3">Product 3</td>
+                                                <td class="text-center p-3">3</td>
+                                                <td class="p-3">$ 200</td>
+                                                <td class="p-3">$ 600</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -714,9 +558,9 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-5 ms-auto">
                                         <ul class="list-unstyled h6 fw-normal mt-4 mb-0 ms-md-5 ms-lg-4">
-                                            <li class="text-muted d-flex justify-content-between pe-3">Subtotal :<span>$ 520</span></li>
+                                            <li class="text-muted d-flex justify-content-between pe-3">Subtotal :<span>$ 1150</span></li>
                                             <li class="text-muted d-flex justify-content-between pe-3">Taxes :<span> 0</span></li>
-                                            <li class="d-flex justify-content-between pe-3">Total :<span>$ 520</span></li>
+                                            <li class="d-flex justify-content-between pe-3">Total :<span>$ 1150</span></li>
                                         </ul>
                                     </div><!--end col-->
                                 </div><!--end row-->

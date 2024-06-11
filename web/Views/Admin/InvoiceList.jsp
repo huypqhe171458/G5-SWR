@@ -1,13 +1,6 @@
-<%-- 
-    Document   : InvoiceList.jsp
-    Created on : Jun 11, 2024, 11:05:15 AM
-    Author     : huyca
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -17,14 +10,12 @@
         <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
         <meta name="author" content="Shreethemes" />
         <meta name="email" content="support@shreethemes.in" />
-        <meta name="website" content="../../../index.html" />
+        <meta name="website" content="https://shreethemes.in" />
         <meta name="Version" content="v1.2.0" />
         <!-- favicon -->
         <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/favicon.ico.png">
         <!-- Bootstrap -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- simplebar -->
-        <link href="${pageContext.request.contextPath}/css/simplebar.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="${pageContext.request.contextPath}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="${pageContext.request.contextPath}/css/remixicon.css" rel="stylesheet" type="text/css" />
@@ -35,325 +26,217 @@
     </head>
 
     <body>
-
-
-        <div class="page-wrapper doctris-theme toggled">
-            <nav id="sidebar" class="sidebar-wrapper">
-                <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
-                    <div class="sidebar-brand">
-                        <a href="index">
-                            <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                            <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+        
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid">
+                <!-- Logo container-->
+                <a class="logo" href="index">
+                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+                </a>                
+                <!-- Logo End -->
+                
+                <!-- Start Mobile Toggle -->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </a>
+                        <!-- End mobile menu toggle-->
                     </div>
-
-                    <ul class="sidebar-menu pt-3">
-                        <li><a href="dash"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
-                        <!--                        <li><a href="appointment.html"><i class="uil uil-stethoscope me-2 d-inline-block"></i>Appointment</a></li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Doctors</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="doctors.html">Doctors</a></li>
-                                                            <li><a href="add-doctor.html">Add Doctor</a></li>
-                                                            <li><a href="dr-profile.html">Profile</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="patients">All Product</a></li>
-                                    <li><a href="add">Add Prodcut</a></li>
-                                    <!--                                    <li><a href="patient-profile.html">Profile</a></li>-->
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="inlist">Invoice List</a></li>
-                                    <li><a href="inad">Invoice</a></li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="chat.html">Chat</a></li>
-                                                            <li><a href="email.html">Email</a></li>
-                                                            <li><a href="calendar.html">Calendar</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Pharmacy</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="product-detail.html">Shop Detail</a></li>
-                                                            <li><a href="shopcart.html">Shopcart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-flip-h me-2 d-inline-block"></i>Blogs</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="blogs.html">Blogs</a></li>
-                                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-file me-2 d-inline-block"></i>Pages</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="faqs.html">FAQs</a></li>
-                                                            <li><a href="review.html">Reviews</a></li>
-                                                            <li><a href="invoice-list.html">Invoice List</a></li>
-                                                            <li><a href="invoice.html">Invoice</a></li>
-                                                            <li><a href="terms.html">Terms & Policy</a></li>
-                                                            <li><a href="privacy.html">Privacy Policy</a></li>
-                                                            <li><a href="error.html">404 !</a></li>
-                                                            <li><a href="blank-page.html">Blank Page</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <li class="sidebar-dropdown">
-                            <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li><a href="login">Login</a></li>
-                                    <li><a href="signup">Signup</a></li>
-                                    <!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>
-                                                                        <li><a href="lock-screen.html">Lock Screen</a></li>
-                                                                        <li><a href="thankyou.html">Thank you...!</a></li>-->
-                                </ul>
-                            </div>
-                        </li>
-
-<!--                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>
-
-                        <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>-->
-                    </ul>
-                    <!-- sidebar-menu  -->
                 </div>
-                <!-- sidebar-content  -->
-                <ul class="sidebar-footer list-unstyled mb-0">
-                    <li class="list-inline-item mb-0 ms-1">
-                        <a href="#" class="btn btn-icon btn-pills btn-soft-primary">
-                            <i class="uil uil-comment icons"></i>
+                <!-- End Mobile Toggle -->
+
+                <!-- Start Dropdown -->
+                <ul class="dropdowns list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
                         </a>
                     </li>
-                </ul>
-            </nav>
-            <!-- sidebar-wrapper  -->
 
-            <!-- Start Page Content -->
-            <main class="page-content bg-light">
-                <div class="top-header">
-                    <div class="header-bar d-flex justify-content-between border-bottom">
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="logo-icon">
-                                <img src="${pageContext.request.contextPath}/images/logo-icon.png" height="30" class="small" alt="">
-                                <span class="big">
-                                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
-                                </span>
-                            </a>
-                            <a id="close-sidebar" class="btn btn-icon btn-pills btn-soft-primary ms-2" href="#">
-                                <i class="uil uil-bars"></i>
-                            </a>
-                            <div class="search-bar p-0 d-none d-lg-block ms-2">
-                                <div id="search" class="menu-search mb-0">
-                                    <form role="search" method="get" id="searchform" class="searchform">
-                                        <div>
-                                            <input type="text" class="form-control border rounded-pill" name="s" id="s" placeholder="Search Keywords...">
-                                            <input type="submit" id="searchsubmit" value="Search">
-                                        </div>
-                                    </form>
-                                </div>
+                    <li class="list-inline-item mb-0 ms-1">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <i class="uil uil-search"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mb-0 ms-1">
+                        <div class="dropdown dropdown-primary">
+                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
+                                <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
+                                    <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                    <div class="flex-1 ms-2">
+                                        <span class="d-block mb-1">Calvin Carlo</span>
+                                        <small class="text-muted">Orthopedic</small>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>
+                                <a class="dropdown-item text-dark" href="doctor-profile-setting.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                                <div class="dropdown-divider border-top"></div>
+                                <a class="dropdown-item text-dark" href="login.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
                             </div>
                         </div>
+                    </li>
+                </ul>
+                <!-- Start Dropdown -->
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-left">
+                        <li class="has-submenu parent-menu-item">
+                            <a href="index">Home</a><span></span>
+                           
+                        </li>
 
-                        <ul class="list-unstyled mb-0">
-                            <li class="list-inline-item mb-0">
-                                <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/language/american.png" class="avatar avatar-ex-small rounded-circle p-2" alt=""></button>
-                                    <div class="dropdown-menu dd-menu drop-ups dropdown-menu-end bg-white shadow border-0 mt-3 p-2" data-simplebar style="height: 175px;">
-                                        <a href="javascript:void(0)" class="d-flex align-items-center">
-                                            <img src="${pageContext.request.contextPath}/images/language/chinese.png" class="avatar avatar-client rounded-circle shadow" alt="">
-                                            <div class="flex-1 text-left ms-2 overflow-hidden">
-                                                <small class="text-dark mb-0">Chinese</small>
-                                            </div>
-                                        </a>
+<!--                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)" class="menu-item"> Dashboard </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="doctor-dashboard.html" class="sub-menu-item">Dashboard</a></li>
+                                        <li><a href="doctor-appointment.html" class="sub-menu-item">Appointment</a></li>
+                                        <li><a href="patient-list.html" class="sub-menu-item">Patients</a></li>
+                                        <li><a href="doctor-schedule.html" class="sub-menu-item">Schedule Timing</a></li>
+                                        <li><a href="invoice" class="sub-menu-item">Invoices</a></li>
+                                        <li><a href="patient-review.html" class="sub-menu-item">Reviews</a></li>
+                                        <li><a href="doctor-messages.html" class="sub-menu-item">Messages</a></li>
+                                        <li><a href="doctor-profile.html" class="sub-menu-item">Profile</a></li>
+                                        <li><a href="doctor-profile-setting.html" class="sub-menu-item">Profile Settings</a></li>
+                                        <li><a href="doctor-chat.html" class="sub-menu-item">Chat</a></li>
+                                        <li><a href="login" class="sub-menu-item">Login</a></li>
+                                        <li><a href="signup" class="sub-menu-item">Sign Up</a></li>
+                                        <li><a href="forgot-password.html" class="sub-menu-item">Forgot Password</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="doctor-team-one.html" class="sub-menu-item">Doctors One</a></li>
+                                <li><a href="doctor-team-two.html" class="sub-menu-item">Doctors Two</a></li>
+                                <li><a href="doctor-team-three.html" class="sub-menu-item">Doctors Three</a></li>
+                            </ul>
+                        </li>-->
 
-                                        <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="${pageContext.request.contextPath}/images/language/european.png" class="avatar avatar-client rounded-circle shadow" alt="">
-                                            <div class="flex-1 text-left ms-2 overflow-hidden">
-                                                <small class="text-dark mb-0">European</small>
-                                            </div>
-                                        </a>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+<!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
+                                <li><a href="patient" class="sub-menu-item">My Account</a></li>
+<!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
+                                <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
+                            </ul>
+                        </li>
 
-                                        <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="${pageContext.request.contextPath}/images/language/indian.png" class="avatar avatar-client rounded-circle shadow" alt="">
-                                            <div class="flex-1 text-left ms-2 overflow-hidden">
-                                                <small class="text-dark mb-0">Indian</small>
-                                            </div>
-                                        </a>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+<!--                                <li><a href="pharmacy.html" class="sub-menu-item">Pharmacy</a></li>-->
+                                <li><a href="shop" class="sub-menu-item">Shop</a></li>
+<!--                                <li><a href="pharmacy-product-detail.html" class="sub-menu-item">Medicine Detail</a></li>-->
+                                <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
+                                <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
+<!--                                <li><a href="pharmacy-account.html" class="sub-menu-item">Account</a></li>-->
+                            </ul>
+                        </li>
+        
+                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
+                                <li><a href="departments.html" class="sub-menu-item">Departments</a></li>
+                                <li><a href="faqs.html" class="sub-menu-item">FAQs</a></li>
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)" class="menu-item"> Blogs </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
+                                        <li><a href="blog-detail.html" class="sub-menu-item">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="terms.html" class="sub-menu-item">Terms & Policy</a></li>
+                                <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
+                                <li><a href="error.html" class="sub-menu-item">404 !</a></li>
+                                <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../admin/index.html" class="sub-menu-item" target="_blank">Admin</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
 
-                                        <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="${pageContext.request.contextPath}/images/language/japanese.png" class="avatar avatar-client rounded-circle shadow" alt="">
-                                            <div class="flex-1 text-left ms-2 overflow-hidden">
-                                                <small class="text-dark mb-0">Japanese</small>
-                                            </div>
-                                        </a>
+        <!-- Start Hero -->
+        <section class="bg-dashboard">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row justify-content-center d-flex">
+                    <div class="col-xl-3 col-lg-4 col-md-5 col-12">
+<!--                        <div class="rounded shadow overflow-hidden sticky-bar">-->
+<!--                            <div class="card border-0">
+                                <img src="${pageContext.request.contextPath}/images/doctors/profile-bg.jpg" class="img-fluid" alt="">
+                            </div>-->
 
-                                        <a href="javascript:void(0)" class="d-flex align-items-center mt-2">
-                                            <img src="${pageContext.request.contextPath}/images/language/russian.png" class="avatar avatar-client rounded-circle shadow" alt="">
-                                            <div class="flex-1 text-left ms-2 overflow-hidden">
-                                                <small class="text-dark mb-0">Russian</small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
+<!--                            <div class="text-center avatar-profile margin-nagative mt-n5 position-relative pb-4 border-bottom">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="rounded-circle shadow-md avatar avatar-md-md" alt="">
+                                <h5 class="mt-3 mb-1">Dr. Calvin Carlo</h5>
+                                <p class="text-muted mb-0">Orthopedic</p>
+                            </div>-->
 
-                            <li class="list-inline-item mb-0 ms-1">
-                                <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    <div class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
-                                </a>
-                            </li>
-
-                            <li class="list-inline-item mb-0 ms-1">
-                                <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-icon btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="mail" class="fea icon-sm"></i></button>
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">4 <span class="visually-hidden">unread mail</span></span>
-
-                                    <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-3 px-2 py-2" data-simplebar style="height: 320px; width: 300px;">
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Janalia</b> <small class="text-muted fw-normal d-inline-block">1 hour ago</small></small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/Codepen.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>codepen</b>  <small class="text-muted fw-normal d-inline-block">4 hour ago</small></small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Cristina</b> <small class="text-muted fw-normal d-inline-block">5 hour ago</small></small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/dribbble.svg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Dribbble</b> <small class="text-muted fw-normal d-inline-block">24 hour ago</small></small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Donald Aghori</b> <small class="text-muted fw-normal d-inline-block">1 day ago</small></small>
-                                            </div>
-                                        </a>
-
-                                        <a href="#" class="d-flex align-items-center justify-content-between py-2 border-top">
-                                            <div class="d-inline-flex position-relative overflow-hidden">
-                                                <img src="${pageContext.request.contextPath}/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                <small class="text-dark mb-0 d-block text-truncat ms-3">You received a new email from <b>Calvin</b> <small class="text-muted fw-normal d-inline-block">2 day ago</small></small>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="list-inline-item mb-0 ms-1">
-                                <div class="dropdown dropdown-primary">
-                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
-                                    <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
-                                        <a class="dropdown-item d-flex align-items-center text-dark" href="https://shreethemes.in/doctris/layouts/admin/profile.html">
-                                            <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
-                                            <div class="flex-1 ms-2">
-                                                <span class="d-block mb-1">Calvin Carlo</span>
-                                                <small class="text-muted">Orthopedic</small>
-                                            </div>
-                                        </a>
-                                        <a class="dropdown-item text-dark" href="index.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>
-                                        <a class="dropdown-item text-dark" href="dr-profile.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
-                                        <div class="dropdown-divider border-top"></div>
-                                        <a class="dropdown-item text-dark" href="lock-screen.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="layout-specing">
-                        <div class="d-md-flex justify-content-between">
-                            <h5 class="mb-0">Invoice List</h5>
-
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
-                                <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Invoice List</li>
-                                </ul>
-                            </nav>
+<!--                            <ul class="list-unstyled sidebar-nav mb-0">
+                                <li class="navbar-item"><a href="doctor-dashboard.html" class="navbar-link"><i class="ri-airplay-line align-middle navbar-icon"></i> Dashboard</a></li>
+                                <li class="navbar-item"><a href="doctor-appointment.html" class="navbar-link"><i class="ri-calendar-check-line align-middle navbar-icon"></i> Appointment</a></li>
+                                <li class="navbar-item"><a href="doctor-schedule.html" class="navbar-link"><i class="ri-timer-line align-middle navbar-icon"></i> Schedule Timing</a></li>
+                                <li class="navbar-item"><a href="invoices.html" class="navbar-link"><i class="ri-pages-line align-middle navbar-icon"></i> Invoices</a></li>
+                                <li class="navbar-item"><a href="doctor-messages.html" class="navbar-link"><i class="ri-mail-unread-line align-middle navbar-icon"></i> Messages</a></li>
+                                <li class="navbar-item"><a href="doctor-profile.html" class="navbar-link"><i class="ri-user-line align-middle navbar-icon"></i> Profile</a></li>
+                                <li class="navbar-item"><a href="doctor-profile-setting.html" class="navbar-link"><i class="ri-user-settings-line align-middle navbar-icon"></i> Profile Settings</a></li>
+                                <li class="navbar-item"><a href="patient-list.html" class="navbar-link"><i class="ri-empathize-line align-middle navbar-icon"></i> Patients</a></li>
+                                <li class="navbar-item"><a href="patient-review.html" class="navbar-link"><i class="ri-chat-1-line align-middle navbar-icon"></i> Patients Review</a></li>
+                                <li class="navbar-item"><a href="doctor-chat.html" class="navbar-link"><i class="ri-chat-voice-line align-middle navbar-icon"></i> Chat</a></li>
+                                <li class="navbar-item"><a href="login.html" class="navbar-link"><i class="ri-login-circle-line align-middle navbar-icon"></i> Login</a></li>
+                                <li class="navbar-item"><a href="forgot-password.html" class="navbar-link"><i class="ri-device-recover-line align-middle navbar-icon"></i> Forgot Password</a></li>
+                            </ul>-->
                         </div>
+                    </div><!--end col-->
 
+                    <div class="col-xl-9 col-lg-8 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <h5 class="mb-0 text-center" >Order List</h5>
                         <div class="row">
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-4 pt-2 ">
                                 <div class="table-responsive shadow rounded">
                                     <table class="table table-center bg-white mb-0">
                                         <thead>
                                             <tr>
-                                                <th class="border-bottom p-3">Invoice</th>
-                                                <th class="border-bottom p-3" style="min-width: 220px;">Name</th>
-                                                <th class="text-center border-bottom p-3" style="min-width: 180px;">Phone</th>
+                                                <th class="border-bottom p-3">ID</th>
+                                                <th class="border-bottom p-3" style="min-width: 220px;">Customer Name</th>
+                                                <th class="text-center border-bottom p-3" style="min-width: 180px;">Order Date</th>
                                                 <th class="text-center border-bottom p-3">Amount</th>
-                                                <th class="text-center border-bottom p-3" style="min-width: 140px;">Generate(Dt.)</th>
+                                                <th class="text-center border-bottom p-3" style="min-width: 140px;">Item</th>
                                                 <th class="text-center border-bottom p-3">Status</th>
                                                 <th class="text-end border-bottom p-3" style="min-width: 200px;"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                          
+
                                             <!-- Start -->
                                             <tr>
-                                                <th class="p-3">#d01</th>
+                                                <th class="p-3">#d04</th>
                                                 <td class="p-3">
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Howard Tanner</span>
+                                                            <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                            <span class="ms-2">Ronald Curtis</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$253</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
+                                                <td class="text-center p-3">$154</td>
+                                                <td class="text-center p-3">ABCXYZ</td>
                                                 <td class="text-center p-3">
                                                     <div class="badge bg-soft-danger rounded px-3 py-1">
                                                         Unpaid
@@ -366,46 +249,20 @@
                                             </tr>
                                             <!-- End -->
 
-                                            <!-- Start -->
+                                             <!-- Start -->
                                             <tr>
-                                                <th class="p-3">#d02</th>
+                                                <th class="p-3">#d04</th>
                                                 <td class="p-3">
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Wendy Filson</span>
+                                                            <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                            <span class="ms-2">Ronald Curtis</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$482</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d03</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Faye Bridger</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$546</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
+                                                <td class="text-center p-3">$154</td>
+                                                <td class="text-center p-3">ABCXYZ</td>
                                                 <td class="text-center p-3">
                                                     <div class="badge bg-soft-danger rounded px-3 py-1">
                                                         Unpaid
@@ -429,9 +286,9 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
+                                                <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">$154</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
+                                                <td class="text-center p-3">ABCXYZ</td>
                                                 <td class="text-center p-3">
                                                     <div class="badge bg-soft-danger rounded px-3 py-1">
                                                         Unpaid
@@ -444,72 +301,20 @@
                                             </tr>
                                             <!-- End -->
 
-                                            <!-- Start -->
+                                             <!-- Start -->
                                             <tr>
-                                                <th class="p-3">#d05</th>
+                                                <th class="p-3">#d04</th>
                                                 <td class="p-3">
                                                     <a href="#" class="text-primary">
                                                         <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Melissa Hibner</span>
+                                                            <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                            <span class="ms-2">Ronald Curtis</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$458</td>
                                                 <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d06</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/06.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Randall Case</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$548</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d07</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/07.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Jerry Morena</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$658</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
+                                                <td class="text-center p-3">$154</td>
+                                                <td class="text-center p-3">ABCXYZ</td>
                                                 <td class="text-center p-3">
                                                     <div class="badge bg-soft-danger rounded px-3 py-1">
                                                         Unpaid
@@ -522,83 +327,7 @@
                                             </tr>
                                             <!-- End -->
 
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d08</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/08.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Lester McNally</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$457</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d09</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Christopher Burrell</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$586</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-success rounded px-3 py-1">
-                                                        Paid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
-
-                                            <!-- Start -->
-                                            <tr>
-                                                <th class="p-3">#d10</th>
-                                                <td class="p-3">
-                                                    <a href="#" class="text-primary">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/10.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Mary Skeens</span>
-                                                        </div>
-                                                    </a>
-                                                </td>
-                                                <td class="text-center p-3">(+12)85-4521-7568</td>
-                                                <td class="text-center p-3">$325</td>
-                                                <td class="text-center p-3">23th Dec 2020</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Print</a>
-                                                </td>
-                                            </tr>
-                                            <!-- End -->
+                                          
                                         </tbody>
                                     </table>
                                 </div>
@@ -621,26 +350,62 @@
                             </div><!--end col-->
                             <!-- PAGINATION END -->
                         </div><!--end row-->
-                    </div>
-                </div><!--end container-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
 
-                <!-- Footer Start -->
-                <footer class="bg-white shadow py-3">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <div class="text-sm-start text-center">
-                                    <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> Â© Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+        <!-- Footer Start -->
+        <footer class="bg-footer py-4">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start text-center">
+                            <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0">
+                        <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
+                            <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
+                            <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
+                            <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
+                            <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-pills btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        <!-- Offcanvas Start -->
+        <div class="offcanvas bg-white offcanvas-top" tabindex="-1" id="offcanvasTop">
+            <div class="offcanvas-body d-flex align-items-center align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center">
+                                <h4>Search now.....</h4>
+                                <div class="subcribe-form mt-4">
+                                    <form>
+                                        <div class="mb-0">
+                                            <input type="text" id="help" name="name" class="border bg-white rounded-pill" required="" placeholder="Search">
+                                            <button type="submit" class="btn btn-pills btn-primary">Search</button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div><!--end col-->
-                        </div><!--end row-->
-                    </div><!--end container-->
-                </footer><!--end footer-->
-                <!-- End -->
-            </main>
-            <!--End page-content" -->
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div>
         </div>
-        <!-- page-wrapper -->
+        <!-- Offcanvas End -->
 
         <!-- Offcanvas Start -->
         <div class="offcanvas offcanvas-end bg-white shadow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -658,13 +423,13 @@
                         <div id="style-switcher">
                             <div>
                                 <ul class="text-center list-unstyled mb-0">
-                                    <li class="d-grid"><a href="javascript:void(0)" class="rtl-version t-rtl-light" onclick="setTheme('style-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="ltr-version t-ltr-light" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-rtl-version t-rtl-dark" onclick="setTheme('style-dark-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-version t-dark mt-4" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/dark-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Dark Version</span></a></li>
-                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Light Version</span></a></li>
-                                    <li class="d-grid"><a href="../landing/index.html" target="_blank" class="mt-4"><img src="${pageContext.request.contextPath}/images/layouts/landing-light.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Landing Demos</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="rtl-version t-rtl-light" onclick="setTheme('style-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/landing-light-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="ltr-version t-ltr-light" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/landing-light.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-rtl-version t-rtl-dark" onclick="setTheme('style-dark-rtl')"><img src="${pageContext.request.contextPath}/images/layouts/landing-dark-rtl.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">RTL Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-ltr-version t-ltr-dark" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/landing-dark.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">LTR Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="dark-version t-dark mt-4" onclick="setTheme('style-dark')"><img src="${pageContext.request.contextPath}/images/layouts/landing-dark.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Dark Version</span></a></li>
+                                    <li class="d-grid"><a href="javascript:void(0)" class="light-version t-light mt-4" onclick="setTheme('style')"><img src="${pageContext.request.contextPath}/images/layouts/landing-light.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Light Version</span></a></li>
+                                    <li class="d-grid"><a href="../admin/index.html" target="_blank" class="mt-4"><img src="${pageContext.request.contextPath}/images/layouts/light-dash.png" class="img-fluid rounded-md shadow-md d-block" alt=""><span class="text-muted mt-2 d-block">Admin Dashboard</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -755,7 +520,7 @@
                                     </ul>
                                 </div><!--end col-->
                             </div><!--end row-->
-
+                            
                             <div class="invoice-table pb-4">
                                 <div class="table-responsive shadow rounded mt-4">
                                     <table class="table table-center invoice-tb mb-0">
@@ -815,14 +580,14 @@
 
                                     <div class="col-sm-6">
                                         <div class="text-sm-end text-muted text-center">
-                                            <small class="mb-0"><a href="#" class="text-dark">Terms & Conditions</a></small>
+                                            <small class="mb-0"><a href="#" class="text-primary">Terms & Conditions</a></small>
                                         </div>
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </div>
                         </div>
 
-                        <!-- <div class="text-end mt-4">
+                        <!-- <div class="text-end mt-4 pt-2">
                             <a href="javascript:window.print()" class="btn btn-soft-primary d-print-none"><i class="uil uil-print"></i> Print</a>
                         </div> -->
                     </div>
@@ -830,16 +595,13 @@
             </div>
         </div>
         <!-- View Invoice End -->
-
+        
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
-        <!-- simplebar -->
-        <script src="${pageContext.request.contextPath}/js/simplebar.min.js"></script>
         <!-- Icons -->
         <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
-
     </body>
 
 </html>
