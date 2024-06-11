@@ -175,27 +175,7 @@
         </header><!--end header-->
         <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <section class="bg-half-170 d-table w-100 bg-light">
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h3 class="sub-title mb-4">Checkout</h3>
-                            <p class="para-desc mx-auto text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-3">
-                                <ul class="breadcrumb bg-light rounded mb-0 bg-transparent">
-                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                    <li class="breadcrumb-item"><a href="pharmacy.html">Pharmacy</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
+       
         <div class="position-relative">
             <div class="shape overflow-hidden text-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,35 +205,43 @@
                                 </li>
                                 <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
                                     <div>
-                                        <h6 class="my-0">Second product</h6>
+                                        <h6 class="my-0">Product name</h6>
                                         <small class="text-muted">Brief description</small>
                                     </div>
-                                    <span class="text-muted">$8</span>
+                                    <span class="text-muted">$12</span>
                                 </li>
                                 <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
                                     <div>
-                                        <h6 class="my-0">Third item</h6>
+                                        <h6 class="my-0">Product name</h6>
                                         <small class="text-muted">Brief description</small>
                                     </div>
-                                    <span class="text-muted">$5</span>
+                                    <span class="text-muted">$12</span>
                                 </li>
                                 <li class="d-flex justify-content-between bg-light p-3 border-bottom">
                                     <div class="text-success">
-                                        <h6 class="my-0">Promo code</h6>
-                                        <small>EXAMPLECODE</small>
+                                        <h6 class="my-0">Voucher</h6>
+                                        <small>50%</small>
                                     </div>
                                     <span class="text-success">−$5</span>
                                 </li>
+                                <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                                    <div>
+                                        <h6 class="my-0">Ship</h6>
+                                    </div>
+                                    <span class="text-muted">$2</span>
+                                </li>
                                 <li class="d-flex justify-content-between p-3">
-                                    <span>Total (USD)</span>
+                                    <div>
+                                        <h6 class="my-0">TOTAL (USD)</h6>
+                                    </div>
                                     <strong>$20</strong>
                                 </li>
                             </ul>
 
                             <form>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Promo code">
-                                    <button type="submit" class="btn btn-secondary">Redeem</button>
+                                    <input type="text" class="form-control" placeholder="Enter voucher">
+                                    <button type="submit" class="btn btn-secondary">ORDER</button>
                                 </div>
                             </form>
                         </div>
@@ -261,7 +249,7 @@
 
                     <div class="col-md-7 col-lg-8">
                         <div class="card rounded shadow p-4 border-0">
-                            <h5 class="mb-3">Billing address</h5>
+                            <h5 class="mb-3">CHECKOUT</h5>
                             <form class="needs-validation" novalidate>
                                 <div class="row g-3">
                                     <div class="col-sm-6">
@@ -309,12 +297,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="address2" class="form-label">Address 2 <span
-                                                class="text-muted">(Optional)</span></label>
-                                        <input type="text" class="form-control" id="address2"
-                                               placeholder="Apartment or suite">
-                                    </div>
+                                    
 
                                     <div class="col-md-5">
                                         <label for="country" class="form-label">Country</label>
@@ -358,61 +341,6 @@
                                     <input type="checkbox" class="form-check-input" id="save-info">
                                     <label class="form-check-label" for="save-info">Save this information for next
                                         time</label>
-                                </div>
-
-                                <h5 class="mb-3 mt-4 pt-4 border-top">Payment</h5>
-
-                                <div class="my-3">
-                                    <div class="form-check">
-                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
-                                               checked required>
-                                        <label class="form-check-label" for="credit">Credit card</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
-                                               required>
-                                        <label class="form-check-label" for="debit">Debit card</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
-                                               required>
-                                        <label class="form-check-label" for="paypal">PayPal</label>
-                                    </div>
-                                </div>
-
-                                <div class="row gy-3">
-                                    <div class="col-md-6">
-                                        <label for="cc-name" class="form-label">Name on card</label>
-                                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                        <small class="text-muted">Full name as displayed on card</small>
-                                        <div class="invalid-feedback">
-                                            Name on card is required
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <label for="cc-number" class="form-label">Credit card number</label>
-                                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                        <div class="invalid-feedback">
-                                            Credit card number is required
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label for="cc-expiration" class="form-label">Expiration</label>
-                                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                                        <div class="invalid-feedback">
-                                            Expiration date required
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label for="cc-cvv" class="form-label">CVV</label>
-                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                        <div class="invalid-feedback">
-                                            Security code required
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <button class="w-100 btn btn-primary" type="submit">Continue to checkout</button>
