@@ -177,27 +177,7 @@
         </header><!--end header-->
         <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <section class="bg-half-170 d-table w-100 bg-light">
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h3 class="sub-title mb-4">Shop Cart</h3>
-                            <p class="para-desc mx-auto text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                        
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-3">
-                                <ul class="breadcrumb bg-light rounded mb-0 bg-transparent">
-                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                    <li class="breadcrumb-item"><a href="pharmacy.html">Pharmacy</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Shop Cart</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
+        
         <div class="position-relative">
             <div class="shape overflow-hidden text-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +288,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-6 mt-4 pt-2">
                         <a href="#" class="btn btn-primary">Shop More</a>
-                        <a href="#" class="btn btn-soft-primary ms-2">Update Cart</a>
                     </div>
                     <div class="col-lg-4 col-md-6 ms-auto mt-4 pt-2">
                         <div class="table-responsive bg-white rounded shadow">
@@ -319,18 +298,18 @@
                                         <td class="text-end font-weight-bold p-3">$ 2190</td>
                                     </tr>
                                     <tr>
-                                        <td class="h6 p-3">Taxes</td>
-                                        <td class="text-end font-weight-bold p-3">$ 219</td>
+                                        <td class="h6 p-3">Ship</td>
+                                        <td class="text-end font-weight-bold p-3">$ 20</td>
                                     </tr>
                                     <tr class="bg-light">
-                                        <td class="h6 p-3">Total</td>
+                                        <td class="h6 p-3">Total Cost</td>
                                         <td class="text-end font-weight-bold p-3">$ 2409</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-4 pt-2 text-end">
-                            <a href="#" class="btn btn-primary">Proceed to checkout</a>
+                            <a href="#" class="btn btn-primary">CHECKOUT</a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->

@@ -353,7 +353,7 @@
                                                 <td class="p-3">Học FPT</td>
                                                 <td class="p-3">Category 1</td>
 
-                                                <td class="p-3"><span class="badge bg-soft-success">Approved</span></td>
+                                                <td class="p-3"><span class="badge bg-soft-success">Enable</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
@@ -378,7 +378,7 @@
                                                 <td class="p-3">Category 1</td>
 
 
-                                                <td class="p-3"><span class="badge bg-soft-warning">Pending</span></td>
+                                                <td class="p-3"><span class="badge bg-soft-warning">Disable</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
@@ -402,7 +402,7 @@
                                                 <td class="p-3">Học FPT</td>
                                                 <td class="p-3">Category 1</td>
 
-                                                <td class="p-3"><span class="badge bg-soft-success">Approved</span></td>
+                                                <td class="p-3"><span class="badge bg-soft-success">Enable</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
@@ -426,7 +426,7 @@
                                                 <td class="p-3">Học FPT</td>
                                                 <td class="p-3">Category 1</td>
 
-                                                <td class="p-3"><span class="badge bg-soft-success">Approved</span></td>
+                                                <td class="p-3"><span class="badge bg-soft-success">Enable</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
@@ -451,7 +451,7 @@
                                                 <td class="p-3">Category 1</td>
 
 
-                                                <td class="p-3"><span class="badge bg-soft-warning">Pending</span></td>
+                                                <td class="p-3"><span class="badge bg-soft-warning">Disable</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
@@ -553,7 +553,7 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header border-bottom p-3">
-                        <h5 class="modal-title" id="exampleModalLabel">Profile Settings</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Product Details Settings</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-3 pt-4">
@@ -563,7 +563,7 @@
                             </div><!--end col-->
 
                             <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
-                                <h6 class="">Upload your picture</h6>
+                                <h6 class="">Product picture</h6>
                                 <p class="text-muted mb-0">For best results, use an image at least 256px by 256px in either .jpg or .png format</p>
                             </div><!--end col-->
 
@@ -577,36 +577,45 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">First Name</label>
-                                        <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
+                                        <label class="form-label">Product Name</label>
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="Product Name">
                                     </div>
                                 </div><!--end col-->
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Last Name</label>
-                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Last Name :">
+                                        <label class="form-label">Category</label>
+                                        <input name="category" id="name2" type="text" class="form-control" placeholder="Category">
                                     </div>
                                 </div><!--end col-->
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Your Email</label>
-                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                        <label class="form-label">Price</label>
+                                        <input name="price" id="email" type="number" class="form-control" placeholder="Price">
                                     </div> 
                                 </div><!--end col-->
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Phone no.</label>
-                                        <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
+                                        <label class="form-label">Quantity</label>
+                                        <input name="quantity" id="number" type="number" class="form-control" placeholder="Quantity">
                                     </div>                                                                               
                                 </div><!--end col-->
 
                                 <div class="col-md-12">
                                     <div class="mb-3">
-                                        <label class="form-label">Your Bio Here</label>
-                                        <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Bio :"></textarea>
+                                        <label class="form-label">Description</label>
+                                        <textarea name="description" id="comments" rows="4" class="form-control" placeholder="Description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">Status</label></br>
+                                        <select name="status">
+                                            <option value="1">Enable</option>
+                                            <option value="0">Disable</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div><!--end row-->
@@ -628,52 +637,45 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header border-bottom p-3">
-                        <h5 class="modal-title" id="exampleModalLabel1">Profile</h5>
+                        <h5 class="modal-title" id="exampleModalLabel1">Product Details</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-3 pt-4">
                         <div class="d-flex align-items-center">
                             <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-small rounded-pill" alt="">
-                            <h5 class="mb-0 ms-3">Howard Tanner</h5>
+                            <h5 class="mb-0 ms-3">Product Name</h5>
                         </div>
                         <ul class="list-unstyled mb-0 d-md-flex justify-content-between mt-4">
                             <li>
                                 <ul class="list-unstyled mb-0">
+
                                     <li class="d-flex">
-                                        <h6>Age:</h6>
-                                        <p class="text-muted ms-2">25 year old</p>
+                                        <h6>Quantity</h6>
+                                        <p class="text-muted ms-2">100</p>
                                     </li>
 
                                     <li class="d-flex">
-                                        <h6>Gender:</h6>
-                                        <p class="text-muted ms-2">Male</p>
-                                    </li>
-
-                                    <li class="d-flex">
-                                        <h6 class="mb-0">Department:</h6>
-                                        <p class="text-muted ms-2 mb-0">Cardiology</p>
+                                        <h6 class="mb-0">Category</h6>
+                                        <p class="text-muted ms-2 mb-0">Category1</p>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <ul class="list-unstyled mb-0">
                                     <li class="d-flex">
-                                        <h6>Date:</h6>
-                                        <p class="text-muted ms-2">20th Dec 2020</p>
+                                        <h6>Price</h6>
+                                        <p class="text-muted ms-2">$1000</p>
                                     </li>
 
                                     <li class="d-flex">
-                                        <h6>Time:</h6>
-                                        <p class="text-muted ms-2">11:00 AM</p>
-                                    </li>
-
-                                    <li class="d-flex">
-                                        <h6 class="mb-0">Doctor:</h6>
-                                        <p class="text-muted ms-2 mb-0">Dr. Calvin Carlo</p>
+                                        <h6>Status</h6>
+                                        <p class="text-muted ms-2">Enable</p>
                                     </li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul></br>
+                        <h6 class="mb-0">Description</h6>
+                        <p class="text-muted ms-2 mb-0">description</p> 
                     </div>
                 </div>
             </div>
