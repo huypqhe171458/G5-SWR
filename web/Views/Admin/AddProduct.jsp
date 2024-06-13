@@ -80,8 +80,8 @@
                             <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                                    <li><a href="inlist">Invoice List</a></li>
-                                    <li><a href="inad">Invoice</a></li>
+                                    <li><a href="inlist">Order List</a></li>
+                                    <li><a href="inad">Order Detail</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -143,7 +143,7 @@
                                     <li><a href="signup">Signup</a></li>-->
                                     <li><a href="aclist">Account</a></li>
                                     <li><a href="addac">Add Account</a></li>
-                                     <li><a href="pro">Profile</a></li>
+                                  
 <!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>-->
 <!--                                    <li><a href="login">Lock Screen</a></li>-->
 <!--                                    <li><a href="thankyou.html">Thank you...!</a></li>-->

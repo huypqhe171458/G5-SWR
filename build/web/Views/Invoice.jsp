@@ -145,7 +145,7 @@
                             </ul>
                         </li>
         
-                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+<!--                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
                                 <li><a href="departments.html" class="sub-menu-item">Departments</a></li>
@@ -162,8 +162,8 @@
                                 <li><a href="error.html" class="sub-menu-item">404 !</a></li>
                                 <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
                             </ul>
-                        </li>
-                        <li><a href="../admin/index.html" class="sub-menu-item" target="_blank">Admin</a></li>
+                        </li>-->
+                        <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->

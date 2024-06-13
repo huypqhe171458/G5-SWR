@@ -209,14 +209,14 @@
 
                                 <div class="d-flex align-items-center mt-2">
                                     <i class="uil uil-user align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Gender</h6>
-                                    <p class="text-muted mb-0 ms-2">Female</p>
+                                    <h6 class="mb-0">Name</h6>
+                                    <p class="text-muted mb-0 ms-2">Nga</p>
                                 </div>
                                 
                                 <div class="d-flex align-items-center mt-2">
                                     <i class="uil uil-envelope align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Birthday</h6>
-                                    <p class="text-muted mb-0 ms-2">19th January 1995</p>
+                                    <h6 class="mb-0">Email</h6>
+                                    <p class="text-muted mb-0 ms-2">ngango@gmail.com</p>
                                 </div>
                                 
                                 <div class="d-flex align-items-center mt-2">
@@ -228,14 +228,14 @@
                                 <div class="d-flex align-items-center mt-2">
                                     <i class="uil uil-italic align-text-bottom text-primary h5 mb-0 me-2"></i>
                                     <h6 class="mb-0">Address</h6>
-                                    <p class="text-muted mb-0 ms-2">Sydney, Australia</p>
+                                    <p class="text-muted mb-0 ms-2">Viet Nam</p>
                                 </div>
                                 
-                                <div class="d-flex align-items-center mt-2">
+<!--                                <div class="d-flex align-items-center mt-2">
                                     <i class="uil uil-medical-drip align-text-bottom text-primary h5 mb-0 me-2"></i>
                                     <h6 class="mb-0">Blood Group</h6>
                                     <p class="text-muted mb-0 ms-2">B +</p>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div><!--end col-->
@@ -243,14 +243,6 @@
                     <div class="col-lg-8 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="card border-0 shadow overflow-hidden">
                             <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded-0 shadow overflow-hidden bg-light mb-0" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link rounded-0 active" id="overview-tab" data-bs-toggle="pill" href="#pills-overview" role="tab" aria-controls="pills-overview" aria-selected="false">
-                                        <div class="text-center pt-1 pb-1">
-                                            <h4 class="title fw-normal mb-0">Profile</h4>
-                                        </div>
-                                    </a><!--end nav link-->
-                                </li><!--end nav item-->
-                                
                                 <li class="nav-item">
                                     <a class="nav-link rounded-0" id="experience-tab" data-bs-toggle="pill" href="#pills-experience" role="tab" aria-controls="pills-experience" aria-selected="false">
                                         <div class="text-center pt-1 pb-1">
@@ -261,150 +253,7 @@
                             </ul>
 
                             <div class="tab-content p-4" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="overview-tab">
-                                    <h5 class="mb-0">Introduction:</h5>
 
-                                    <p class="text-muted mt-4 mb-0">Web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy text is also known as 'fill text'. Dummy texts have been in use by typesetters since the 16th century.</p>
-                                
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12 mt-4">
-                                            <h5>Appointment List</h5>
-            
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-heart-pulse-line h3 fw-normal text-primary mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Cardiogram</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Calvin Carlo</p>
-                                                </div>
-                                                <span class="mb-0">10 Dec</span>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-stethoscope-line h3 fw-normal text-success mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Checkup</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Cristino Murphy</p>
-                                                </div>
-                                                <span class="mb-0">12 Dec</span>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-virus-line h3 fw-normal text-warning mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Covid Test</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Alia Reddy</p>
-                                                </div>
-                                                <span class="mb-0">13 Dec</span>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-dossier-line h3 fw-normal text-secondary mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Dentist</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Toni Kovar</p>
-                                                </div>
-                                                <span class="mb-0">15 Dec</span>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-eye-2-line h3 fw-normal text-info mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Eye Test</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Jessica McFarlane</p>
-                                                </div>
-                                                <span class="mb-0">17 Dec</span>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <i class="ri-microscope-line h3 fw-normal text-danger mb-0"></i>
-                                                <div class="flex-1 overflow-hidden ms-2">
-                                                    <h6 class="mb-0">Orthopedic</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Dr. Elsie Sherman</p>
-                                                </div>
-                                                <span class="mb-0">18 Dec</span>
-                                            </div>
-                                        </div>
-            
-                                        <div class="col-lg-6 col-12 mt-4">
-                                            <h5>Payment List</h5>
-            
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Cardiogram</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Checkup</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Covid Test</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Dentist</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Eye Test</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-    
-                                            <div class="d-flex justify-content-between align-items-center rounded p-3 shadow mt-3">
-                                                <div class="flex-1 overflow-hidden">
-                                                    <h6 class="flex-1 mb-0">Orthopedic</h6>
-                                                    <p class="text-muted mb-0 text-truncate small">Full bill paid</p>
-                                                </div>
-                                                <a href="#" class="btn btn-icon btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice"><i class="uil uil-clipboard-notes icons"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <h5 class="mb-0 mt-4 pt-2">Contact us</h5>
-                                    <div class="row">
-                                        <div class="col-md-12 col-lg-6 mt-4">
-                                            <div class="card features feature-primary text-center border-0 p-4 rounded shadow">
-                                                <div class="icon text-center rounded-lg mx-auto">
-                                                    <i class="uil uil-message align-middle h3"></i>
-                                                </div>
-                                                <div class="card-body p-0 mt-3">
-                                                    <a href="#" class="title text-dark h6 d-block">New Messages</a>
-                                                    <a href="#" class="link">Read more <i class="ri-arrow-right-line align-middle"></i></a>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                        
-                                        <div class="col-md-12 col-lg-6 mt-4">
-                                            <div class="card features feature-primary text-center border-0 p-4 rounded shadow">
-                                                <div class="icon text-center rounded-lg mx-auto">
-                                                    <i class="uil uil-envelope-star align-middle h3"></i>
-                                                </div>
-                                                <div class="card-body p-0 mt-3">
-                                                    <a href="#" class="title text-dark h6 d-block">Latest Proposals</a>
-                                                    <a href="#" class="link">View more <i class="ri-arrow-right-line align-middle"></i></a>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </div>
 
                                 <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="experience-tab">
                                     <h5 class="mb-0">Personal Information :</h5>
