@@ -42,7 +42,7 @@
                 <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
                     <div class="sidebar-brand">
                         <a href="index">
-                        <!--<a href="index.html">-->
+                            <!--<a href="index.html">-->
                             <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
                             <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
                         </a>
@@ -57,12 +57,12 @@
                                 <ul>
                                     <li><a href="patients">All Product</a></li>
                                     <li><a href="add">Add Prodcut</a></li>
-                                
+
                                 </ul>
                             </div>
                         </li>
 
-                      
+
 
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
@@ -73,13 +73,13 @@
                                 </ul>
                             </div>
                         </li>
-                       
+
 
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                             <div class="sidebar-submenu">
                                 <ul>
-                  
+
                                     <li><a href="aclist">Account</a></li>
                                     <li><a href="addac">Add Account</a></li>
 
@@ -87,7 +87,7 @@
                             </div>
                         </li>
 
-                       
+
                     </ul>
                     <!-- sidebar-menu  -->
                 </div>
@@ -255,7 +255,7 @@
                     <div class="layout-specing">
                         <div class="d-md-flex justify-content-between">
                             <h5 class="mb-0">Account List</h5>
-                             <div class="search-bar p-0 d-none d-lg-block ms-2">
+                            <div class="search-bar p-0 d-none d-lg-block ms-2">
                                 <div id="search" class="menu-search mb-0">
                                     <form role="search" method="get" id="searchform" class="searchform">
                                         <div>
@@ -281,14 +281,13 @@
                                             <tr>
                                                 <th class="border-bottom p-3" style="min-width: 50px;">Id</th>
                                                 <th class="border-bottom p-3" style="min-width: 180px;">Name</th>
-                                                <th class="border-bottom p-3">Age</th>
-                                                <th class="border-bottom p-3">Gender</th>
+                                                
                                                 <th class="border-bottom p-3">Address</th>
                                                 <th class="border-bottom p-3">Phone</th>
                                                 <th class="border-bottom p-3">Department</th>
                                                 <th class="border-bottom p-3">Email</th>
                                                 <th class="border-bottom p-3">Status</th>
-                                                <th class="border-bottom p-3" style="min-width: 100px;"></th>
+                                                <th class="border-bottom p-3">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -302,16 +301,15 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="p-3">21</td>
-                                                <td class="p-3">Female</td>
+                                               
                                                 <td class="p-3">Dien Chau, Nghe An</td>
                                                 <td class="p-3">0987 654 321</td>
                                                 <td class="p-3">Manager</td>
                                                 <td class="p-3">ngakiu@gmail.com</td>
+                                                <td class="p-3"><span class="badge bg-soft-success">Active</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
                                                 </td>
                                             </tr>
 
@@ -325,16 +323,16 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="p-3">28</td>
-                                                <td class="p-3">Male</td>
+                                              
                                                 <td class="p-3">Thach That, Ha Noi</td>
                                                 <td class="p-3">0912 345 678</td>
                                                 <td class="p-3">Sale Staff</td>
                                                 <td class="p-3">haipham@gmail.com</td>
+                                                <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -348,17 +346,16 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="p-3">28</td>
-                                                <td class="p-3">Male</td>
+                                                
                                                 <td class="p-3">Dong Anh, Ha Noi</td>
                                                 <td class="p-3">0909 876 543</td>
                                                 <td class="p-3">Warehouse Staff</td>
                                                 <td class="p-3">huypham@gmail.com</td>
+                                                <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
-                                                </td>
+
                                             </tr>
 
                                             <tr>
@@ -371,16 +368,16 @@
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="p-3">25</td>
-                                                <td class="p-3">Female</td>
+                                               
                                                 <td class="p-3">Thach Ha, Ha Tinh</td>
                                                 <td class="p-3">0984 567 987</td>
                                                 <td class="p-3">Customer</td>
                                                 <td class="p-3">20th Dec 2020</td>
+                                                <td class="p-3"><span class="badge bg-soft-success">Active</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -390,20 +387,20 @@
                                                     <a href="#" class="text-dark">
                                                         <div class="d-flex align-items-center">
                                                             <img src="${pageContext.request.contextPath}/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                            <span class="ms-2">Nguyen Anh Thu</span>
+                                                            <span class="ms-2">Nguyen Manh Hien</span>
                                                         </div>
                                                     </a>
                                                 </td>
-                                                <td class="p-3">28</td>
-                                                <td class="p-3">Female</td>
+                                                
                                                 <td class="p-3">Ha Dong, Ha Noi</td>
                                                 <td class="p-3">0988 945 4568</td>
                                                 <td class="p-3">Customer</td>
                                                 <td class="p-3">20th Dec 2020</td>
+                                                <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -526,15 +523,15 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">First Name</label>
-                                        <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
+                                        <label class="form-label">Full Name</label>
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="Full Name :">
                                     </div>
                                 </div><!--end col-->
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Last Name</label>
-                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Last Name :">
+                                        <label class="form-label">Address</label>
+                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
                                     </div>
                                 </div><!--end col-->
 
@@ -547,22 +544,36 @@
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Phone no.</label>
-                                        <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
+                                        <label class="form-label">Phone</label>
+                                        <input name="number" id="number" type="text" class="form-control" placeholder="Phone:">
                                     </div>                                                                               
                                 </div><!--end col-->
 
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Your Bio Here</label>
-                                        <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Bio :"></textarea>
+                                        <label class="form-label">Role</label>
+                                        <select class="form-control department-name select2input">
+                                            <option value="EY">Customer</option>
+                                            <option value="GY">Warehouse Staff</option>
+                                            <option value="PS">Sale Staff</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Status</label>
+                                        <select class="form-control department-name select2input">
+                                            <option value="EY">Active</option>
+                                            <option value="GY">Inactive</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div><!--end row-->
 
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
+                                    <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save">
                                 </div><!--end col-->
                             </div><!--end row-->
                         </form><!--end form-->
@@ -588,17 +599,12 @@
                         <ul class="list-unstyled mb-0 d-md-flex justify-content-between mt-4">
                             <li>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="d-flex">
-                                        <h6>Gender:</h6>
-                                        <p class="text-muted ms-2">Female</p>
-                                    </li>
+                                   
                                     <li class="d-flex">
                                         <h6>Phone Number</h6>
                                         <p class="text-muted ms-2">0987 345 678</p>
-
-
                                     <li class="d-flex">
-                                        <h6 class="mb-0">Department:</h6>
+                                        <h6 class="mb-0">Role:</h6>
                                         <p class="text-muted ms-2 mb-0">Customer</p>
                                     </li>
                                 </ul>

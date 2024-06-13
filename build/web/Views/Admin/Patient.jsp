@@ -47,18 +47,6 @@
 
                     <ul class="sidebar-menu pt-3">
                         <li><a href="dash"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-user me-2 d-inline-block"></i>Doctors</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="doctors.html">Doctors</a></li>
-                                                            <li><a href="add-doctor.html">Add Doctor</a></li>
-                                                            <li><a href="dr-profile.html">Profile</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
                         <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
                             <div class="sidebar-submenu">
@@ -77,75 +65,16 @@
                                     <li><a href="inad">Order Detail</a></li>
                                 </ul>
                             </div>
-                        </li>
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-apps me-2 d-inline-block"></i>Apps</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="chat.html">Chat</a></li>
-                                                            <li><a href="email.html">Email</a></li>
-                                                            <li><a href="calendar.html">Calendar</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-                        <!--
-                                                <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Pharmacy</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="product-detail.html">Shop Detail</a></li>
-                                                            <li><a href="shopcart.html">Shopcart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-flip-h me-2 d-inline-block"></i>Blogs</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="blogs.html">Blogs</a></li>
-                                                            <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                        <!--                        <li class="sidebar-dropdown">
-                                                    <a href="javascript:void(0)"><i class="uil uil-file me-2 d-inline-block"></i>Pages</a>
-                                                    <div class="sidebar-submenu">
-                                                        <ul>
-                                                            <li><a href="faqs.html">FAQs</a></li>
-                                                            <li><a href="review.html">Reviews</a></li>
-                                                            <li><a href="invoice-list.html">Invoice List</a></li>
-                                                            <li><a href="invoice.html">Invoice</a></li>
-                                                            <li><a href="terms.html">Terms & Policy</a></li>
-                                                            <li><a href="privacy.html">Privacy Policy</a></li>
-                                                            <li><a href="error.html">404 !</a></li>
-                                                            <li><a href="blank-page.html">Blank Page</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </li>-->
-
-                         <li class="sidebar-dropdown">
+                        </li>                                                                  
+                        <li class="sidebar-dropdown">
                             <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                             <div class="sidebar-submenu">
                                 <ul>
-<!--                                    <li><a href="login">Login</a></li>
-                                    <li><a href="signup">Signup</a></li>-->
                                     <li><a href="aclist">Account</a></li>
                                     <li><a href="addac">Add Account</a></li>
-                                   
-<!--                                    <li><a href="forgot-password.html">Forgot Password</a></li>-->
-<!--                                    <li><a href="login">Lock Screen</a></li>-->
-<!--                                    <li><a href="thankyou.html">Thank you...!</a></li>-->
                                 </ul>
                             </div>
-                        </li>
-
-                        <!--                        <li><a href="components.html"><i class="uil uil-cube me-2 d-inline-block"></i>Components</a></li>-->
-
-                        <!--                        <li><a href="../landing/index-two.html" target="_blank"><i class="uil uil-window me-2 d-inline-block"></i>Landing page</a></li>-->
+                        </li>                    
                     </ul>
                     <!-- sidebar-menu  -->
                 </div>
@@ -312,13 +241,21 @@
                 <div class="container-fluid">
                     <div class="layout-specing">
                         <div class="d-md-flex justify-content-between">
-                            <h5 class="mb-0">Patients List</h5>
-
+                            <h5 class="mb-0">Product List</h5>
+                            <div class="search-bar p-0 d-none d-lg-block ms-2">
+                                <div id="search" class="menu-search mb-0">
+                                    <form role="search" method="get" id="searchform" class="searchform">
+                                        <div>
+                                            <input type="text" class="form-control border rounded-pill" name="s" id="s" placeholder="Search Keywords...">
+                                            <input type="submit" id="searchsubmit" value="Search">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                             <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
                                 <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
-                                    <li class="breadcrumb-item"><a href="dash">Dash</a></li>
-
-                                    <li class="breadcrumb-item active" aria-current="page">All Product</li>
+                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Patients</li>
                                 </ul>
                             </nav>
                         </div>
@@ -360,7 +297,7 @@
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -385,7 +322,7 @@
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -409,7 +346,7 @@
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -433,7 +370,7 @@
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -458,7 +395,7 @@
                                                 <td class="text-end p-3">
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
                                                     <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
-                                                    <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i class="uil uil-trash"></i></a>
+
                                                 </td>
                                             </tr>
 
@@ -612,14 +549,15 @@
                                         <textarea name="description" id="comments" rows="4" class="form-control" placeholder="Description"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Status</label></br>
-                                        <select name="status">
-                                            <option value="1">Enable</option>
-                                            <option value="0">Disable</option>
+                                        <label class="form-label">Status</label>
+                                        <select class="form-control department-name select2input">
+                                            <option value="EY">Enable</option>
+                                            <option value="GY">Disable</option>
                                         </select>
                                     </div>
+
                                 </div>
                             </div><!--end row-->
 

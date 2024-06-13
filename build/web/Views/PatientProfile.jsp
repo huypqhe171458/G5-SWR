@@ -107,39 +107,12 @@
                             <a href="index">Home</a><span></span>
                         </li>
 
-<!--                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Dashboard </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="doctor-dashboard.html" class="sub-menu-item">Dashboard</a></li>
-                                        <li><a href="doctor-appointment.html" class="sub-menu-item">Appointment</a></li>
-                                        <li><a href="patient-list.html" class="sub-menu-item">Patients</a></li>
-                                        <li><a href="doctor-schedule.html" class="sub-menu-item">Schedule Timing</a></li>
-                                        <li><a href="invoices.html" class="sub-menu-item">Invoices</a></li>
-                                        <li><a href="patient-review.html" class="sub-menu-item">Reviews</a></li>
-                                        <li><a href="doctor-messages.html" class="sub-menu-item">Messages</a></li>
-                                        <li><a href="doctor" class="sub-menu-item">Profile</a></li>
-                                        <li><a href="doctor-profile-setting.html" class="sub-menu-item">Profile Settings</a></li>
-                                        <li><a href="doctor-chat.html" class="sub-menu-item">Chat</a></li>
-                                        <li><a href="login" class="sub-menu-item">Login</a></li>
-                                        <li><a href="signup" class="sub-menu-item">Sign Up</a></li>
-                                        <li><a href="forgot-password.html" class="sub-menu-item">Forgot Password</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="doctor-team-one.html" class="sub-menu-item">Doctors One</a></li>
-                                <li><a href="doctor-team-two.html" class="sub-menu-item">Doctors Two</a></li>
-                                <li><a href="doctor-team-three.html" class="sub-menu-item">Doctors Three</a></li>
-                            </ul>
-                        </li>-->
+
 
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-<!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
                                 <li><a href="patient" class="sub-menu-item">My Account</a></li>
-<!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
                                 <li><a href="invoice" class="sub-menu-item">Order List</a></li>
                             </ul>
                         </li>
@@ -147,33 +120,12 @@
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-<!--                                <li><a href="pharmacy.html" class="sub-menu-item">Pharmacy</a></li>-->
                                 <li><a href="shop" class="sub-menu-item">Shop</a></li>
-<!--                                <li><a href="pharmacy-product-detail.html" class="sub-menu-item">Medicine Detail</a></li>-->
                                 <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
                                 <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
-<!--                                <li><a href="pharmacy-account.html" class="sub-menu-item">Account</a></li>-->
                             </ul>
                         </li>
         
-<!--                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
-                                <li><a href="departments.html" class="sub-menu-item">Departments</a></li>
-                                <li><a href="faqs.html" class="sub-menu-item">FAQs</a></li>
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Blogs </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
-                                        <li><a href="blog-detail.html" class="sub-menu-item">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="terms.html" class="sub-menu-item">Terms & Policy</a></li>
-                                <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
-                                <li><a href="error.html" class="sub-menu-item">404 !</a></li>
-                                <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
-                            </ul>
-                        </li>-->
                         <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
@@ -185,78 +137,25 @@
         <section class="bg-hero">
             <div class="container">
                 <div class="row mt-lg-5">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="rounded shadow overflow-hidden sticky-bar">
-                            <div class="card border-0">
-                                <img src="${pageContext.request.contextPath}/images/bg/bg-profile.jpg" class="img-fluid" alt="">
-                            </div>
+                    
 
-                            <div class="text-center avatar-profile margin-nagative mt-n5 position-relative pb-4 border-bottom">
-                                <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="rounded-circle shadow-md avatar avatar-md-md" alt="">
-                                <h5 class="mt-3 mb-1">Christopher Burrell</h5>
-                                <p class="text-muted mb-0">25 Years old</p>
-                            </div>
-
-                            <div class="list-unstyled p-4">
-                                <div class="progress-box mb-4">
-                                    <h6 class="title">Complete your profile</h6>
-                                    <div class="progress">
-                                        <div class="progress-bar position-relative bg-primary" style="width:89%;">
-                                            <div class="progress-value d-block text-muted h6">89%</div>
-                                        </div>
-                                    </div>
-                                </div><!--end process box-->
-
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="uil uil-user align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Name</h6>
-                                    <p class="text-muted mb-0 ms-2">Nga</p>
-                                </div>
-                                
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="uil uil-envelope align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Email</h6>
-                                    <p class="text-muted mb-0 ms-2">ngango@gmail.com</p>
-                                </div>
-                                
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="uil uil-book-open align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Phone No.</h6>
-                                    <p class="text-muted mb-0 ms-2">+(125) 458-8547</p>
-                                </div>
-                                
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="uil uil-italic align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Address</h6>
-                                    <p class="text-muted mb-0 ms-2">Viet Nam</p>
-                                </div>
-                                
-<!--                                <div class="d-flex align-items-center mt-2">
-                                    <i class="uil uil-medical-drip align-text-bottom text-primary h5 mb-0 me-2"></i>
-                                    <h6 class="mb-0">Blood Group</h6>
-                                    <p class="text-muted mb-0 ms-2">B +</p>
-                                </div>-->
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-8 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="col-lg-12 col-md-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="card border-0 shadow overflow-hidden">
                             <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded-0 shadow overflow-hidden bg-light mb-0" id="pills-tab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link rounded-0" id="experience-tab" data-bs-toggle="pill" href="#pills-experience" role="tab" aria-controls="pills-experience" aria-selected="false">
+                                    <a class="nav-link rounded-0 active" id="experience-tab" data-bs-toggle="pill" href="#pills-experience" role="tab" aria-controls="pills-experience" aria-selected="false">
                                         <div class="text-center pt-1 pb-1">
                                             <h4 class="title fw-normal mb-0">Profile Settings</h4>
                                         </div>
-                                    </a><!--end nav link-->
-                                </li><!--end nav item-->
+                                    </a>
+                                </li>
                             </ul>
 
                             <div class="tab-content p-4" id="pills-tabContent">
 
 
-                                <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="experience-tab">
-                                    <h5 class="mb-0">Personal Information :</h5>
+                                <div class="tab-pane fade show active" id="pills-experience" role="tabpanel" aria-labelledby="experience-tab">
+                                    
                                     <div class="row align-items-center mt-4">
                                         <div class="col-lg-2 col-md-4">
                                             <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
@@ -274,86 +173,46 @@
         
                                     <form class="mt-4">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-12">
                                                 <div class="mb-3">
                                                     <label class="form-label">Full Name</label>
                                                     <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
                                                 </div>
-                                            </div><!--end col-->
-    
-                                           
-    
-                                            <div class="col-lg-6">
                                                 <div class="mb-3">
                                                     <label class="form-label">Your Email</label>
                                                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
-                                                </div> 
-                                            </div><!--end col-->
-    
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Phone no.</label>
+                                                </div>
+                                                 <div class="mb-3">
+                                                    <label class="form-label">Phone</label>
                                                     <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
-                                                </div>                                                                               
-                                            </div><!--end col-->
-    
-                                           <div class="col-lg-6">
+                                                </div>  
                                                 <div class="mb-3">
                                                     <label class="form-label">Address</label>
                                                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
                                                 </div> 
-                                            </div><!--end col-->
+                                            </div><!--end col-->                                    
+                                         
                                         </div><!--end row-->
                                         
                                         <div class="row">
-                                            <div class="col-sm-12">
+                                            <div class="col-sm-10">
                                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
                                             </div><!--end col-->
+                                          
+                                            <div class="col-sm-2">
+                                                <input type="submit" id="submit" name="send" class="btn btn-primary" value="Change Password">
+                                            </div><!--end col-->
                                         </div><!--end row-->
-                                    </form><!--end form-->
-
-                                    <div class="mt-4 pt-2">
-                                        <h5 class="mb-0">Change Password :</h5>
-        
-                                        <form class="mt-4">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Old password :</label>
-                                                        <input type="password" class="form-control" placeholder="Old password" required="">
-                                                    </div>
-                                                </div><!--end col-->
-            
-                                                <div class="col-lg-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">New password :</label>
-                                                        <input type="password" class="form-control" placeholder="New password" required="">
-                                                    </div>
-                                                </div><!--end col-->
-            
-                                                <div class="col-lg-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Confirm password :</label>
-                                                        <input type="password" class="form-control" placeholder="Re-type New password" required="">
-                                                    </div>
-                                                </div><!--end col-->
-            
-                                                <div class="col-lg-12 mt-2 mb-0">
-                                                    <button class="btn btn-primary">Save password</button>
-                                                </div><!--end col-->
-                                            </div><!--end row-->
-                                        </form>
-                                    </div>
-                                    
-                               
+                                        <div class="row">
+                                            
+                                        </div><!--end row-->
+                                    </form><!--end form-->                              
                                         </div><!--end col-->
                                     </div>
                                 </div>
                             </div>                     
                         </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+                    </div><!--end col-->         
         </section><!--end section-->
         <!-- End -->
 
