@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -38,139 +38,48 @@
     </head>
 
     <body>
-       
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="index">
-                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
-                </a>                
-                <!-- Logo End -->
-                
-                <!-- Start Mobile Toggle -->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
-                <!-- End Mobile Toggle -->
 
-                <!-- Start Dropdown -->
-                <ul class="dropdowns list-inline mb-0">
-                    <li class="list-inline-item mb-0">
-                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                            <i class="uil uil-search"></i>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <div class="dropdown dropdown-primary">
-                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
-                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
-                                <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
-                                    <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
-                                    <div class="flex-1 ms-2">
-                                        <span class="d-block mb-1">Mrs. Christopher</span>
-                                        <small class="text-muted">25 Year old</small>
-                                    </div>
-                                </a>
-<!--                                <a class="dropdown-item text-dark" href="patient-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>-->
-                                <a class="dropdown-item text-dark" href="patient"><span class="mb-0 d-inline-block me-1"><i class="uil uil-user align-middle h6"></i></span> Profile</a>
-                                <div class="dropdown-divider border-top"></div>
-                                <a class="dropdown-item text-dark" href="login"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Start Dropdown -->
-        
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu nav-left">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="index">Home</a><span></span>
-                        </li>
+        <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
 
 
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="patient" class="sub-menu-item">My Account</a></li>
-                                <li><a href="invoice" class="sub-menu-item">Order List</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="shop" class="sub-menu-item">Shop</a></li>
-                                <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
-                                <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
-                            </ul>
-                        </li>
-        
-                        <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
-
-        <!-- Start -->
-        <section class="bg-hero">
-            <div class="container">
-                <div class="row mt-lg-5">
-                    
-
-                    <div class="col-lg-12 col-md-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="card border-0 shadow overflow-hidden">
-                            <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded-0 shadow overflow-hidden bg-light mb-0" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link rounded-0 active" id="experience-tab" data-bs-toggle="pill" href="#pills-experience" role="tab" aria-controls="pills-experience" aria-selected="false">
-                                        <div class="text-center pt-1 pb-1">
-                                            <h4 class="title fw-normal mb-0">Profile Settings</h4>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content p-4" id="pills-tabContent">
+            <!-- Start -->
+            <section class="bg-hero">
+                <div class="container">
+                    <div class="row mt-lg-5">
 
 
-                                <div class="tab-pane fade show active" id="pills-experience" role="tabpanel" aria-labelledby="experience-tab">
-                                    
-                                    <div class="row align-items-center mt-4">
-                                        <div class="col-lg-2 col-md-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
+                        <div class="col-lg-12 col-md-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <div class="card border-0 shadow overflow-hidden">
+                                <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded-0 shadow overflow-hidden bg-light mb-0" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded-0 active" id="experience-tab" data-bs-toggle="pill" href="#pills-experience" role="tab" aria-controls="pills-experience" aria-selected="false">
+                                            <div class="text-center pt-1 pb-1">
+                                                <h4 class="title fw-normal mb-0">Profile Settings</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content p-4" id="pills-tabContent">
+
+
+                                    <div class="tab-pane fade show active" id="pills-experience" role="tabpanel" aria-labelledby="experience-tab">
+
+                                        <div class="row align-items-center mt-4">
+                                            <div class="col-lg-2 col-md-4">
+                                                <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
                                         </div><!--end col-->
-    
+
                                         <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
                                             <h6 class="">Upload your picture</h6>
                                         </div><!--end col-->
-    
+
                                         <div class="col-lg-5 col-md-12 text-lg-right text-center mt-4 mt-lg-0">
                                             <a href="#" class="btn btn-primary">Upload</a>
                                             <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
                                         </div><!--end col-->
                                     </div><!--end row-->
-        
+
                                     <form class="mt-4">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -182,7 +91,7 @@
                                                     <label class="form-label">Your Email</label>
                                                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
                                                 </div>
-                                                 <div class="mb-3">
+                                                <div class="mb-3">
                                                     <label class="form-label">Phone</label>
                                                     <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
                                                 </div>  
@@ -191,28 +100,28 @@
                                                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
                                                 </div> 
                                             </div><!--end col-->                                    
-                                         
+
                                         </div><!--end row-->
-                                        
+
                                         <div class="row">
                                             <div class="col-sm-10">
                                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
                                             </div><!--end col-->
-                                          
+
                                             <div class="col-sm-2">
                                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Change Password">
                                             </div><!--end col-->
                                         </div><!--end row-->
                                         <div class="row">
-                                            
+
                                         </div><!--end row-->
                                     </form><!--end form-->                              
-                                        </div><!--end col-->
-                                    </div>
-                                </div>
-                            </div>                     
+                                </div><!--end col-->
+                            </div>
                         </div>
-                    </div><!--end col-->         
+                    </div>                     
+                </div>
+            </div><!--end col-->         
         </section><!--end section-->
         <!-- End -->
 
@@ -240,7 +149,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Departments</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -253,7 +162,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Contact us</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -293,7 +202,7 @@
                                 <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
                             </div>
                         </div><!--end col-->
-    
+
                         <div class="col-sm-6 mt-4 mt-sm-0">
                             <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
                                 <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
@@ -449,7 +358,7 @@
                                     </ul>
                                 </div><!--end col-->
                             </div><!--end row-->
-                            
+
                             <div class="invoice-table pb-4">
                                 <div class="table-responsive shadow rounded mt-4">
                                     <table class="table table-center invoice-tb mb-0">
@@ -524,7 +433,7 @@
             </div>
         </div>
         <!-- View Invoice End -->
-        
+
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
@@ -541,7 +450,7 @@
         <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
-        
+
     </body>
 
 </html>

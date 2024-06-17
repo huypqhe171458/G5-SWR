@@ -33,332 +33,195 @@
     </head>
 
     <body>
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="index">
-                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
-                </a>                
-                <!-- Logo End -->
+        <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
 
-                <!-- Start Mobile Toggle -->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
+
+            <div class="position-relative">
+                <div class="shape overflow-hidden text-white">
+                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                    </svg>
                 </div>
-                <!-- End Mobile Toggle -->
-
-                <!-- Start Dropdown -->
-                <ul class="dropdowns list-inline mb-0">
-                    <li class="list-inline-item mb-0">
-                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                            <i class="uil uil-search"></i>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <div class="dropdown dropdown-primary">
-                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
-                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
-                                <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
-                                    <div class="flex-1 ms-2">
-                                        <span class="d-block mb-1">Calvin Carlo</span>
-                                        <small class="text-muted">Orthopedic</small>
-                                    </div>
-                                </a>
-<!--                                <a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>-->
-                                <a class="dropdown-item text-dark" href="patien"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile</a>
-                                <div class="dropdown-divider border-top"></div>
-                                <a class="dropdown-item text-dark" href="login"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Start Dropdown -->
-
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu nav-left">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="index">Home</a><span></span>
-                        </li>
-
-<!--                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Dashboard </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="doctor-dashboard.html" class="sub-menu-item">Dashboard</a></li>
-                                        <li><a href="doctor-appointment.html" class="sub-menu-item">Appointment</a></li>
-                                        <li><a href="patient-list.html" class="sub-menu-item">Patients</a></li>
-                                        <li><a href="doctor-schedule.html" class="sub-menu-item">Schedule Timing</a></li>
-                                        <li><a href="invoices.html" class="sub-menu-item">Invoices</a></li>
-                                        <li><a href="patient-review.html" class="sub-menu-item">Reviews</a></li>
-                                        <li><a href="doctor-messages.html" class="sub-menu-item">Messages</a></li>
-                                        <li><a href="doctor-profile.html" class="sub-menu-item">Profile</a></li>
-                                        <li><a href="doctor-profile-setting.html" class="sub-menu-item">Profile Settings</a></li>
-                                        <li><a href="doctor-chat.html" class="sub-menu-item">Chat</a></li>
-                                        <li><a href="login" class="sub-menu-item">Login</a></li>
-                                        <li><a href="signup" class="sub-menu-item">Sign Up</a></li>
-                                        <li><a href="forgot-password.html" class="sub-menu-item">Forgot Password</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="doctor-team-one.html" class="sub-menu-item">Doctors One</a></li>
-                                <li><a href="doctor-team-two.html" class="sub-menu-item">Doctors Two</a></li>
-                                <li><a href="doctor-team-three.html" class="sub-menu-item">Doctors Three</a></li>
-                            </ul>
-                        </li>-->
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-<!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
-                                <li><a href="patient" class="sub-menu-item">My Account</a></li>
-<!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
-                                <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-<!--                                <li><a href="pharmacy.html" class="sub-menu-item">Pharmacy</a></li>-->
-                                <li><a href="shop" class="sub-menu-item">Shop</a></li>
-<!--                                <li><a href="pharmacy-product-detail.html" class="sub-menu-item">Medicine Detail</a></li>-->
-                                <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
-                                <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
-<!--                                <li><a href="pharmacy-account.html" class="sub-menu-item">Account</a></li>-->
-                            </ul>
-                        </li>
-
-<!--                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
-                                <li><a href="departments.html" class="sub-menu-item">Departments</a></li>
-                                <li><a href="faqs.html" class="sub-menu-item">FAQs</a></li>
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Blogs </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
-                                        <li><a href="blog-detail.html" class="sub-menu-item">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="terms.html" class="sub-menu-item">Terms & Policy</a></li>
-                                <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
-                                <li><a href="error.html" class="sub-menu-item">404 !</a></li>
-                                <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
-                            </ul>
-                        </li>-->
-                        <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
-
-       
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
             </div>
-        </div>
-        <!-- Hero End -->
+            <!-- Hero End -->
 
-        <!-- Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-lg-4 order-md-last">
-                        <div class="card rounded shadow p-4 border-0">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="h5 mb-0">Your cart</span>
-                                <span class="badge bg-primary rounded-pill">3</span>
+            <!-- Start -->
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4 order-md-last">
+                            <div class="card rounded shadow p-4 border-0">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="h5 mb-0">Order (3 products)</span>
+                                </div>
+                                <ul class="list-group mb-3 border">
+                                    <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                                        <div>
+                                            <h6 class="my-0">Product name</h6>
+                                            <small class="text-muted">Brief description</small>
+                                        </div>
+                                        <span class="text-muted">$12</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between bg-light p-3 border-bottom">
+                                        <div class="text-success">
+                                            <input type="text" class="form-control" id="id" placeholder="Enter voucher">
+                                        </div>
+                                        <button class="btn btn-secondary " value="Apply">Apply</button>
+                                    </li>
+                                    <li class="d-flex justify-content-between bg-light p-3 border-bottom">
+                                        <div class="text-success">
+                                            <h6 class="my-0">Voucher</h6>
+                                            <small>50%</small>
+                                        </div>
+                                        <span class="text-success">−$5</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
+                                        <div>
+                                            <h6 class="my-0">Ship</h6>
+                                        </div>
+                                        <span class="text-muted">$2</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between p-3">
+                                        <div>
+                                            <h6 class="my-0">TOTAL (USD)</h6>
+                                        </div>
+                                        <strong>$20</strong>
+                                    </li>
+                                </ul>
+
+                                <div class="col-lg-12">
+                                    <button type="submit" class="btn btn-secondary ">ORDER</button>
+                                </div>
                             </div>
-                            <ul class="list-group mb-3 border">
-                                <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
-                                    <div>
-                                        <h6 class="my-0">Product name</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$12</span>
-                                </li>
-                                <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
-                                    <div>
-                                        <h6 class="my-0">Product name</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$12</span>
-                                </li>
-                                <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
-                                    <div>
-                                        <h6 class="my-0">Product name</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$12</span>
-                                </li>
-                                <li class="d-flex justify-content-between bg-light p-3 border-bottom">
-                                    <div class="text-success">
-                                        <h6 class="my-0">Voucher</h6>
-                                        <small>50%</small>
-                                    </div>
-                                    <span class="text-success">−$5</span>
-                                </li>
-                                <li class="d-flex justify-content-between lh-sm p-3 border-bottom">
-                                    <div>
-                                        <h6 class="my-0">Ship</h6>
-                                    </div>
-                                    <span class="text-muted">$2</span>
-                                </li>
-                                <li class="d-flex justify-content-between p-3">
-                                    <div>
-                                        <h6 class="my-0">TOTAL (USD)</h6>
-                                    </div>
-                                    <strong>$20</strong>
-                                </li>
-                            </ul>
+                        </div><!--end col-->
 
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter voucher">
-                                    <button type="submit" class="btn btn-secondary">ORDER</button>
+                        <div class="col-md-4 col-lg-5">
+                            <div class="card rounded shadow p-4 border-0">
+                                <h5 class="mb-3">CHECKOUT</h5>
+                                <form class="needs-validation" novalidate>
+                                    <div class="row g-3">
+
+                                        <div class="col-12">
+                                            <label for="username" class="form-label">Full Name</label>
+                                            <div class="input-group has-validation">
+                                                <input type="text" class="form-control" id="username" placeholder="Fullname" required>
+                                                <div class="invalid-feedback"> Your username is required. </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="text" class="form-label">Phone Number </label>
+                                            <input type="text" class="form-control" id="email" placeholder="Phone number">
+                                            <div class="invalid-feedback">
+                                                Please enter a valid email address for shipping updates.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="address" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                                   required>
+                                            <div class="invalid-feedback">
+                                                Please enter your shipping address.
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-4">
+                                            <label for="country" class="form-label">City</label>
+                                            <select class="form-select form-control" id="country" required>
+                                                <option value="">Choose...</option>
+                                                <option>Ha Noi</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please select a valid country.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="state" class="form-label">Town</label>
+                                            <select class="form-select form-control" id="state" required>
+                                                <option value="">Choose...</option>
+                                                <option>Thach That</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid state.
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="state" class="form-label">Village</label>
+                                            <select class="form-select form-control" id="state" required>
+                                                <option value="">Choose...</option>
+                                                <option>Thach Hoa</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid state.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="save-info">
+                                        <label class="form-check-label" for="save-info">Save this information for next
+                                            time</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-md-4 col-lg-3">
+                            <div class="rounded shadow p-4 border-0">
+                                <h5 class="mb-3">Payment</h5>
+
+                                <div class="my-3">
+                                    <div class="form-check">
+                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                               checked required>
+                                        <label class="form-check-label" for="credit">Cash on delivery - COD</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
+                                               required>
+                                        <label class="form-check-label" for="debit">VNPAY</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                               required>
+                                        <label class="form-check-label" for="paypal">MoMo</label>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section-->
+            <!-- End -->
 
-                    <div class="col-md-7 col-lg-8">
-                        <div class="card rounded shadow p-4 border-0">
-                            <h5 class="mb-3">CHECKOUT</h5>
-                            <form class="needs-validation" novalidate>
-                                <div class="row g-3">
-                                    <div class="col-sm-6">
-                                        <label for="firstName" class="form-label">First name</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" value=""
-                                               required>
-                                        <div class="invalid-feedback">
-                                            Valid first name is required.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6">
-                                        <label for="lastName" class="form-label">Last name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" value=""
-                                               required>
-                                        <div class="invalid-feedback">
-                                            Valid last name is required.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label for="username" class="form-label">Username</label>
-                                        <div class="input-group has-validation">
-                                            <span class="input-group-text bg-light text-muted border">@</span>
-                                            <input type="text" class="form-control" id="username" placeholder="Username" required>
-                                            <div class="invalid-feedback"> Your username is required. </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label for="email" class="form-label">Email <span
-                                                class="text-muted">(Optional)</span></label>
-                                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                        <div class="invalid-feedback">
-                                            Please enter a valid email address for shipping updates.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <label for="address" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                               required>
-                                        <div class="invalid-feedback">
-                                            Please enter your shipping address.
-                                        </div>
-                                    </div>
-
-                                    
-
-                                    <div class="col-md-5">
-                                        <label for="country" class="form-label">Country</label>
-                                        <select class="form-select form-control" id="country" required>
-                                            <option value="">Choose...</option>
-                                            <option>United States</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select a valid country.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <label for="state" class="form-label">State</label>
-                                        <select class="form-select form-control" id="state" required>
-                                            <option value="">Choose...</option>
-                                            <option>California</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <label for="zip" class="form-label">Zip</label>
-                                        <input type="text" class="form-control" id="zip" placeholder="" required>
-                                        <div class="invalid-feedback">
-                                            Zip code required.
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="form-check mt-4 pt-4 border-top">
-                                    <input type="checkbox" class="form-check-input" id="same-address">
-                                    <label class="form-check-label" for="same-address">Shipping address is the same as my
-                                        billing address</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="save-info">
-                                    <label class="form-check-label" for="save-info">Save this information for next
-                                        time</label>
-                                </div>
-
-                                <button class="w-100 btn btn-primary" type="submit">Continue to checkout</button>
-                            </form>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <!-- Start -->
-        <footer class="bg-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
-                        <a href="#" class="logo-footer">
-                            <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
+            <!-- Start -->
+            <footer class="bg-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
+                            <a href="#" class="logo-footer">
+                                <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
                         </a>
                         <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                     </div><!--end col-->

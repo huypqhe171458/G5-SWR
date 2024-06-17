@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -37,185 +37,24 @@
     </head>
 
     <body>
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="index">
-                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
-                    <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
-                </a>                
-                <!-- Logo End -->
-                
-                <!-- Start Mobile Toggle -->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
-                <!-- End Mobile Toggle -->
+        <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
 
-                <!-- Start Dropdown -->
-                <ul class="dropdowns list-inline mb-0">
-                    <li class="list-inline-item mb-0">
-                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                            <i class="uil uil-search"></i>
-                        </a>
-                    </li>
-
-                    <li class="list-inline-item mb-0 ms-1">
-                        <div class="dropdown dropdown-primary">
-                            <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-ex-small rounded-circle" alt=""></button>
-                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
-                                <a class="dropdown-item d-flex align-items-center text-dark" href="doctor-profile.html">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
-                                    <div class="flex-1 ms-2">
-                                        <span class="d-block mb-1">Calvin Carlo</span>
-                                        <small class="text-muted">Orthopedic</small>
-                                    </div>
-                                </a>
-                                <!--<a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>-->
-                                <a class="dropdown-item text-dark" href="patient"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
-                                <div class="dropdown-divider border-top"></div>
-                                <a class="dropdown-item text-dark" href="login"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Start Dropdown -->
-        
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu nav-left">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="index">Home</a><span ></span>
-                            
-                        </li>
-
-<!--                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Doctors</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Dashboard </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="doctor-dashboard.html" class="sub-menu-item">Dashboard</a></li>
-                                        <li><a href="doctor-appointment.html" class="sub-menu-item">Appointment</a></li>
-                                        <li><a href="patient-list.html" class="sub-menu-item">Patients</a></li>
-                                        <li><a href="doctor-schedule.html" class="sub-menu-item">Schedule Timing</a></li>
-                                        <li><a href="invoices.html" class="sub-menu-item">Invoices</a></li>
-                                        <li><a href="patient-review.html" class="sub-menu-item">Reviews</a></li>
-                                        <li><a href="doctor-messages.html" class="sub-menu-item">Messages</a></li>
-                                        <li><a href="doctor-profile.html" class="sub-menu-item">Profile</a></li>
-                                        <li><a href="doctor-profile-setting.html" class="sub-menu-item">Profile Settings</a></li>
-                                        <li><a href="doctor-chat.html" class="sub-menu-item">Chat</a></li>
-                                        <li><a href="login" class="sub-menu-item">Login</a></li>
-                                        <li><a href="signup" class="sub-menu-item">Sign Up</a></li>
-                                        <li><a href="forgot-password.html" class="sub-menu-item">Forgot Password</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="doctor-team-one.html" class="sub-menu-item">Doctors One</a></li>
-                                <li><a href="doctor-team-two.html" class="sub-menu-item">Doctors Two</a></li>
-                                <li><a href="doctor-team-three.html" class="sub-menu-item">Doctors Three</a></li>
-                            </ul>
-                        </li>-->
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-<!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
-                                <li><a href="patient" class="sub-menu-item">My Account</a></li>
-<!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
-                                <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-<!--                                <li><a href="pharmacy.html" class="sub-menu-item">Pharmacy</a></li>-->
-                                <li><a href="pharmacy-shop.html" class="sub-menu-item">Shop</a></li>
-<!--                                <li><a href="detail" class="sub-menu-item">Medicine Detail</a></li>-->
-                                <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
-                                <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
-<!--                                <li><a href="pharmacy-account.html" class="sub-menu-item">Account</a></li>-->
-                            </ul>
-                        </li>
-        
-<!--                        <li class="has-submenu parent-parent-menu-item"><a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="aboutus.html" class="sub-menu-item"> About Us</a></li>
-                                <li><a href="departments.html" class="sub-menu-item">Departments</a></li>
-                                <li><a href="faqs.html" class="sub-menu-item">FAQs</a></li>
-                                <li class="has-submenu parent-menu-item">
-                                    <a href="javascript:void(0)" class="menu-item"> Blogs </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="blogs.html" class="sub-menu-item">Blogs</a></li>
-                                        <li><a href="blog-detail.html" class="sub-menu-item">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="terms.html" class="sub-menu-item">Terms & Policy</a></li>
-                                <li><a href="privacy.html" class="sub-menu-item">Privacy Policy</a></li>
-                                <li><a href="error.html" class="sub-menu-item">404 !</a></li>
-                                <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
-                            </ul>
-                        </li>-->
-                        <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
-
-        <!-- Hero Start -->
-        <section class="bg-half-170 d-table w-100 bg-light">
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center">
-                            <h3 class="sub-title mb-4">Plastic Medicine Box</h3>
-                            <p class="para-desc mx-auto text-muted">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                        
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-3">
-                                <ul class="breadcrumb bg-light rounded mb-0 bg-transparent">
-                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                    <li class="breadcrumb-item"><a href="pharmacy.html">Pharmacy</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Product Detail</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <div class="position-relative">
+                <div class="shape overflow-hidden text-white">
+                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <!-- Hero End -->
+            <!-- Hero End -->
 
-        <section class="section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-5">
-                        <div class="slider slider-for">
-                            <div><img src="${pageContext.request.contextPath}/images/pharmacy/shop/01.jpg" class="img-fluid rounded" alt=""></div>
+            <section class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <div class="slider slider-for">
+                                <div><img src="${pageContext.request.contextPath}/images/pharmacy/shop/01.jpg" class="img-fluid rounded" alt=""></div>
                             <div><img src="${pageContext.request.contextPath}/images/pharmacy/shop/02.jpg" class="img-fluid rounded" alt=""></div>
                             <div><img src="${pageContext.request.contextPath}/images/pharmacy/shop/03.jpg" class="img-fluid rounded" alt=""></div>
                             <div><img src="${pageContext.request.contextPath}/images/pharmacy/shop/04.jpg" class="img-fluid rounded" alt=""></div>
@@ -241,10 +80,10 @@
                                 <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
                                 <li class="list-inline-item me-2 h6 text-muted">(20 Ratting)</li>
                             </ul>
-                            
+
                             <h5 class="mt-4 py-2">Overview :</h5>
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
-                        
+
                             <div class="d-flex shop-list align-items-center">
                                 <h6 class="mb-0">Quantity:</h6>
                                 <div class="qty-icons ms-3">
@@ -285,7 +124,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -307,7 +146,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                                
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -317,7 +156,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -339,7 +178,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -349,7 +188,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -371,7 +210,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -381,7 +220,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -403,7 +242,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -413,7 +252,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -435,7 +274,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -445,7 +284,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -467,7 +306,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -477,7 +316,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -499,7 +338,7 @@
                                     </div>
                                 </div>
                             </div><!--end col-->
-                            
+
                             <div class="tiny-slide">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden">
@@ -509,7 +348,7 @@
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="eye" class="icons"></i></a></li>
                                             <li class="mt-2"><a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a></li>
                                         </ul>                                
-        
+
                                         <div class="qty-icons">
                                             <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-pills btn-icon btn-primary minus">-</button>
                                             <input min="0" name="quantity" value="0" type="number" class="btn btn-pills btn-icon btn-primary qty-btn quantity">
@@ -561,7 +400,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Departments</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -574,7 +413,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Contact us</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -614,7 +453,7 @@
                                 <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
                             </div>
                         </div><!--end col-->
-    
+
                         <div class="col-sm-6 mt-4 mt-sm-0">
                             <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
                                 <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
@@ -701,7 +540,7 @@
             </div>
         </div>
         <!-- Offcanvas End -->
-        
+
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
