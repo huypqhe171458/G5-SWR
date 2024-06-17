@@ -49,16 +49,10 @@
                                 <h4 class="text-center">Sign Up</h4>  
                                 <form action="doctor-dashboard.html" class="login-form mt-4">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="mb-3">                                               
-                                                <label class="form-label">First name <span class="text-danger">*</span></label>
+                                                <label class="form-label">Full name <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" placeholder="First Name" name="s" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">                                                
-                                                <label class="form-label">Last name <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" placeholder="Last Name" name="s" required="">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -73,6 +67,12 @@
                                                 <input type="password" class="form-control" placeholder="Password" required="">
                                             </div>
                                         </div>
+                                         <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                                                <input type="password" class="form-control" placeholder="Confirm Password" required="">
+                                            </div>
+                                        </div>
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <div class="form-check">
@@ -85,24 +85,7 @@
                                             <div class="d-grid">
                                                 <button class="btn btn-primary">Register</button>
                                             </div>
-                                        </div>
-
-                                        <div class="col-lg-12 mt-3 text-center">
-                                            <h6 class="text-muted">Or</h6>
-                                        </div><!--end col-->
-                                        
-                                        <div class="col-6 mt-3">
-                                            <div class="d-grid">
-                                                <a href="javascript:void(0)" class="btn btn-soft-primary"><i class="uil uil-facebook"></i> Facebook</a>
-                                            </div>
-                                        </div><!--end col-->
-                                        
-                                        <div class="col-6 mt-3">
-                                            <div class="d-grid">
-                                                <a href="javascript:void(0)" class="btn btn-soft-primary"><i class="uil uil-google"></i> Google</a>
-                                            </div>
-                                        </div><!--end col-->
-
+                                        </div>                                                                          
                                         <div class="mx-auto">
                                             <p class="mb-0 mt-3"><small class="text-dark me-2">Already have an account ?</small> <a href="login" class="text-dark fw-bold">Sign in</a></p>
                                         </div>

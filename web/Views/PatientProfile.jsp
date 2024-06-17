@@ -32,6 +32,7 @@
         <link href="${pageContext.request.contextPath}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="${pageContext.request.contextPath}/css/remixicon.css" rel="stylesheet" type="text/css" />
         <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Css -->
         <link href="${pageContext.request.contextPath}/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
 
@@ -107,14 +108,47 @@
                                             <div class="col-sm-10">
                                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
                                             </div><!--end col-->
+                                              
 
                                             <div class="col-sm-2">
-                                                <input type="submit" id="submit" name="send" class="btn btn-primary" value="Change Password">
+                                                <input type="submit" id="submit" name="send" class="btn btn-primary" data-toggle="modal"  data-target="#changePasswordModal"  value="Change Password">
                                             </div><!--end col-->
                                         </div><!--end row-->
                                         <div class="row">
-
-                                        </div><!--end row-->
+                                        </div>
+                                        <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="changePasswordModalLabel">Change Password</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Current password :</label>
+                                                                <input type="password" class="form-control" placeholder="Current password" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">New password :</label>
+                                                                <input type="password" class="form-control" placeholder="New password" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Confirm New password :</label>
+                                                                <input type="password" class="form-control" placeholder="Confirm New password" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary">Change password</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end row-->
                                     </form><!--end form-->                              
                                 </div><!--end col-->
                             </div>
@@ -450,7 +484,9 @@
         <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 
 </html>

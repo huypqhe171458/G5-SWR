@@ -59,6 +59,7 @@
                         </a>
                         <!--<a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>-->
                         <a class="dropdown-item text-dark" href="patient"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                        <a class="dropdown-item text-dark" href="order"><span class="mb-0 d-inline-block me-1"><i class="uil uil-list-ul align-middle h6"></i></span> Order History</a>
                         <div class="dropdown-divider border-top"></div>
                         <a class="dropdown-item text-dark" href="login"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
                     </div>
@@ -79,10 +80,8 @@
 
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
-                    <ul class="submenu">
-                        <!--                                <li><a href="patient-dashboard.html" class="sub-menu-item">Dashboard</a></li>-->
-                        <li><a href="patient" class="sub-menu-item">My Account</a></li>
-                        <!--                                <li><a href="booking-appointment.html" class="sub-menu-item">Book Appointment</a></li>-->
+                    <ul class="submenu">                      
+                       <li><a href="patient" class="sub-menu-item">My Account</a></li>    
                         <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
                     </ul>
                 </li>

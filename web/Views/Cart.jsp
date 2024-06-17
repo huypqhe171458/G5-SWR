@@ -179,7 +179,7 @@
                             </table>
                         </div>
                         <div class="mt-4 pt-2 text-end">
-                            <a href="#" class="btn btn-primary">CHECKOUT</a>
+                            <a href="bank" class="btn btn-primary">CHECKOUT</a>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->

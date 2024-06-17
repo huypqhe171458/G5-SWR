@@ -49,7 +49,7 @@
             <section class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-lg-4 order-md-last">
+                        <div class="col-md-5 col-lg-6 order-md-last">
                             <div class="card rounded shadow p-4 border-0">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <span class="h5 mb-0">Order (3 products)</span>
@@ -109,7 +109,7 @@
                             </div>
                         </div><!--end col-->
 
-                        <div class="col-md-4 col-lg-5">
+                        <div class="col-md-4 col-lg-6">
                             <div class="card rounded shadow p-4 border-0">
                                 <h5 class="mb-3">CHECKOUT</h5>
                                 <form class="needs-validation" novalidate>
@@ -187,29 +187,6 @@
                                 </form>
                             </div>
                         </div><!--end col-->
-                        <div class="col-md-4 col-lg-3">
-                            <div class="rounded shadow p-4 border-0">
-                                <h5 class="mb-3">Payment</h5>
-
-                                <div class="my-3">
-                                    <div class="form-check">
-                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
-                                               checked required>
-                                        <label class="form-check-label" for="credit">Cash on delivery - COD</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
-                                               required>
-                                        <label class="form-check-label" for="debit">VNPAY</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
-                                               required>
-                                        <label class="form-check-label" for="paypal">MoMo</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div><!--end row-->
                 </div><!--end container-->
             </section><!--end section-->

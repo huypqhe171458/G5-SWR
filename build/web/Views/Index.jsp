@@ -37,488 +37,288 @@
             <section class="py-4 bg-light">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <!--                    <div class="col-lg-12 col-md-12 col-12 text-center py-4">
-                                                <img src="${pageContext.request.contextPath}/images/client/amazon.png" class="avatar avatar-client" alt="">
-                                            </div>-->
-
-                    <!--                    <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/google.png" class="avatar avatar-client" alt="">
-                                        </div>end col
-                    
-                                        <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/lenovo.png" class="avatar avatar-client" alt="">
-                                        </div>end col
-                    
-                                        <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/paypal.png" class="avatar avatar-client" alt="">
-                                        </div>end col
-                    
-                                        <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/shopify.png" class="avatar avatar-client" alt="">
-                                        </div>end col
-                    
-                                        <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                                            <img src="${pageContext.request.contextPath}/images/client/spotify.png" class="avatar avatar-client" alt="">
-                                        </div>end col-->
-                    <img src ="images/2.png" style="width: 50%">
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- Partners End -->
-
-        <!-- Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row justify-content-center">
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
-                        <div class="card features feature-primary border-0 p-4 rounded-md shadow">
-                            <div class="icon text-center rounded-lg">
-                                <i class="uil uil-user-md h3 mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-3">
-                                <a href="departments.html" class="title text-dark h5">Doctors</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
-                                <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
-                        <div class="card features feature-primary border-0 p-4 rounded-md shadow">
-                            <div class="icon text-center rounded-lg">
-                                <i class="uil uil-capsule h3 mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-3">
-                                <a href="departments.html" class="title text-dark h5">Clinics</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
-                                <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
-                        <div class="card features feature-primary border-0 p-4 rounded-md shadow">
-                            <div class="icon text-center rounded-lg">
-                                <i class="uil uil-microscope h3 mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-3">
-                                <a href="departments.html" class="title text-dark h5">Labs</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
-                                <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
-                        <div class="card features feature-primary border-0 p-4 rounded-md shadow">
-                            <div class="icon text-center rounded-lg">
-                                <i class="uil uil-ambulance h3 mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-3">
-                                <a href="departments.html" class="title text-dark h5">Emergency</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
-                                <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-xl col-md-4 col-12 mt-4 pt-2">
-                        <div class="card features feature-primary border-0 p-4 rounded-md shadow">
-                            <div class="icon text-center rounded-lg">
-                                <i class="uil uil-shield-plus h3 mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-3">
-                                <a href="departments.html" class="title text-dark h5">Insurance</a>
-                                <p class="text-muted mt-3">Due to its wide spread use as filler text</p>
-                                <a href="departments.html" class="link">Find here <i class="ri-arrow-right-line align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
+                        <img src ="images/2.png" style="width: 50%">
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section-->
+            <!-- Partners End -->
 
             <!-- Start -->
             <section class="section">
                 <div class="container">
-
-
-                    <div class="row align-items-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="section-title text-center mb-4 pb-2">
+                                <h1>Best Selling Products</h1>
+                            </div>
+                        </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
                             <div class="card team border-0 rounded shadow overflow-hidden">
                                 <div class="team-person position-relative overflow-hidden">
                                     <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
-                                    <small class="text-muted speciality">Eye Care</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
                             </div>
-                        </div><!--end col-->
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD</small>
+                                    </li>
+                                </ul>
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/02.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Cristino Murphy</a>
-                                    <small class="text-muted speciality">M.B.B.S, Gynecologist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                        </div><!--end col-->
-
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/03.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Alia Reddy</a>
-                                    <small class="text-muted speciality">M.B.B.S, Psychotherapist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
                             </div>
-                        </div><!--end col-->
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/04.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Toni Kovar</a>
-                                    <small class="text-muted speciality">M.B.B.S, Orthopedic</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD</small>
+                                    </li>
+                                </ul>
                             </div>
-                        </div><!--end col-->
-
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/05.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Jessica McFarlane</a>
-                                    <small class="text-muted speciality">M.B.B.S, Dentist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
                             </div>
-                        </div><!--end col-->
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/06.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Elsie Sherman</a>
-                                    <small class="text-muted speciality">M.B.B.S, Gastrologist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD / Visit</small>
+                                    </li>
+                                </ul>
+
                             </div>
-                        </div><!--end col-->
-
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/07.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Bertha Magers</a>
-                                    <small class="text-muted speciality">M.B.B.S, Urologist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
                             </div>
-                        </div><!--end col-->
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
 
-                        <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
-                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                <div class="team-person position-relative overflow-hidden">
-                                    <img src="${pageContext.request.contextPath}/images/doctors/08.jpg" class="img-fluid" alt="">
-                                    <ul class="list-unstyled team-like">
-                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body">
-                                    <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Louis Batey</a>
-                                    <small class="text-muted speciality">M.B.B.S, Neurologist</small>
-                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                        <ul class="list-unstyled mb-0">
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                        </ul>
-                                        <p class="text-muted mb-0">5 Star</p>
-                                    </div>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="d-flex">
-                                            <i class="ri-map-pin-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">63, PG Shustoke, UK</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-time-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">Mon: 2:00PM - 6:00PM</small>
-                                        </li>
-                                        <li class="d-flex mt-2">
-                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                            <small class="text-muted ms-2">$ 75 USD / Visit</small>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled mt-2 mb-0">
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="facebook" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="linkedin" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="icons"></i></a></li>
-                                        <li class="mt-2 list-inline-item"><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="twitter" class="icons"></i></a></li>
-                                    </ul>
-                                </div>
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD / Visit</small>
+                                    </li>
+                                </ul>
+
                             </div>
-                        </div><!--end col-->
-                    </div><!--end row-->
-                </div><!--end container-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h1>Featured Products</h1>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD</small>
+                                    </li>
+                                </ul>
 
 
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
 
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
 
-                </div><!--end container-->
-            </section><!--end section-->
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD / Visit</small>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card team border-0 rounded shadow overflow-hidden">
+                            <div class="team-person position-relative overflow-hidden">
+                                <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="img-fluid" alt="">
+                                <ul class="list-unstyled team-like">
+                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <a href="doctor-team-two.html" class="title text-dark h5 d-block mb-0">Calvin Carlo</a>
+                                <small class="text-muted speciality">Eye Care</small>
+                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                    </ul>
+                                    <p class="text-muted mb-0">5 Star</p>
+                                </div>
+                                <ul class="list-unstyled mt-2 mb-0">
+
+                                    <li class="d-flex mt-2">
+                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                        <small class="text-muted ms-2">$ 75 USD / Visit</small>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <!-- Start -->
+        
             <!-- End -->
 
             <!-- Start -->
