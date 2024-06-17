@@ -1,6 +1,13 @@
+<%-- 
+    Document   : ForgotPassword
+    Created on : Jun 17, 2024, 10:03:33 PM
+    Author     : Hai Pham
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -26,66 +33,49 @@
     </head>
 
     <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
         <div class="back-to-home rounded d-none d-sm-block">
             <a href="index" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
         </div>
 
         <!-- Hero Start -->
-        <section class="bg-home d-flex bg-light align-items-center" style="background: url('${pageContext.request.contextPath}/images/bg/bg-lines-one.png') center;">
+        <section class="bg-home d-flex bg-light align-items-center" style="background: url('../assets/images/bg/bg-lines-one.png') center;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-8">
-                        <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="mx-auto d-block" alt="">
+                        <img src="../assets/images/logo-dark.png" height="24" class="mx-auto d-block" alt="">
                         <div class="card login-page bg-white shadow mt-4 rounded border-0">
                             <div class="card-body">
-                                <h4 class="text-center">Sign In</h4>  
-                                <form action="doctor-dashboard.html" class="login-form mt-4">
+                                <h4 class="text-center">Password Reset</h4>  
+                                <form class="login-form mt-4" style="display: ">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                                                <input type="email" class="form-control" placeholder="Email" name="email" required="">
+                                                <label class="form-label">Your Email <span class="text-danger">*</span></label> <a href="#" style="margin-left: 13rem;text-decoration: underline">Send OTP*</a>
+                                                <input type="email" class="form-control" placeholder="Enter Your Email " name="email" required="">
                                             </div>
-                                        </div>
-
-                                        <div class="col-lg-12">
                                             <div class="mb-3">
-                                                <label class="form-label">Password <span class="text-danger">*</span></label>
-                                                <input type="password" class="form-control" placeholder="Password" required="">
+                                                <label class="form-label">OTP <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" placeholder="Enter OTP we sent you via email" name="otp" required="">
                                             </div>
                                         </div>
-
                                         <div class="col-lg-12">
-                                            <div class="d-flex justify-content-between">
-                                                <div class="mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input align-middle" type="checkbox" value="" id="remember-check">
-                                                        <label class="form-check-label" for="remember-check">Remember me</label>
-                                                    </div>
-                                                </div>
-                                                <a href="forgotpassword" class="text-dark h6 mb-0">Forgot password ?</a>
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary" onclick="location.href='forgotpassword2'">Reset Password</button>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 mb-0">
-                                            <div class="d-grid">
-                                                <button class="btn btn-primary">Sign in</button>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 mt-3 text-center">
-                                            <h6 class="text-muted">Or</h6>
-                                        </div><!--end col-->
-                                        
-                                      
-                                        
-                                        <div class="col-12 mt-3">
-                                            <div class="d-grid">
-                                                <a href="#" class="btn btn-soft-primary"><i class="uil uil-google"></i> Google</a>
-                                            </div>
-                                        </div><!--end col-->
-
-                                        <div class="col-12 text-center">
-                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="signup" class="text-dark fw-bold">Sign Up</a></p>
+                                        <div class="mx-auto">
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Remember your password ?</small> <a href="login" class="text-dark h6 mb-0">Sign in</a></p>
                                         </div>
                                     </div>
                                 </form>
@@ -96,14 +86,14 @@
             </div> <!--end container-->
         </section><!--end section-->
         <!-- Hero End -->
-        
+
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
         <!-- Icons -->
         <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
-        
+
     </body>
 
 </html>
