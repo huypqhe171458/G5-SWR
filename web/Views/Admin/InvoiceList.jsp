@@ -90,14 +90,12 @@
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">$154</td>
                                                 <td class="text-center p-3">ABCXYZ</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
+                                                <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Paid</span>
+                                            </td>
                                                 <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Update</a>
+                                                      <a href="inad" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                   <a href="#" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -116,14 +114,12 @@
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">$154</td>
                                                 <td class="text-center p-3">ABCXYZ</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Update</a>
+                                                <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Paid</span>
+                                            </td>
+                                               <td class="text-end p-3">
+                                                      <a href="inad" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                   <a href="#" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -142,14 +138,12 @@
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">$154</td>
                                                 <td class="text-center p-3">ABCXYZ</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
-                                                <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Update</a>
+                                                <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Paid</span>
+                                            </td>
+                                                 <td class="text-end p-3">
+                                                      <a href="inad" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                   <a href="#" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -168,14 +162,12 @@
                                                 <td class="text-center p-3">23th Dec 2020</td>
                                                 <td class="text-center p-3">$154</td>
                                                 <td class="text-center p-3">ABCXYZ</td>
-                                                <td class="text-center p-3">
-                                                    <div class="badge bg-soft-danger rounded px-3 py-1">
-                                                        Unpaid
-                                                    </div>
-                                                </td>
+                                                <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Paid</span>
+                                            </td>
                                                 <td class="text-end p-3">
-                                                    <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#view-invoice">View</a>
-                                                    <a href="#" class="btn btn-sm btn-outline-primary ms-2">Update</a>
+                                                      <a href="inad" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                   <a href="#" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
                                                 </td>
                                             </tr>
                                             <!-- End -->
@@ -678,7 +670,19 @@
 <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
 <!-- Main Js -->
 <script src="${pageContext.request.contextPath}/js/app.js"></script>
-
+<script>
+                                    function toggleStatus(element) {
+                                        if (element.innerText === "Paid") {
+                                            element.innerText = "Unpaid";
+                                            element.classList.remove('bg-soft-success');
+                                            element.classList.add('bg-soft-danger');
+                                        } else {
+                                            element.innerText = "Paid";
+                                            element.classList.remove('bg-soft-danger');
+                                            element.classList.add('bg-soft-success');
+                                        }
+                                    }
+    </script>
 </body>
 
 </html>

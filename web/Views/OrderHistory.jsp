@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -20,231 +20,187 @@
         <link href="${pageContext.request.contextPath}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="${pageContext.request.contextPath}/css/remixicon.css" rel="stylesheet" type="text/css" />
         <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- Css -->
         <link href="${pageContext.request.contextPath}/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
 
     </head>
 
     <body>
-     
-        
-     <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
-        
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
-        </div>
-        <!-- Hero End -->
 
-        <!-- Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex align-items-center">
-                            <img src="${pageContext.request.contextPath}/images/client/09.jpg" class="avatar avatar-md-md rounded-circle" alt="">
-                            <div class="ms-3">
-                                <h6 class="text-muted mb-0">Hello,</h6>
-                                <h5 class="mb-0">Mrs. Christopher</h5>
-                            </div>
+
+        <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
+
+            <div class="position-relative">
+                <div class="shape overflow-hidden text-white">
+                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- Hero End -->
+
+            <!-- Start -->
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div><h2>Order History</h2></div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-4 mt-4 pt-2">
-                        <ul class="nav nav-pills nav-justified flex-column bg-white rounded shadow p-3 mb-0" id="pills-tab" role="tablist">
-                           
-                            
-                            <li class="nav-item mt-2">
-                                <a class="nav-link active rounded" id="order-history" data-bs-toggle="pill" href="#orders" role="tab" aria-controls="orders" aria-selected="false">
-                                    <div class="text-start py-1 px-3">
-                                        <h6 class="mb-0"><i class="uil uil-list-ul h5 align-middle me-2 mb-0"></i> Order History</h6>
+                    <div class="row">
+
+                        <div class="col-md-12 col-12 mt-4 pt-2">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade bg-white show active shadow rounded p-4" id="orders" role="tabpanel" aria-labelledby="order-history">
+                                    <div class="table-responsive bg-white shadow rounded">
+                                        <table class="table mb-0 table-center table-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-bottom p-3" scope="col">Order ID</th>
+                                                    <th class="border-bottom p-3" scope="col">Receiver</th>
+                                                    <th class="border-bottom p-3" scope="col">Email</th>
+                                                    <th class="border-bottom p-3" scope="col">Mobile</th>
+                                                    <th class="border-bottom p-3" scope="col">Amount</th>
+                                                    <th class="border-bottom p-3" scope="col">Status</th>
+                                                    <th class="border-bottom p-3" scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-3">12312312321903</td>
+                                                    <td class="p-3">Nga</td>
+                                                    <td class="p-3">ngango123@gmail.com<span class="text-muted"></span></td>
+                                                    <td class="p-3">0988888888</td>
+                                                    <td class="p-3">1.000.000.000</td>
+                                                    <td class="text-success p-3">Submitted</td>
+                                                    <td class="p-3">
+                                                        <a href="#" class="text-primary" title="View">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <a href="#" class="text-warning" title="Update" style="margin-left: 10px;">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <a href="#" class="text-success" title="Create" style="margin-left: 10px;">
+                                                            <i class="fas fa-plus"></i>
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="p-3">1293821937128</td>
+                                                    <td class="p-3">Thw</td>
+                                                    <td class="p-3">thwngo123@gmail.com<span class="text-muted"></span></td>
+                                                    <td class="p-3">0978888888</td>
+                                                    <td class="p-3">2.000.000.000</td>
+                                                    <td class="text-muted p-3">Processing</td>
+                                                    <td class="p-3">
+                                                        <a href="#" class="text-primary" title="View">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <a href="#" class="text-warning" title="Update" style="margin-left: 10px;">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <a href="#" class="text-success" title="Create" style="margin-left: 10px;">
+                                                            <i class="fas fa-plus"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="p-3">312312837295</td>
+                                                    <td class="p-3">Hai</td>
+                                                    <td class="p-3">haipham123@gmail.com<span class="text-muted"></span></td>
+                                                    <td class="p-3">0843782331</td>
+                                                    <td class="p-3">10.000.000.000</td>
+                                                    <td class="text-danger p-3">Canceled</td>
+                                                    <td class="p-3">
+                                                        <a href="#" class="text-primary" title="View">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <a href="#" class="text-warning" title="Update" style="margin-left: 10px;">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </a><!--end nav link-->
-                            </li><!--end nav item-->
-                        </ul><!--end nav pills-->
-                    </div><!--end col-->
+                                </div><!--end teb pane-->
 
-                    <div class="col-md-8 col-12 mt-4 pt-2">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade bg-white show active shadow rounded p-4" id="orders" role="tabpanel" aria-labelledby="order-history">
-                                <div class="table-responsive bg-white shadow rounded">
-                                    <table class="table mb-0 table-center table-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th class="border-bottom p-3" scope="col">Order no.</th>
-                                                <th class="border-bottom p-3" scope="col">Date</th>
-                                                <th class="border-bottom p-3" scope="col">Total</th>
-                                                <th class="border-bottom p-3" scope="col">Status</th>
-                                                <th class="border-bottom p-3" scope="col">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="p-3">7107</td>
-                                                <td class="p-3">1st November 2020</td>
-                                                <td class="p-3">$ 320 <span class="text-muted">for 2items</span></td>
-                                                <td class="text-success p-3">Delivered</td>
-                                                <td class="p-3"><a href="#" class="text-primary">View <i class="uil uil-arrow-right"></i></a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="p-3">8007</td>
-                                                <td class="p-3">4td November 2020</td>
-                                                <td class="p-3">$ 800 <span class="text-muted">for 1item</span></td>
-                                                <td class="text-muted p-3">Processing</td>
-                                                <td class="p-3"><a href="#" class="text-primary">View <i class="uil uil-arrow-right"></i></a></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="p-3">8008</td>
-                                                <td class="p-3">4th November 2020</td>
-                                                <td class="p-3">$ 800 <span class="text-muted">for 1item</span></td>
-                                                <td class="text-danger p-3">Canceled</td>
-                                                <td class="p-3"><a href="#" class="text-primary">View <i class="uil uil-arrow-right"></i></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div><!--end teb pane-->
-
-                            <div class="tab-pane fade bg-white shadow rounded p-4" id="down" role="tabpanel" aria-labelledby="download">
-                                <div class="table-responsive bg-white shadow rounded">
-                                    <table class="table mb-0 table-center table-nowrap">
-                                        <thead>
-                                            <tr>
-                                                <th class="border-bottom p-3" scope="col">Product Name</th>
-                                                <th class="border-bottom p-3" scope="col">Description</th>
-                                                <th class="border-bottom p-3" scope="col">Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="p-3">Quick heal</td>
-                                                <td class="text-muted p-3">It is said that song composers of the past <br> used dummy texts as lyrics when writing <br> melodies in order to have a 'ready-made' <br> text to sing with the melody.</td>
-                                                <td class="text-success p-3">Downloaded</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div><!--end teb pane-->
-
-                            <div class="tab-pane fade bg-white shadow rounded p-4" id="address" role="tabpanel" aria-labelledby="addresses">
-                                <h6 class="text-muted mb-0">The following addresses will be used on the checkout page by default.</h6>
-
-                                <div class="row">
-                                    <div class="col-lg-6 mt-4 pt-2">
-                                        <div class="d-flex align-items-center mb-4 justify-content-between">
-                                            <h5 class="mb-0">Billing Address:</h5>
-                                            <a href="#" class="text-primary h5 mb-0" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="uil uil-edit align-middle"></i></a>
-                                        </div>
-                                        <div class="pt-4 border-top">
-                                            <p class="h6">Cally Joseph</p>
-                                            <p class="text-muted mb-0">C/54 Northwest Freeway, </p>
-                                            <p class="text-muted mb-0">Suite 558,</p>
-                                            <p class="text-muted mb-0">Houston, USA 485</p>
-                                            <p class="text-muted mb-0">+123 897 5468</p>
-                                        </div>
+                                <div class="tab-pane fade bg-white shadow rounded p-4" id="down" role="tabpanel" aria-labelledby="download">
+                                    <div class="table-responsive bg-white shadow rounded">
+                                        <table class="table mb-0 table-center table-nowrap">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-bottom p-3" scope="col">Product Name</th>
+                                                    <th class="border-bottom p-3" scope="col">Description</th>
+                                                    <th class="border-bottom p-3" scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="p-3">Quick heal</td>
+                                                    <td class="text-muted p-3">It is said that song composers of the past <br> used dummy texts as lyrics when writing <br> melodies in order to have a 'ready-made' <br> text to sing with the melody.</td>
+                                                    <td class="text-success p-3">Downloaded</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                </div><!--end teb pane-->
 
-                                    <div class="col-lg-6 mt-4 pt-2">
-                                        <div class="d-flex align-items-center mb-4 justify-content-between">
-                                            <h5 class="mb-0">Shipping Address:</h5>
-                                            <a href="#" class="text-primary h5 mb-0" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="uil uil-edit align-middle"></i></a>
-                                        </div>
-                                        <div class="pt-4 border-top">
-                                            <p class="h6">Cally Joseph</p>
-                                            <p class="text-muted mb-0">C/54 Northwest Freeway, </p>
-                                            <p class="text-muted mb-0">Suite 558,</p>
-                                            <p class="text-muted mb-0">Houston, USA 485</p>
-                                            <p class="text-muted mb-0">+123 897 5468</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--end teb pane-->
+                                <div class="tab-pane fade bg-white shadow rounded p-4" id="address" role="tabpanel" aria-labelledby="addresses">
+                                    <h6 class="text-muted mb-0">The following addresses will be used on the checkout page by default.</h6>
 
-                            <div class="tab-pane fade bg-white shadow rounded p-4" id="account" role="tabpanel" aria-labelledby="account-details">
-                                <form>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">First Name</label>
-                                                <input name="name" id="first-name" type="text" class="form-control" value="Cally">
+                                        <div class="col-lg-6 mt-4 pt-2">
+                                            <div class="d-flex align-items-center mb-4 justify-content-between">
+                                                <h5 class="mb-0">Billing Address:</h5>
+                                                <a href="#" class="text-primary h5 mb-0" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="uil uil-edit align-middle"></i></a>
                                             </div>
-                                        </div><!--end col-->
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Last Name</label>
-                                                <input name="name" id="last-name" type="text" class="form-control" value="Joseph">
+                                            <div class="pt-4 border-top">
+                                                <p class="h6">Cally Joseph</p>
+                                                <p class="text-muted mb-0">C/54 Northwest Freeway, </p>
+                                                <p class="text-muted mb-0">Suite 558,</p>
+                                                <p class="text-muted mb-0">Houston, USA 485</p>
+                                                <p class="text-muted mb-0">+123 897 5468</p>
                                             </div>
-                                        </div><!--end col-->
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Your Email</label>
-                                                <input name="email" id="email" type="email" class="form-control" value="callyjoseph@gmail.com">
-                                            </div> 
-                                        </div><!--end col-->
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Display Name</label>
-                                                <input name="name" id="display-name" type="text" class="form-control" value="christopher">
-                                            </div> 
-                                        </div><!--end col-->
+                                        </div>
 
-                                        <div class="col-lg-12 mt-2 mb-0">
-                                            <button class="btn btn-primary">Save Changes</button>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </form>
+                                        <div class="col-lg-6 mt-4 pt-2">
+                                            <div class="d-flex align-items-center mb-4 justify-content-between">
+                                                <h5 class="mb-0">Shipping Address:</h5>
+                                                <a href="#" class="text-primary h5 mb-0" data-bs-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><i class="uil uil-edit align-middle"></i></a>
+                                            </div>
+                                            <div class="pt-4 border-top">
+                                                <p class="h6">Cally Joseph</p>
+                                                <p class="text-muted mb-0">C/54 Northwest Freeway, </p>
+                                                <p class="text-muted mb-0">Suite 558,</p>
+                                                <p class="text-muted mb-0">Houston, USA 485</p>
+                                                <p class="text-muted mb-0">+123 897 5468</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--end teb pane-->
 
-                                <h5 class="mt-4">Change password :</h5>
-                                <form>
-                                    <div class="row mt-3">
-                                        <div class="col-lg-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">Old password :</label>
-                                                <input type="password" class="form-control" placeholder="Old password" required="">
-                                            </div>
-                                        </div><!--end col-->
-    
-                                        <div class="col-lg-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">New password :</label>
-                                                <input type="password" class="form-control" placeholder="New password" required="">
-                                            </div>
-                                        </div><!--end col-->
-    
-                                        <div class="col-lg-12">
-                                            <div class="mb-3">
-                                                <label class="form-label">Re-type New password :</label>
-                                                <input type="password" class="form-control" placeholder="Re-type New password" required="">
-                                            </div>
-                                        </div><!--end col-->
-    
-                                        <div class="col-lg-12 mt-2 mb-0">
-                                            <button class="btn btn-primary">Save Password</button>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </form>
-                            </div><!--end teb pane-->
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
+                                <div class="tab-pane fade bg-white shadow rounded p-4" id="account" role="tabpanel" aria-labelledby="account-details">                                                                                    
+                                </div><!--end teb pane-->
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section-->
+            <!-- End -->
 
-        <!-- Start -->
-        <footer class="bg-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
-                        <a href="#" class="logo-footer">
-                            <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
+            <!-- Start -->
+            <footer class="bg-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
+                            <a href="#" class="logo-footer">
+                                <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
                         </a>
                         <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                     </div><!--end col-->
@@ -262,7 +218,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Departments</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -275,7 +231,7 @@
                                     <li><a href="#" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Neurology</a></li>
                                 </ul>
                             </div><!--end col-->
-                            
+
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="text-light title-dark footer-head">Contact us</h5>
                                 <ul class="list-unstyled footer-list mt-4">
@@ -315,7 +271,7 @@
                                 <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
                             </div>
                         </div><!--end col-->
-    
+
                         <div class="col-sm-6 mt-4 mt-sm-0">
                             <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
                                 <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
@@ -402,7 +358,7 @@
             </div>
         </div>
         <!-- Offcanvas End -->
-        
+
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
         <!-- Icons -->

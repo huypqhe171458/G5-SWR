@@ -76,6 +76,22 @@
         <servlet-name>BankingServlet</servlet-name>
         <servlet-class>BankingServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UpdateControllers</servlet-name>
+        <servlet-class>Dashboard.UpdateControllers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateAccServlet</servlet-name>
+        <servlet-class>Dashboard.UpdateAccServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailAccountServlet</servlet-name>
+        <servlet-class>Dashboard.DetailAccountServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailProductServlet</servlet-name>
+        <servlet-class>Dashboard.DetailProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndexControllers</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -151,6 +167,22 @@
     <servlet-mapping>
         <servlet-name>BankingServlet</servlet-name>
         <url-pattern>/bank</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateControllers</servlet-name>
+        <url-pattern>/updatepro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateAccServlet</servlet-name>
+        <url-pattern>/updateacc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailAccountServlet</servlet-name>
+        <url-pattern>/detailacc</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailProductServlet</servlet-name>
+        <url-pattern>/detailpro</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index</welcome-file>

@@ -84,36 +84,46 @@
                                     <form class="mt-4">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Full Name</label>
-                                                    <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Full Name*</label>
+                                                        <input name="fullname" id="fullname" type="text" class="form-control" placeholder="Full Name :">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">User Name*</label>
+                                                        <input name="username" id="username" type="text" class="form-control" placeholder="User Name :">
+                                                    </div>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Your Email</label>
-                                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Email*</label>
+                                                        <input name="email" id="email" type="email" class="form-control" placeholder="Email :">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Phone</label>
+                                                        <input name="phone" id="phone" type="text" class="form-control" placeholder="Phone :">
+                                                    </div>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label">Phone</label>
-                                                    <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
-                                                </div>  
-                                                <div class="mb-3">
-                                                    <label class="form-label">Address</label>
-                                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
-                                                </div> 
+                                                <div class="row mb-3">
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Address</label>
+                                                        <input name="address" id="address" type="text" class="form-control" placeholder="Address :">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">User Role</label>
+                                                        <input name="userrole" id="userrole" type="text" class="form-control" placeholder="User Role :">
+                                                    </div>
+                                                </div>
                                             </div><!--end col-->                                    
-
                                         </div><!--end row-->
-
                                         <div class="row">
-                                            <div class="col-sm-10">
+                                            <div class="col-sm-7">
                                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
                                             </div><!--end col-->
-                                              
-
-                                            <div class="col-sm-2">
-                                                <input type="submit" id="submit" name="send" class="btn btn-primary" data-toggle="modal"  data-target="#changePasswordModal"  value="Change Password">
+                                            <div class="col-sm-5">
+                                                <input type="button" id="changePassword" name="changePassword" class="btn btn-primary" data-toggle="modal" data-target="#changePasswordModal" value="Change Password">
                                             </div><!--end col-->
-                                        </div><!--end row-->
+                                        </div>
                                         <div class="row">
                                         </div>
                                         <div class="modal fade" id="changePasswordModal" tabindex="-1" role="dialog" aria-labelledby="changePasswordModalLabel" aria-hidden="true">

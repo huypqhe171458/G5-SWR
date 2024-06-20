@@ -32,17 +32,6 @@
             <section class="bg-half-170 pb-0 d-table w-100">
             </section><!--end section-->
             <!-- End Hero -->
-
-            <!-- Partners start -->
-            <section class="py-4 bg-light">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <img src ="images/2.png" style="width: 50%">
-                    </div><!--end row-->
-                </div><!--end container-->
-            </section><!--end section-->
-            <!-- Partners End -->
-
             <!-- Start -->
             <section class="section">
                 <div class="container">

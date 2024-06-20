@@ -43,7 +43,7 @@
                 <div class="container-fluid">
                     <div class="layout-specing">
                         <div class="d-md-flex justify-content-between">
-                            <h5 class="mb-0">Account List</h5>
+                            <h5 class="mb-0">Product List</h5>
                             <div class="search-bar p-0 d-none d-lg-block ms-2">
                                 <div id="search" class="menu-search mb-0">
                                     <form role="search" method="get" id="searchform" class="searchform">
@@ -52,14 +52,22 @@
                                             <input type="submit" id="searchsubmit" value="Search">
                                         </div>
                                     </form>
+
                                 </div>
+
                             </div>
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
-                                <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Doctris</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Patients</li>
-                                </ul>
-                            </nav>
+                            <div>
+                                <form method="GET" action="shop" class="sort-by">
+                                    <select id="sorting" class="form-select" name="sortBy">
+                                        <option value="default">Default</option>
+                                        <option value="Active">Active</option>
+                                        <option value="Inactive">inactive</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="">
+                                <a href="addac" class="btn btn-primary">Add Account</a>
+                            </div>
                         </div>
 
                         <div class="row">
@@ -95,10 +103,12 @@
                                             <td class="p-3">0987 654 321</td>
                                             <td class="p-3">Manager</td>
                                             <td class="p-3">ngakiu@gmail.com</td>
-                                            <td class="p-3"><span class="badge bg-soft-success">Active</span></td>
+                                            <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                            </td>
                                             <td class="text-end p-3">
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
+                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
                                             </td>
                                         </tr>
 
@@ -117,10 +127,12 @@
                                             <td class="p-3">0912 345 678</td>
                                             <td class="p-3">Sale Staff</td>
                                             <td class="p-3">haipham@gmail.com</td>
-                                            <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
+                                            <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                            </td>
                                             <td class="text-end p-3">
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
+                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                 <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
@@ -140,10 +152,12 @@
                                             <td class="p-3">0909 876 543</td>
                                             <td class="p-3">Warehouse Staff</td>
                                             <td class="p-3">huypham@gmail.com</td>
-                                            <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
+                                            <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                            </td>
                                             <td class="text-end p-3">
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
+                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                         </tr>
 
@@ -162,10 +176,12 @@
                                             <td class="p-3">0984 567 987</td>
                                             <td class="p-3">Customer</td>
                                             <td class="p-3">20th Dec 2020</td>
-                                            <td class="p-3"><span class="badge bg-soft-success">Active</span></td>
+                                            <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                            </td>
                                             <td class="text-end p-3">
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
+                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
@@ -185,10 +201,12 @@
                                             <td class="p-3">0988 945 4568</td>
                                             <td class="p-3">Customer</td>
                                             <td class="p-3">20th Dec 2020</td>
-                                            <td class="p-3"><span class="badge bg-soft-danger">Inactive</span></td>
+                                            <td class="p-3">
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                            </td>
                                             <td class="text-end p-3">
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-primary" data-bs-toggle="modal" data-bs-target="#viewprofile"><i class="uil uil-eye"></i></a>
-                                                <a href="#" class="btn btn-icon btn-pills btn-soft-success" data-bs-toggle="modal" data-bs-target="#editprofile"><i class="uil uil-pen"></i></a>
+                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
@@ -428,7 +446,19 @@
     <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
     <!-- Main Js -->
     <script src="${pageContext.request.contextPath}/js/app.js"></script>
-
+    <script>
+                                    function toggleStatus(element) {
+                                        if (element.innerText === "Active") {
+                                            element.innerText = "Inactive";
+                                            element.classList.remove('bg-soft-success');
+                                            element.classList.add('bg-soft-danger');
+                                        } else {
+                                            element.innerText = "Active";
+                                            element.classList.remove('bg-soft-danger');
+                                            element.classList.add('bg-soft-success');
+                                        }
+                                    }
+    </script>
 </body>
 
 </html>

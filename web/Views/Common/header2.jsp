@@ -21,8 +21,6 @@
                 <div class="sidebar-submenu">
                     <ul>
                         <li><a href="patients">All Product</a></li>
-                        <li><a href="add">Add Product</a></li>
-                        <!--                                    <li><a href="patient-profile.html">Profile</a></li>-->
                     </ul>
                 </div>
             </li>
@@ -31,7 +29,6 @@
                 <div class="sidebar-submenu">
                     <ul>
                         <li><a href="inlist">Order List</a></li>
-                        <li><a href="inad">Order Detail</a></li>
                     </ul>
                 </div>
             </li>                                                                  
@@ -40,7 +37,6 @@
                 <div class="sidebar-submenu">
                     <ul>
                         <li><a href="aclist">Account</a></li>
-                        <li><a href="addac">Add Account</a></li>
                     </ul>
                 </div>
             </li>                    
