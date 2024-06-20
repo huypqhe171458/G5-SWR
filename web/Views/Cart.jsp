@@ -36,40 +36,40 @@
 
         <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
 
-        <div class="position-relative">
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
+            <div class="position-relative">
+                <div class="shape overflow-hidden text-white">
+                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                    </svg>
+                </div>
             </div>
-        </div>
-        <!-- Hero End -->
+            <!-- Hero End -->
 
-        <!-- Start -->
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="table-responsive bg-white shadow rounded">
-                            <table class="table table-center table-padding mb-0">
-                                <thead>
-                                    <tr>
-                                        <th class="border-bottom p-3" style="min-width:20px "></th>
-                                        <th class="border-bottom p-3" style="min-width: 300px;">Product</th>
-                                        <th class="border-bottom text-center p-3" style="min-width: 160px;">Price</th>
-                                        <th class="border-bottom text-center p-3" style="min-width: 190px;">Qty</th>
-                                        <th class="border-bottom text-end p-3" style="min-width: 50px;">Total</th>
-                                    </tr>
-                                </thead>
+            <!-- Start -->
+            <section class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table-responsive bg-white shadow rounded">
+                                <table class="table table-center table-padding mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-bottom p-3" style="min-width:20px "></th>
+                                            <th class="border-bottom p-3" style="min-width: 300px;">Product</th>
+                                            <th class="border-bottom text-center p-3" style="min-width: 160px;">Price</th>
+                                            <th class="border-bottom text-center p-3" style="min-width: 190px;">Quantity</th>
+                                            <th class="border-bottom text-end p-3" style="min-width: 50px;">Price</th>
+                                        </tr>
+                                    </thead>
 
-                                <tbody>
-                                    <tr>
-                                        <td class="h5 p-3 text-center">
-                                            <input class="form-check-input" type="checkbox" id="id" name="name">
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/ashwagandha.jpg" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                    <tbody>
+                                        <tr>
+                                            <td class="h5 p-3 text-center">
+                                                <input class="form-check-input" type="checkbox" id="id" name="name">
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/ashwagandha.jpg" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
                                                 <h6 class="mb-0 ms-3">Ashwagandha Churna</h6>
                                             </div>
                                         </td>
@@ -152,37 +152,31 @@
                                     </tr>
                                 </tbody>
                             </table>
+
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 mt-4 pt-2">
+                <div class="row d-flex justify-content-between align-items-center mt-4 pt-2 bg-white rounded shadow p-3">
+                    <div class="col-lg-6 col-md-6">
                         <a href="#" class="btn btn-primary">Shop More</a>
                     </div>
-                    <div class="col-lg-4 col-md-6 ms-auto mt-4 pt-2">
-                        <div class="table-responsive bg-white rounded shadow">
-                            <table class="table table-center table-padding mb-0">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="table-responsive">
+                            <table class="table table-center table-padding mb-0" style="width: 100%;">
                                 <tbody>
-                                    <tr>
-                                        <td class="h6 p-3">Subtotal</td>
-                                        <td class="text-end font-weight-bold p-3">$ 2190</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="h6 p-3">Ship</td>
-                                        <td class="text-end font-weight-bold p-3">$ 20</td>
-                                    </tr>
                                     <tr class="bg-light">
-                                        <td class="h6 p-3">Total Cost</td>
-                                        <td class="text-end font-weight-bold p-3">$ 2409</td>
+                                        <td class="h6 p-3">TOTAL:</td>
+                                        <td class="h6 p-3">$2409</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="mt-4 pt-2 text-end">
-                            <a href="bank" class="btn btn-primary">CHECKOUT</a>
-                        </div>
                     </div><!--end col-->
-                </div><!--end row-->
+                    <div class="col-lg-3 text-end">
+                        <a href="checkout" class="btn btn-primary">CHECKOUT</a>
+                    </div>
+                </div>
+                <!--end row-->
             </div><!--end container-->
         </section><!--end section-->
         <!-- End -->
