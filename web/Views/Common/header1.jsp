@@ -78,20 +78,20 @@
 
 
 
-                <li class="has-submenu parent-menu-item">
+<!--                <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Profile</a><span class="menu-arrow"></span>
                     <ul class="submenu">                      
                        <li><a href="patient" class="sub-menu-item">My Account</a></li>    
                         <li><a href="invoice" class="sub-menu-item">Invoice</a></li>
                     </ul>
-                </li>
+                </li>-->
 
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
                     <ul class="submenu">                             
                         <li><a href="shop" class="sub-menu-item">Shop</a></li>                      
                         <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
-                        <li><a href="checkout" class="sub-menu-item">Checkout</a></li>
+<!--                        <li><a href="checkout" class="sub-menu-item">Checkout</a></li>-->
 
                     </ul>
                 </li>

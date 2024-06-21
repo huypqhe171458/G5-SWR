@@ -24,14 +24,14 @@
                     </ul>
                 </div>
             </li>
-            <li class="sidebar-dropdown">
+<!--            <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
                 <div class="sidebar-submenu">
                     <ul>
                         <li><a href="inlist">Order List</a></li>
                     </ul>
                 </div>
-            </li>                                                                  
+            </li>                                                                  -->
             <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                 <div class="sidebar-submenu">
