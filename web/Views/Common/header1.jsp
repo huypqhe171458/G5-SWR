@@ -91,8 +91,7 @@
                     <ul class="submenu">                             
                         <li><a href="./Shop.jsp" class="sub-menu-item">Shop</a></li>                      
                         <li><a href="./Cart.jsp" class="sub-menu-item">Shop Cart</a></li>
-<!--                        <li><a href="checkout" class="sub-menu-item">Checkout</a></li>-->
-
+                        <li><a href="./Checkout.jsp" class="sub-menu-item">Checkout</a></li>
                     </ul>
                 </li>
 

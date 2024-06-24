@@ -66,10 +66,9 @@
                             <!--end col-->
 
                             <div class="col-xl-4 col-lg-3 mt-0">
-
                                 <div class="card shadow border-0 p-4">
-                                    <h6 class="align-items-center mb-3">Revenues</h6>
-                                    <div id="revenuesChart" class="apex-chart"></div>
+                                    <h6 class="align-items-center mb-3">New Orders by Status</h6>
+                                    <div id="orderStatusChart" class="apex-chart"></div>
                                 </div>
                                 <div class="card shadow border-0 p-4 mt-1">
                                     <h6 class="align-items-center mb-3">Revenues by Product Categories</h6>
@@ -79,8 +78,8 @@
 
                             <div class="col-xl-4 col-lg-4 mt-0">
                                 <div class="card shadow border-0 p-4">
-                                    <h6 class="align-items-center mb-3">New Orders by Status</h6>
-                                    <div id="orderStatusChart" class="apex-chart"></div>
+                                    <h6 class="align-items-center mb-3">Revenues</h6>
+                                    <div id="revenuesChart" class="apex-chart"></div>
                                 </div>
                             </div><!--end col-->
 
@@ -196,7 +195,7 @@
                                             var optionsRevenues = {
                                                 chart: {
                                                     type: 'bar',
-                                                    height: 182
+                                                    height: 540
                                                 },
                                                 series: [{
                                                         name: 'Paid',
@@ -215,7 +214,7 @@
                                             var optionsCategoryRevenues = {
                                                 chart: {
                                                     type: 'bar',
-                                                    height: 250
+                                                    height: 280
                                                 },
                                                 series: [{
                                                         name: 'Category Revenues',
