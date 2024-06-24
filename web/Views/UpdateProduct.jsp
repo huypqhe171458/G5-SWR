@@ -63,6 +63,12 @@
                                     <input name="price" id="email" type="number" class="form-control" placeholder="Price">
                                 </div> 
                             </div><!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Reduced Price</label>
+                                    <input name="price" id="email" type="number" class="form-control" placeholder="Price">
+                                </div> 
+                            </div><!--end col-->
 
                             <div class="col-md-6">
                                 <div class="mb-3">
@@ -93,7 +99,7 @@
                             <div class="col-sm-12">
                                 <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
                                 
-                                 <a href="./Patient.jsp" class="btn btn-warning">Cancel</a>
+                                 <a href="./Product.jsp" class="btn btn-warning">Cancel</a>
                             </div><!--end col-->
                         </div><!--end row-->
                     </form><!--end form-->

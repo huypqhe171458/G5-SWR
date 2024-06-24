@@ -85,6 +85,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                     <div class="container rounded bg-white mt-5 mb-5 profile-container">
                                         <div class="row">
                                             <div class="col-md-4 border-right">
@@ -107,7 +108,7 @@
                                                     </div>
                                                     <div class="row mb-3">
                                                          <div class="col-md-6">
-                                                            <label for="address" class="labels">Department: Customer</label>
+                                                            <label for="address" class="labels">Role: Customer</label>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <label for="phonenumber" class="labels">Phone: 0987 654 321</label>
@@ -124,7 +125,7 @@
                                                         </div>
                                                     </div>
                                                    
-                                                         <a href="account" class="btn btn-outline-info">Back</a>
+                                                         <a href="./Account.jsp" class="btn btn-outline-info">Back</a>
                                                 </div>
                                             </div>
                                         </div>

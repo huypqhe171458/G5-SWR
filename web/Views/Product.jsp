@@ -56,11 +56,6 @@
                                         <option value="Inactive">Category 5</option>
                                     </select>
                                 </form>
-<<<<<<<< HEAD:web/Views/Patient.jsp
-                            </div>
-                            <div class="">
-                                <a href="./AddProduct.jsp" class="btn btn-primary">Add product</a>
-========
                                 <form method="GET" action="shop" class="sort-by me-2">
                                     <select id="sorting" class="form-select" name="sortBy">
                                         <option value="Manager">Default</option>
@@ -72,7 +67,6 @@
                                     <input type="text" class="form-control border rounded-pill me-2" name="s" id="s" placeholder="Search Keywords...">
                                     <input type="submit" id="searchsubmit" value="Search">
                                 </form>
->>>>>>>> 89f0d36343207894a482dc472ed520d6418e0181:build/web/Views/Product.jsp
                             </div>
                         </div>
 
@@ -114,7 +108,7 @@
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
                                             </td>
-                                             <td class="p-3">
+                                           <td class="p-3">
                                                 <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
@@ -194,7 +188,7 @@
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
                                             </td>
-                                             <td class="p-3">
+                                            <td class="p-3">
                                                 <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
@@ -220,7 +214,7 @@
                                             <td class="p-3">
                                                 <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
-                                             <td class="p-3">
+                                            <td class="p-3">
                                                 <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
