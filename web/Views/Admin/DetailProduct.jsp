@@ -47,7 +47,8 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Howard Tanner</h5>
                                         <p class="card-text">Category 1</p>
-                                        <p class="card-text"><strong>Price:</strong> $25000</p>
+                                        <p class="card-text"><strong>Price:</strong> $20000</p>
+                                        <p class="card-text"><strong>Reduced Price:</strong> $9000</p>
                                         <p class="card-text"><strong>Quantity:</strong> 10</p>
                                         <p class="card-text"><strong>Status:</strong> <span class="badge bg-success">Enable</span></p>
                                         <a href="patients" class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Back</a>
@@ -56,7 +57,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h2>Product Description</h2>
-                                <p>Bla bla bla bla bla</p>
+                                <p>Description refers to the process of depicting or explaining the features or characteristics of something or someone through language, imagery, or other forms of representation</p>
                                 
                         </div>
                     </div>

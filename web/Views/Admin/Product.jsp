@@ -39,31 +39,34 @@
 
                 <div class="container-fluid">
                     <div class="layout-specing">
-                        <div class="d-md-flex justify-content-between">
+                        <div class="d-md-flex justify-content-between align-items-center">
                             <h5 class="mb-0">Product List</h5>
-                            <div class="search-bar p-0 d-none d-lg-block ms-2">
-                                <div id="search" class="menu-search mb-0">
-                                    <form role="search" method="get" id="searchform" class="searchform">
-                                        <div>
-                                            <input type="text" class="form-control border rounded-pill" name="s" id="s" placeholder="Search Keywords...">
-                                            <input type="submit" id="searchsubmit" value="Search">
-                                        </div>
-                                    </form>
+                            <a href="#" class="btn btn-primary ms-md-3" data-bs-toggle="modal" data-bs-target="#addProductModal">Add Product</a>
 
-                                </div>
 
-                            </div>
-                            <div>
-                                <form method="GET" action="shop" class="sort-by">
+                        </div>
+                        <div class="d-md-flex justify-content-between align-items-center mt-3">
+                            <div class="d-flex flex-wrap">
+                                <form method="GET" action="shop" class="sort-by me-2">
                                     <select id="sorting" class="form-select" name="sortBy">
-                                        <option value="default">Default</option>
-                                        <option value="Enable">Enable</option>
-                                        <option value="Disable">Disable</option>
+                                        <option value="default">Category 1</option>
+                                        <option value="Active">Category 2</option>
+                                        <option value="Inactive">Category 3</option>
+                                        <option value="Active">Category 4</option>
+                                        <option value="Inactive">Category 5</option>
                                     </select>
                                 </form>
-                            </div>
-                            <div class="">
-                                <a href="add" class="btn btn-primary">Add product</a>
+                                <form method="GET" action="shop" class="sort-by me-2">
+                                    <select id="sorting" class="form-select" name="sortBy">
+                                        <option value="Manager">Default</option>
+                                        <option value="Sale Staff">Enable</option>
+                                        <option value="Warehouse Staff">Disable</option>
+                                    </select>
+                                </form>
+                                <form role="search" method="get" id="searchform" class="searchform d-flex">
+                                    <input type="text" class="form-control border rounded-pill me-2" name="s" id="s" placeholder="Search Keywords...">
+                                    <input type="submit" id="searchsubmit" value="Search">
+                                </form>
                             </div>
                         </div>
 
@@ -76,6 +79,7 @@
                                                 <th class="border-bottom p-3" style="min-width: 50px;">Id</th>
                                                 <th class="border-bottom p-3" style="min-width: 180px;">Name</th>
                                                 <th class="border-bottom p-3">Price</th>
+                                                <th class="border-bottom p-3">Reduced Price</th>
                                                 <th class="border-bottom p-3">Quantity</th>
                                                 <th class="border-bottom p-3">Category</th>
                                                 <th class="border-bottom p-3">Status</th>
@@ -94,7 +98,8 @@
                                                     </div>
                                                 </a>
                                             </td>
-                                            <td class="p-3">25000</td>
+                                            <td class="p-3">2000</td>
+                                            <td class="p-3">9000</td>
                                             <td class="p-3">10</td>
 
 
@@ -121,14 +126,15 @@
                                                 </a>
                                             </td>
                                             <td class="p-3">25000</td>
+                                            <td class="p-3">10000</td>
                                             <td class="p-3">10</td>
 
 
-                                            <td class="p-3">Category 1</td>
+                                            <td class="p-3">Category 2</td>
 
 
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
+                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
                                             <td class="p-3">
                                                 <a href="detailpro" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
@@ -147,11 +153,12 @@
                                                     </div>
                                                 </a>
                                             </td>
-                                            <td class="p-3">25000</td>
+                                            <td class="p-3">29000</td>
+                                            <td class="p-3">11000</td>
                                             <td class="p-3">10</td>
 
 
-                                            <td class="p-3">Category 1</td>
+                                            <td class="p-3">Category 3</td>
 
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
@@ -173,9 +180,10 @@
                                                     </div>
                                                 </a>
                                             </td>
-                                            <td class="p-3">25000</td>
+                                            <td class="p-3">30000</td>
+                                            <td class="p-3">12000</td>
                                             <td class="p-3">10</td>                                                
-                                            <td class="p-3">Category 1</td>
+                                            <td class="p-3">Category 4</td>
 
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
@@ -198,12 +206,13 @@
                                                 </a>
                                             </td>
                                             <td class="p-3">25000</td>
+                                            <td class="p-3">10000</td>
                                             <td class="p-3">10</td>                                             
                                             <td class="p-3">Category 1</td>
 
 
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
+                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
                                             <td class="p-3">
                                                 <a href="detailpro" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
@@ -354,7 +363,91 @@
     </div>
     <!-- Profile End -->
     <!-- Modal end -->
+    <!-- Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-8 mt-4">
+                            <div class="card border-0 p-4 rounded shadow">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 col-md-4">
+                                        <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
+                                    </div>
+                                    <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
+                                        <h5 class="">Upload your picture</h5>
+                                    </div>
+                                    <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
+                                        <a href="#" class="btn btn-primary">Upload</a>
+                                        <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
+                                    </div>
+                                </div>
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Full Name</label>
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name :">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Price</label>
+                                                <input name="price" id="price" type="number" class="form-control" placeholder="Price:">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Reduced Price</label>
+                                                <input name="name" id="name2" type="number" class="form-control" placeholder="Price:">
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Quantity</label>
+                                                <input name="quantity" id="quantity" type="number" class="form-control" placeholder="Quantity :">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Description</label>
+                                                <textarea name="description" id="description" class="form-control" rows="5" placeholder="Description :"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Status</label>
+                                                <input name="status" id="status" type="text" class="form-control" placeholder="Status :">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Category</label>
+                                                <select class="form-control department-name select2input">
+                                                    <option value="EY">Category 1</option>
+                                                    <option value="GY">Category 2</option>
+                                                    <option value="PS">Category 3</option>
+                                                    <option value="OR">Category 4</option>
+                                                    <option value="DE">Category 5</option>
 
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Add Product</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- javascript -->
     <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
     <!-- simplebar -->
@@ -364,17 +457,17 @@
     <!-- Main Js -->
     <script src="${pageContext.request.contextPath}/js/app.js"></script>
     <script>
-    function toggleStatus(element) {
-        if (element.innerText === "Enable") {
-            element.innerText = "Disable";
-            element.classList.remove('bg-soft-success');
-            element.classList.add('bg-soft-danger');
-        } else {
-            element.innerText = "Enable";
-            element.classList.remove('bg-soft-danger');
-            element.classList.add('bg-soft-success');
-        }
-    }
+                                    function toggleStatus(element) {
+                                        if (element.innerText === "Enable") {
+                                            element.innerText = "Disable";
+                                            element.classList.remove('bg-soft-success');
+                                            element.classList.add('bg-soft-danger');
+                                        } else {
+                                            element.innerText = "Enable";
+                                            element.classList.remove('bg-soft-danger');
+                                            element.classList.add('bg-soft-success');
+                                        }
+                                    }
     </script>
 </body>
 

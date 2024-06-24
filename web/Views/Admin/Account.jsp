@@ -42,33 +42,37 @@
 
                 <div class="container-fluid">
                     <div class="layout-specing">
-                        <div class="d-md-flex justify-content-between">
-                            <h5 class="mb-0">Product List</h5>
-                            <div class="search-bar p-0 d-none d-lg-block ms-2">
-                                <div id="search" class="menu-search mb-0">
-                                    <form role="search" method="get" id="searchform" class="searchform">
-                                        <div>
-                                            <input type="text" class="form-control border rounded-pill" name="s" id="s" placeholder="Search Keywords...">
-                                            <input type="submit" id="searchsubmit" value="Search">
-                                        </div>
-                                    </form>
+                        <div class="d-md-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">Account List</h5>
+                           <a href="#" class="btn btn-primary ms-md-3" data-bs-toggle="modal" data-bs-target="#addAccountModal">Add Account</a>
 
-                                </div>
-
-                            </div>
-                            <div>
-                                <form method="GET" action="shop" class="sort-by">
+                        </div>
+                        <div class="d-md-flex justify-content-between align-items-center mt-3">
+                            <div class="d-flex flex-wrap">
+                                <form method="GET" action="shop" class="sort-by me-2">
                                     <select id="sorting" class="form-select" name="sortBy">
                                         <option value="default">Default</option>
                                         <option value="Active">Active</option>
-                                        <option value="Inactive">inactive</option>
+                                        <option value="Inactive">Inactive</option>
                                     </select>
                                 </form>
-                            </div>
-                            <div class="">
-                                <a href="addac" class="btn btn-primary">Add Account</a>
+                                <form method="GET" action="shop" class="sort-by me-2">
+                                    <select id="sorting" class="form-select" name="sortBy">
+                                        <option value="Manager">Manager</option>
+                                        <option value="Sale Staff">Sale Staff</option>
+                                        <option value="Warehouse Staff">Warehouse Staff</option>
+                                        <option value="Customer">Customer</option>
+                                    </select>
+                                </form>
+                                <form role="search" method="get" id="searchform" class="searchform d-flex">
+                                    <input type="text" class="form-control border rounded-pill me-2" name="s" id="s" placeholder="Search Keywords...">
+                                    <input type="submit" id="searchsubmit" value="Search">
+                                </form>
                             </div>
                         </div>
+
+
+
 
                         <div class="row">
                             <div class="col-12 mt-4">
@@ -81,7 +85,7 @@
 
                                                 <th class="border-bottom p-3">Address</th>
                                                 <th class="border-bottom p-3">Phone</th>
-                                                <th class="border-bottom p-3">Department</th>
+                                                <th class="border-bottom p-3">Role</th>
                                                 <th class="border-bottom p-3">Email</th>
                                                 <th class="border-bottom p-3">Status</th>
                                                 <th class="border-bottom p-3">Action</th>
@@ -89,28 +93,30 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th class="p-3">1</th>
-                                                <td class="py-3">
-                                                    <a href="#" class="text-dark">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Cao Quynh Nga</span>
+                                            <th class="p-3">1</th>
+                                            <td class="py-3">
+                                                <a href="#" class="text-dark">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                        <span class="ms-2">Nguyen Thi Thuong</span>
                                                     </div>
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Dien Chau, Nghe An</td>
-                                            <td class="p-3">0987 654 321</td>
-                                            <td class="p-3">Manager</td>
-                                            <td class="p-3">ngakiu@gmail.com</td>
+                                            <td class="p-3">Thach Ha, Ha Tinh</td>
+                                            <td class="p-3">0984 567 987</td>
+                                            <td class="p-3">Customer</td>
+                                            <td class="p-3">20th Dec 2020</td>
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
                                             <td class="text-end p-3">
                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+
                                             </td>
                                         </tr>
+                                          
 
                                         <tr>
                                             <th class="p-3">2</th>
@@ -128,11 +134,11 @@
                                             <td class="p-3">Sale Staff</td>
                                             <td class="p-3">haipham@gmail.com</td>
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
                                             <td class="text-end p-3">
-                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                 <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
@@ -156,33 +162,32 @@
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
                                             </td>
                                             <td class="text-end p-3">
-                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                         </tr>
 
-                                        <tr>
-                                            <th class="p-3">4</th>
-                                            <td class="py-3">
-                                                <a href="#" class="text-dark">
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Nguyen Thi Thuong</span>
+                                          <tr>
+                                                <th class="p-3">4</th>
+                                                <td class="py-3">
+                                                    <a href="#" class="text-dark">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                        <span class="ms-2">Cao Quynh Nga</span>
                                                     </div>
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Thach Ha, Ha Tinh</td>
-                                            <td class="p-3">0984 567 987</td>
-                                            <td class="p-3">Customer</td>
-                                            <td class="p-3">20th Dec 2020</td>
+                                            <td class="p-3">Dien Chau, Nghe An</td>
+                                            <td class="p-3">0987 654 321</td>
+                                            <td class="p-3">Manager</td>
+                                            <td class="p-3">ngakiu@gmail.com</td>
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
                                             </td>
                                             <td class="text-end p-3">
                                                 <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
                                                 <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
-
                                             </td>
                                         </tr>
 
@@ -436,7 +441,85 @@
         </div>
     </div>
     <!-- Profile End -->
-    <!-- Modal end -->
+    <div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAccountModalLabel">Add New Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-8 mt-4">
+                            <div class="card border-0 p-4 rounded shadow">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 col-md-4">
+                                        <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
+                                        <h5 class="">Upload your picture</h5>
+                                        <p class="text-muted mb-0"></p>
+                                    </div>
+
+                                    <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
+                                        <a href="#" class="btn btn-primary">Upload</a>
+                                        <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
+                                    </div>
+                                </div>
+
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">FullName</label>
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="FullName :">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Address</label>
+                                                <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Email</label>
+                                                <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                            </div> 
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Phone no.</label>
+                                                <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
+                                            </div>                                                                               
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Role</label>
+                                                <select class="form-control department-name select2input">
+                                                    <option value="EY">Customer</option>
+                                                    <option value="GY">Warehouse Staff</option>
+                                                    <option value="PS">Sale Staff</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Add Account</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- javascript -->
     <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
@@ -459,6 +542,14 @@
                                         }
                                     }
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var addAccountButton = document.querySelector('a[href="addac"]');
+            addAccountButton.setAttribute('data-bs-toggle', 'modal');
+            addAccountButton.setAttribute('data-bs-target', '#addAccountModal');
+        });
+    </script>
+
 </body>
 
 </html>

@@ -107,7 +107,7 @@
                                                     </div>
                                                     <div class="row mb-3">
                                                          <div class="col-md-6">
-                                                            <label for="address" class="labels">Department: Customer</label>
+                                                            <label for="address" class="labels">View: Customer</label>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <label for="phonenumber" class="labels">Phone: 0987 654 321</label>
