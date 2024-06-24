@@ -35,96 +35,94 @@
 
     <body>
         <div class="page-wrapper doctris-theme toggled">
-            <jsp:include page="../Common/header2.jsp"></jsp:include>
+            <jsp:include page="./Common/header2.jsp"></jsp:include>
 
                 <div class="container-fluid">
                     <div class="layout-specing">
+                    
 
                         <form class="mt-4">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Full Name</label>
-                                        <input name="name" id="name" type="text" class="form-control" placeholder="Full Name :">
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Address</label>
-                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Your Email</label>
-                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
-                                    </div> 
-                                </div><!--end col-->
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Phone</label>
-                                        <input name="number" id="number" type="text" class="form-control" placeholder="Phone:">
-                                    </div>                                                                               
-                                </div><!--end col-->
-
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Role</label>
-                                        <select class="form-control department-name select2input">
-                                            <option value="EY">Customer</option>
-                                            <option value="GY">Warehouse Staff</option>
-                                            <option value="PS">Sale Staff</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Status</label>
-                                        <select class="form-control department-name select2input">
-                                            <option value="EY">Active</option>
-                                            <option value="GY">Inactive</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div><!--end row-->
-
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
-                                    <a href="aclist" class="btn btn-warning">Cancel</a>
-                                </div><!--end col-->
-                            </div><!--end row-->
-                        </form><!--end form-->
-                    </div>
-                </div><!--end container-->
-
-                <!-- Footer Start -->
-                <footer class="bg-white shadow py-3">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col">
-                                <div class="text-sm-start text-center">
-                                    <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Product Name</label>
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Product Name">
                                 </div>
                             </div><!--end col-->
-                        </div><!--end row-->
-                    </div><!--end container-->
-                </footer><!--end footer-->
-                <!-- End -->
-            </main>
-            <!--End page-content" -->
-        </div>
-        <!-- page-wrapper -->
 
-        <!-- Offcanvas Start -->
-        <div class="offcanvas offcanvas-end bg-white shadow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header p-4 border-bottom">
-                <h5 id="offcanvasRightLabel" class="mb-0">
-                    <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="light-version" alt="">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Category</label>
+                                    <input name="category" id="name2" type="text" class="form-control" placeholder="Category">
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Price</label>
+                                    <input name="price" id="email" type="number" class="form-control" placeholder="Price">
+                                </div> 
+                            </div><!--end col-->
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Quantity</label>
+                                    <input name="quantity" id="number" type="number" class="form-control" placeholder="Quantity">
+                                </div>                                                                               
+                            </div><!--end col-->
+
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Description</label>
+                                    <textarea name="description" id="comments" rows="4" class="form-control" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="mb-3">
+                                    <label class="form-label">Status</label>
+                                    <select class="form-control department-name select2input">
+                                        <option value="EY">Enable</option>
+                                        <option value="GY">Disable</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div><!--end row-->
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
+                                
+                                 <a href="./Patient.jsp" class="btn btn-warning">Cancel</a>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </form><!--end form-->
+                </div>
+            </div><!--end container-->
+
+            <!-- Footer Start -->
+            <footer class="bg-white shadow py-3">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="text-sm-start text-center">
+                                <p class="mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </footer><!--end footer-->
+            <!-- End -->
+        </main>
+        <!--End page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- Offcanvas Start -->
+    <div class="offcanvas offcanvas-end bg-white shadow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header p-4 border-bottom">
+            <h5 id="offcanvasRightLabel" class="mb-0">
+                <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="light-version" alt="">
                 <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="dark-version" alt="">
             </h5>
             <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="uil uil-times fs-4"></i></button>
@@ -167,7 +165,7 @@
 
     <!-- Modal start -->
     <!-- Profile Settings Start -->
-
+   
     <!-- Profile Settings End -->
 
     <!-- Profile Start -->
@@ -230,6 +228,6 @@
     <!-- Main Js -->
     <script src="${pageContext.request.contextPath}/js/app.js"></script>
     <script>
-                                    </body>
+</body>
 
-                                    </html>
+</html>

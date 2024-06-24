@@ -8,35 +8,27 @@
 <nav id="sidebar" class="sidebar-wrapper">
     <div class="sidebar-content" data-simplebar style="height: calc(100% - 60px);">
         <div class="sidebar-brand">
-            <a href="index">
+            <a href="./Index.jsp">
                 <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
                 <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
             </a>
         </div>
 
         <ul class="sidebar-menu pt-3">
-            <li><a href="dash"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
+            <li><a href="./Dashboard.jsp"><i class="uil uil-dashboard me-2 d-inline-block"></i>Dashboard</a></li>
             <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="patients">All Product</a></li>
+                        <li><a href="./Patient.jsp">All Product</a></li>
                     </ul>
                 </div>
             </li>
-<!--            <li class="sidebar-dropdown">
-                <a href="javascript:void(0)"><i class="uil uil-shopping-cart me-2 d-inline-block"></i>Order</a>
-                <div class="sidebar-submenu">
-                    <ul>
-                        <li><a href="inlist">Order List</a></li>
-                    </ul>
-                </div>
-            </li>                                                                  -->
             <li class="sidebar-dropdown">
                 <a href="javascript:void(0)"><i class="uil uil-sign-in-alt me-2 d-inline-block"></i>Authentication</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="aclist">Account</a></li>
+                        <li><a href="./Account.jsp">Account</a></li>
                     </ul>
                 </div>
             </li>                    

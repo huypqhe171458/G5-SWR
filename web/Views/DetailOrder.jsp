@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <title>Doctris - Doctor Appointment Booking System</title>
@@ -19,18 +17,129 @@
         <!-- Icons -->
         <link href="${pageContext.request.contextPath}/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link href="${pageContext.request.contextPath}/css/remixicon.css" rel="stylesheet" type="text/css" />
-        <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
+        <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <!-- Css -->
         <link href="${pageContext.request.contextPath}/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
 
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f9fa;
+                color: #333;
+                line-height: 1.6;
+            }
+            .section {
+                padding: 80px 0;
+            }
+            .order-details {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                margin-top: 30px;
+            }
+            .order-details h2 {
+                font-size: 28px;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            .order-details table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            .order-details th, .order-details td {
+                padding: 12px;
+                border-bottom: 1px solid #f2f2f2;
+            }
+            .order-details th {
+                background-color: #f8f9fa;
+                font-weight: 500;
+                text-align: left;
+            }
+            .order-details td {
+                text-align: left;
+            }
+            .bg-footer {
+                background-color: #222;
+                color: #fff;
+                padding: 60px 0;
+            }
+            .footer-head {
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            .footer-list {
+                margin-top: 20px;
+                padding-left: 0;
+                list-style: none;
+            }
+            .footer-list li {
+                margin-bottom: 10px;
+            }
+            .footer-list a {
+                color: #ddd;
+                text-decoration: none;
+            }
+            .footer-list a:hover {
+                color: #fff;
+            }
+            .social-icon {
+                margin-top: 20px;
+                padding-left: 0;
+                list-style: none;
+            }
+            .social-icon li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .social-icon a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .social-icon a:hover {
+                color: #17a2b8;
+            }
+            .footer-bar {
+                padding-top: 30px;
+                border-top: 1px solid #333;
+                margin-top: 40px;
+                font-size: 14px;
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: 20px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+                display: none;
+            }
+            .back-to-top:hover {
+                background-color: #0056b3;
+            }
+        </style>
     </head>
-
     <body>
 
-
+        <!-- Header -->
         <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
+            <!-- End Header -->
 
+            <!-- Hero Section -->
             <div class="position-relative">
                 <div class="shape overflow-hidden text-white">
                     <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,123 +149,49 @@
             </div>
             <!-- Hero End -->
 
-            <!-- Start -->
+            <!-- Order Details Section -->
             <section class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div><h2>Order History</h2></div>
+                            <div><h2>Order Detail</h2></div>
                         </div>
                     </div>
+                    <div class="order-details">
+                        <table>
+                            <tr>
+                                <th>Order ID:</th>
+                                <td>12312312321903</td>
+                            </tr>
+                            <tr>
+                                <th>Receiver:</th>
+                                <td>Nga</td>
+                            </tr>
+                            <tr>
+                                <th>Email:</th>
+                                <td>ngango123@gmail.com	</td>
+                            </tr>
+                            <tr>
+                                <th>Mobile:</th>
+                                <td>0988888888</td>
+                            </tr>
+                            <tr>
+                                <th>Amount:</th>
+                                <td>1.000.000.000</td>
+                            </tr>
+                            <tr>
+                                <th>Status:</th>
+                                <td>Submitted</td>
+                            </tr>
+                        </table>
 
-                    <div class="row">
-                        <div class="row mb-3">
-                            <div class="col-md-3">
-                                <div class="input-group">
-                                    <span class="input-group-text">Status:</span>
-                                    <select class="form-select">
-                                        <option selected>All</option>
-                                        <option value="1">Submitted</option>
-                                        <option value="2">Processing</option>
-                                        <option value="3">Canceled</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-12 mt-4 pt-2">
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade bg-white show active shadow rounded p-4" id="orders" role="tabpanel" aria-labelledby="order-history">
-                                    <div class="table-responsive bg-white shadow rounded">
-                                        <table class="table mb-0 table-center table-nowrap">
-                                            <thead>
-                                                <tr>
-                                                    <th class="border-bottom p-3" scope="col">Order ID</th>
-                                                    <th class="border-bottom p-3" scope="col">Receiver</th>
-                                                    <th class="border-bottom p-3" scope="col">Email</th>
-                                                    <th class="border-bottom p-3" scope="col">Mobile</th>
-                                                    <th class="border-bottom p-3" scope="col">Amount</th>
-                                                    <th class="border-bottom p-3" scope="col">Status</th>
-                                                    <th class="border-bottom p-3" scope="col">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-3">12312312321903</td>
-                                                    <td class="p-3">Nga</td>
-                                                    <td class="p-3">ngango123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0988888888</td>
-                                                    <td class="p-3">1.000.000.000</td>
-                                                    <td class="text-success p-3">Submitted</td>
-                                                    <td class="p-3">
-                                                        <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>                                
-                                                        <a href="./UpdateOrder.jsp" class="text-warning" title="Update" style="margin-left: 10px;">
-                                                            <i class="fas fa-edit"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
-
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="p-3">1293821937128</td>
-                                                    <td class="p-3">Thw</td>
-                                                    <td class="p-3">thwngo123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0978888888</td>
-                                                    <td class="p-3">2.000.000.000</td>
-                                                    <td class="text-muted p-3">Processing</td>
-                                                    <td class="p-3">
-                                                         <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>                                
-                                                        <a href="./UpdateOrder.jsp" class="text-warning" title="Update" style="margin-left: 10px;">
-                                                            <i class="fas fa-edit"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">312312837295</td>
-                                                    <td class="p-3">Hai</td>
-                                                    <td class="p-3">haipham123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0843782331</td>
-                                                    <td class="p-3">10.000.000.000</td>
-                                                    <td class="text-danger p-3">Canceled</td>
-                                                    <td class="p-3">
-                                                         <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a> 
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade bg-white shadow rounded p-4" id="account" role="tabpanel" aria-labelledby="account-details">                                                                                    
-                                </div><!--end teb pane-->
-                            </div>
-                        </div><!--end col-->
-                    </div><!--end row-->
+                    <a href="./OrderHistory.jsp" class="btn btn-warning">Cancel</a>
+                    </div>
                 </div><!--end container-->
             </section><!--end section-->
-            <!-- End -->
-            <!-- Start -->
+            <!-- End Order Details Section -->
+
+            <!-- Footer -->
             <footer class="bg-footer">
                 <div class="container">
                     <div class="row">
@@ -166,6 +201,7 @@
                         </a>
                         <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                     </div><!--end col-->
+
                     <div class="col-xl-7 col-lg-8 col-md-12">
                         <div class="row">
                             <div class="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
@@ -245,11 +281,10 @@
                 </div>
             </div><!--end container-->
         </footer><!--end footer-->
-        <!-- End -->
+        <!-- End Footer -->
 
         <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-pills btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-
 
         <!-- javascript -->
         <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
@@ -258,5 +293,4 @@
         <!-- Main Js -->
         <script src="${pageContext.request.contextPath}/js/app.js"></script>
     </body>
-
 </html>

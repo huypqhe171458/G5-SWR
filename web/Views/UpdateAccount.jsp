@@ -35,7 +35,7 @@
 
     <body>
         <div class="page-wrapper doctris-theme toggled">
-            <jsp:include page="../Common/header2.jsp"></jsp:include>
+            <jsp:include page="./Common/header2.jsp"></jsp:include>
 
                 <div class="container-fluid">
                     <div class="layout-specing">
@@ -95,7 +95,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save changes">
-                                    <a href="aclist" class="btn btn-warning">Cancel</a>
+                                     <a href="./Account.jsp" class="btn btn-warning">Cancel</a>
                                 </div><!--end col-->
                             </div><!--end row-->
                         </form><!--end form-->

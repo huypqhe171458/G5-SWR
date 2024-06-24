@@ -10,7 +10,7 @@
 <header id="topnav" class="defaultscroll sticky">
     <div class="container">
         <!-- Logo container-->
-        <a class="logo" href="index">
+        <a class="logo" href="./Index.jsp">
             <img src="${pageContext.request.contextPath}/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
             <img src="${pageContext.request.contextPath}/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
         </a>                
@@ -58,10 +58,10 @@
                             </div>
                         </a>
                         <!--<a class="dropdown-item text-dark" href="doctor-dashboard.html"><span class="mb-0 d-inline-block me-1"><i class="uil uil-dashboard align-middle h6"></i></span> Dashboard</a>-->
-                        <a class="dropdown-item text-dark" href="patient"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
-                        <a class="dropdown-item text-dark" href="order"><span class="mb-0 d-inline-block me-1"><i class="uil uil-list-ul align-middle h6"></i></span> Order History</a>
+                        <a class="dropdown-item text-dark" href="./PatientProfile.jsp"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                        <a class="dropdown-item text-dark" href="./OrderHistory.jsp"><span class="mb-0 d-inline-block me-1"><i class="uil uil-list-ul align-middle h6"></i></span> Order History</a>
                         <div class="dropdown-divider border-top"></div>
-                        <a class="dropdown-item text-dark" href="login"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
+                        <a class="dropdown-item text-dark" href="./Login.jsp"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
                     </div>
                 </div>
             </li>
@@ -72,7 +72,7 @@
             <!-- Navigation Menu-->   
             <ul class="navigation-menu nav-left">
                 <li class="has-submenu parent-menu-item">
-                    <a href="index">Home</a><span ></span>
+                    <a href="./Index.jsp">Home</a><span ></span>
 
                 </li>
 
@@ -89,15 +89,15 @@
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
                     <ul class="submenu">                             
-                        <li><a href="shop" class="sub-menu-item">Shop</a></li>                      
-                        <li><a href="cart" class="sub-menu-item">Shop Cart</a></li>
+                        <li><a href="./Shop.jsp" class="sub-menu-item">Shop</a></li>                      
+                        <li><a href="./Cart.jsp" class="sub-menu-item">Shop Cart</a></li>
 <!--                        <li><a href="checkout" class="sub-menu-item">Checkout</a></li>-->
 
                     </ul>
                 </li>
 
 
-                <li><a href="dash" class="sub-menu-item" target="_blank">Admin</a></li>
+                <li><a href="./Dashboard.jsp" class="sub-menu-item" target="_blank">Admin</a></li>
             </ul>
         </div><!--end navigation-->
     </div><!--end container-->

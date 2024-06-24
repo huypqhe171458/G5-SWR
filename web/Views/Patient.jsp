@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Account.jsp
-    Created on : Jun 11, 2024, 11:41:05 AM
+    Document   : Patient.jsp
+    Created on : Jun 10, 2024, 11:20:48 PM
     Author     : huyca
 --%>
 
@@ -31,48 +31,50 @@
         <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"  rel="stylesheet">
         <!-- Css -->
         <link href="${pageContext.request.contextPath}/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
-
     </head>
 
     <body>
-
-
         <div class="page-wrapper doctris-theme toggled">
-            <jsp:include page="../Common/header2.jsp"></jsp:include>
+            <jsp:include page="./Common/header2.jsp"></jsp:include>
 
                 <div class="container-fluid">
                     <div class="layout-specing">
                         <div class="d-md-flex justify-content-between align-items-center">
-                            <h5 class="mb-0">Account List</h5>
-                           <a href="#" class="btn btn-primary ms-md-3" data-bs-toggle="modal" data-bs-target="#addAccountModal">Add Account</a>
+                            <h5 class="mb-0">Product List</h5>
+                            <a href="#" class="btn btn-primary ms-md-3" data-bs-toggle="modal" data-bs-target="#addProductModal">Add Product</a>
+
 
                         </div>
                         <div class="d-md-flex justify-content-between align-items-center mt-3">
                             <div class="d-flex flex-wrap">
                                 <form method="GET" action="shop" class="sort-by me-2">
                                     <select id="sorting" class="form-select" name="sortBy">
-                                        <option value="default">Default</option>
-                                        <option value="Active">Active</option>
-                                        <option value="Inactive">Inactive</option>
+                                        <option value="default">Category 1</option>
+                                        <option value="Active">Category 2</option>
+                                        <option value="Inactive">Category 3</option>
+                                        <option value="Active">Category 4</option>
+                                        <option value="Inactive">Category 5</option>
                                     </select>
                                 </form>
+<<<<<<<< HEAD:web/Views/Patient.jsp
+                            </div>
+                            <div class="">
+                                <a href="./AddProduct.jsp" class="btn btn-primary">Add product</a>
+========
                                 <form method="GET" action="shop" class="sort-by me-2">
                                     <select id="sorting" class="form-select" name="sortBy">
-                                        <option value="Manager">Manager</option>
-                                        <option value="Sale Staff">Sale Staff</option>
-                                        <option value="Warehouse Staff">Warehouse Staff</option>
-                                        <option value="Customer">Customer</option>
+                                        <option value="Manager">Default</option>
+                                        <option value="Sale Staff">Enable</option>
+                                        <option value="Warehouse Staff">Disable</option>
                                     </select>
                                 </form>
                                 <form role="search" method="get" id="searchform" class="searchform d-flex">
                                     <input type="text" class="form-control border rounded-pill me-2" name="s" id="s" placeholder="Search Keywords...">
                                     <input type="submit" id="searchsubmit" value="Search">
                                 </form>
+>>>>>>>> 89f0d36343207894a482dc472ed520d6418e0181:build/web/Views/Product.jsp
                             </div>
                         </div>
-
-
-
 
                         <div class="row">
                             <div class="col-12 mt-4">
@@ -82,41 +84,42 @@
                                             <tr>
                                                 <th class="border-bottom p-3" style="min-width: 50px;">Id</th>
                                                 <th class="border-bottom p-3" style="min-width: 180px;">Name</th>
-
-                                                <th class="border-bottom p-3">Address</th>
-                                                <th class="border-bottom p-3">Phone</th>
-                                                <th class="border-bottom p-3">Role</th>
-                                                <th class="border-bottom p-3">Email</th>
+                                                <th class="border-bottom p-3">Price</th>
+                                                <th class="border-bottom p-3">Reduced Price</th>
+                                                <th class="border-bottom p-3">Quantity</th>
+                                                <th class="border-bottom p-3">Category</th>
                                                 <th class="border-bottom p-3">Status</th>
                                                 <th class="border-bottom p-3">Action</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <th class="p-3">1</th>
-                                            <td class="py-3">
-                                                <a href="#" class="text-dark">
-                                                    <div class="d-flex align-items-center">
-                                                        <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Nguyen Thi Thuong</span>
+                                                <th class="p-3">1</th>
+                                                <td class="py-3">
+                                                    <a href="#" class="text-dark">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                        <span class="ms-2">Howard Tanner</span>
                                                     </div>
                                                 </a>
                                             </td>
+                                            <td class="p-3">2000</td>
+                                            <td class="p-3">9000</td>
+                                            <td class="p-3">10</td>
 
-                                            <td class="p-3">Thach Ha, Ha Tinh</td>
-                                            <td class="p-3">0984 567 987</td>
-                                            <td class="p-3">Customer</td>
-                                            <td class="p-3">20th Dec 2020</td>
+
+                                            <td class="p-3">Category 1</td>
+
                                             <td class="p-3">
-                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                             <td class="p-3">
+                                                <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
-                                          
 
                                         <tr>
                                             <th class="p-3">2</th>
@@ -124,21 +127,24 @@
                                                 <a href="#" class="text-dark">
                                                     <div class="d-flex align-items-center">
                                                         <img src="${pageContext.request.contextPath}/images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Pham Duc Hai</span>
+                                                        <span class="ms-2">Wendy Filson</span>
                                                     </div>
                                                 </a>
                                             </td>
+                                            <td class="p-3">25000</td>
+                                            <td class="p-3">10000</td>
+                                            <td class="p-3">10</td>
 
-                                            <td class="p-3">Thach That, Ha Noi</td>
-                                            <td class="p-3">0912 345 678</td>
-                                            <td class="p-3">Sale Staff</td>
-                                            <td class="p-3">haipham@gmail.com</td>
+
+                                            <td class="p-3">Category 2</td>
+
+
                                             <td class="p-3">
                                                 <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                            <td class="p-3">
+                                                <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
@@ -149,45 +155,49 @@
                                                 <a href="#" class="text-dark">
                                                     <div class="d-flex align-items-center">
                                                         <img src="${pageContext.request.contextPath}/images/client/03.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Pham Quang Huy</span>
+                                                        <span class="ms-2">Faye Bridger</span>
                                                     </div>
                                                 </a>
                                             </td>
+                                            <td class="p-3">29000</td>
+                                            <td class="p-3">11000</td>
+                                            <td class="p-3">10</td>
 
-                                            <td class="p-3">Dong Anh, Ha Noi</td>
-                                            <td class="p-3">0909 876 543</td>
-                                            <td class="p-3">Warehouse Staff</td>
-                                            <td class="p-3">huypham@gmail.com</td>
+
+                                            <td class="p-3">Category 3</td>
+
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                            <td class="p-3">
+                                                <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
+                                            </td>
                                         </tr>
 
-                                          <tr>
-                                                <th class="p-3">4</th>
-                                                <td class="py-3">
-                                                    <a href="#" class="text-dark">
-                                                        <div class="d-flex align-items-center">
-                                                            <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Cao Quynh Nga</span>
+                                        <tr>
+                                            <th class="p-3">4</th>
+                                            <td class="py-3">
+                                                <a href="#" class="text-dark">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="${pageContext.request.contextPath}/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
+                                                        <span class="ms-2">Ronald Curtis</span>
                                                     </div>
                                                 </a>
                                             </td>
+                                            <td class="p-3">30000</td>
+                                            <td class="p-3">12000</td>
+                                            <td class="p-3">10</td>                                                
+                                            <td class="p-3">Category 4</td>
 
-                                            <td class="p-3">Dien Chau, Nghe An</td>
-                                            <td class="p-3">0987 654 321</td>
-                                            <td class="p-3">Manager</td>
-                                            <td class="p-3">ngakiu@gmail.com</td>
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Enable</span>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                             <td class="p-3">
+                                                <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+
                                             </td>
                                         </tr>
 
@@ -197,25 +207,25 @@
                                                 <a href="#" class="text-dark">
                                                     <div class="d-flex align-items-center">
                                                         <img src="${pageContext.request.contextPath}/images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow" alt="">
-                                                        <span class="ms-2">Nguyen Manh Hien</span>
+                                                        <span class="ms-2">Melissa Hibner</span>
                                                     </div>
                                                 </a>
                                             </td>
+                                            <td class="p-3">25000</td>
+                                            <td class="p-3">10000</td>
+                                            <td class="p-3">10</td>                                             
+                                            <td class="p-3">Category 1</td>
 
-                                            <td class="p-3">Ha Dong, Ha Noi</td>
-                                            <td class="p-3">0988 945 4568</td>
-                                            <td class="p-3">Customer</td>
-                                            <td class="p-3">20th Dec 2020</td>
+
                                             <td class="p-3">
-                                                <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
+                                                <span class="badge bg-soft-danger status-toggle" onclick="toggleStatus(this)">Disable</span>
                                             </td>
-                                            <td class="text-end p-3">
-                                                <a href="detailacc" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
-                                                <a href="updateacc" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
+                                             <td class="p-3">
+                                                <a href="./DetailProduct.jsp" class="btn btn-icon btn-pills btn-soft-primary"><i class="uil uil-eye"></i></a>
+                                                <a href="./UpdateProduct.jsp" class="btn btn-icon btn-pills btn-soft-success"><i class="uil uil-pen"></i></a>
 
                                             </td>
                                         </tr>
-
 
                                     </tbody>
                                 </table>
@@ -307,92 +317,6 @@
 
     <!-- Modal start -->
     <!-- Profile Settings Start -->
-    <div class="modal fade" id="editprofile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-bottom p-3">
-                    <h5 class="modal-title" id="exampleModalLabel">Profile Settings</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-3 pt-4">
-                    <div class="row align-items-center">
-                        <div class="col-lg-2 col-md-4">
-                            <img src="${pageContext.request.contextPath}/images/doctors/01.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
-                        </div><!--end col-->
-
-                        <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
-                            <h6 class="">Upload your picture</h6>
-                            <p class="text-muted mb-0">For best results, use an image at least 256px by 256px in either .jpg or .png format</p>
-                        </div><!--end col-->
-
-                        <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
-                            <a href="#" class="btn btn-primary">Upload</a>
-                            <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
-                        </div><!--end col-->
-                    </div><!--end row-->
-
-                    <form class="mt-4">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Full Name</label>
-                                    <input name="name" id="name" type="text" class="form-control" placeholder="Full Name :">
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Address</label>
-                                    <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
-                                </div>
-                            </div><!--end col-->
-
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Your Email</label>
-                                    <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
-                                </div> 
-                            </div><!--end col-->
-
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Phone</label>
-                                    <input name="number" id="number" type="text" class="form-control" placeholder="Phone:">
-                                </div>                                                                               
-                            </div><!--end col-->
-
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Role</label>
-                                    <select class="form-control department-name select2input">
-                                        <option value="EY">Customer</option>
-                                        <option value="GY">Warehouse Staff</option>
-                                        <option value="PS">Sale Staff</option>
-
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Status</label>
-                                    <select class="form-control department-name select2input">
-                                        <option value="EY">Active</option>
-                                        <option value="GY">Inactive</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div><!--end row-->
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <input type="submit" id="submit" name="send" class="btn btn-primary" value="Save">
-                            </div><!--end col-->
-                        </div><!--end row-->
-                    </form><!--end form-->
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Profile Settings End -->
 
     <!-- Profile Start -->
@@ -400,56 +324,60 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header border-bottom p-3">
-                    <h5 class="modal-title" id="exampleModalLabel1">Profile</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Product Details</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-3 pt-4">
                     <div class="d-flex align-items-center">
                         <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-small rounded-pill" alt="">
-                        <h5 class="mb-0 ms-3">Nguyen Thi Thuong</h5>
+                        <h5 class="mb-0 ms-3">Product Name</h5>
                     </div>
                     <ul class="list-unstyled mb-0 d-md-flex justify-content-between mt-4">
                         <li>
                             <ul class="list-unstyled mb-0">
 
                                 <li class="d-flex">
-                                    <h6>Phone Number</h6>
-                                    <p class="text-muted ms-2">0987 345 678</p>
+                                    <h6>Quantity</h6>
+                                    <p class="text-muted ms-2">100</p>
+                                </li>
+
                                 <li class="d-flex">
-                                    <h6 class="mb-0">Role:</h6>
-                                    <p class="text-muted ms-2 mb-0">Customer</p>
+                                    <h6 class="mb-0">Category</h6>
+                                    <p class="text-muted ms-2 mb-0">Category1</p>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <ul class="list-unstyled mb-0">
                                 <li class="d-flex">
-                                    <h6>Email</h6>
-                                    <p class="text-muted ms-2">thwww@gmail.com</p>
+                                    <h6>Price</h6>
+                                    <p class="text-muted ms-2">$1000</p>
                                 </li>
 
-
                                 <li class="d-flex">
-                                    <h6 class="mb-0">Address</h6>
-                                    <p class="text-muted ms-2 mb-0">Thach Ha, Ha Tinh</p>
+                                    <h6>Status</h6>
+                                    <p class="text-muted ms-2">Enable</p>
                                 </li>
                             </ul>
                         </li>
-                    </ul>
+                    </ul></br>
+                    <h6 class="mb-0">Description</h6>
+                    <p class="text-muted ms-2 mb-0">description</p> 
                 </div>
             </div>
         </div>
     </div>
     <!-- Profile End -->
-    <div class="modal fade" id="addAccountModal" tabindex="-1" aria-labelledby="addAccountModalLabel" aria-hidden="true">
+    <!-- Modal end -->
+    <!-- Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="addAccountModalLabel">Add New Product</h5>
+                    <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-
                     <div class="row">
                         <div class="col-lg-8 mt-4">
                             <div class="card border-0 p-4 rounded shadow">
@@ -457,61 +385,67 @@
                                     <div class="col-lg-2 col-md-4">
                                         <img src="${pageContext.request.contextPath}/images/client/01.jpg" class="avatar avatar-md-md rounded-pill shadow mx-auto d-block" alt="">
                                     </div>
-
                                     <div class="col-lg-5 col-md-8 text-center text-md-start mt-4 mt-sm-0">
                                         <h5 class="">Upload your picture</h5>
-                                        <p class="text-muted mb-0"></p>
                                     </div>
-
                                     <div class="col-lg-5 col-md-12 text-lg-end text-center mt-4 mt-lg-0">
                                         <a href="#" class="btn btn-primary">Upload</a>
                                         <a href="#" class="btn btn-soft-primary ms-2">Remove</a>
                                     </div>
                                 </div>
-
                                 <form class="mt-4">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">FullName</label>
-                                                <input name="name" id="name" type="text" class="form-control" placeholder="FullName :">
+                                                <label class="form-label">Full Name</label>
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="Full Name :">
                                             </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Address</label>
-                                                <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
+                                                <label class="form-label">Price</label>
+                                                <input name="price" id="price" type="number" class="form-control" placeholder="Price:">
                                             </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Your Email</label>
-                                                <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
-                                            </div> 
+                                                <label class="form-label">Reduced Price</label>
+                                                <input name="name" id="name2" type="number" class="form-control" placeholder="Price:">
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Quantity</label>
+                                                <input name="quantity" id="quantity" type="number" class="form-control" placeholder="Quantity :">
+                                            </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Phone no.</label>
-                                                <input name="number" id="number" type="text" class="form-control" placeholder="Phone no. :">
-                                            </div>                                                                               
+                                                <label class="form-label">Description</label>
+                                                <textarea name="description" id="description" class="form-control" rows="5" placeholder="Description :"></textarea>
+                                            </div>
                                         </div>
-
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Role</label>
+                                                <label class="form-label">Status</label>
+                                                <input name="status" id="status" type="text" class="form-control" placeholder="Status :">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Category</label>
                                                 <select class="form-control department-name select2input">
-                                                    <option value="EY">Customer</option>
-                                                    <option value="GY">Warehouse Staff</option>
-                                                    <option value="PS">Sale Staff</option>
+                                                    <option value="EY">Category 1</option>
+                                                    <option value="GY">Category 2</option>
+                                                    <option value="PS">Category 3</option>
+                                                    <option value="OR">Category 4</option>
+                                                    <option value="DE">Category 5</option>
+
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <button type="submit" class="btn btn-primary">Add Account</button>
+                                    <button type="submit" class="btn btn-primary">Add Product</button>
                                 </form>
                             </div>
                         </div>
@@ -520,7 +454,6 @@
             </div>
         </div>
     </div>
-
     <!-- javascript -->
     <script src="${pageContext.request.contextPath}/js/bootstrap.bundle.min.js"></script>
     <!-- simplebar -->
@@ -531,25 +464,17 @@
     <script src="${pageContext.request.contextPath}/js/app.js"></script>
     <script>
                                     function toggleStatus(element) {
-                                        if (element.innerText === "Active") {
-                                            element.innerText = "Inactive";
+                                        if (element.innerText === "Enable") {
+                                            element.innerText = "Disable";
                                             element.classList.remove('bg-soft-success');
                                             element.classList.add('bg-soft-danger');
                                         } else {
-                                            element.innerText = "Active";
+                                            element.innerText = "Enable";
                                             element.classList.remove('bg-soft-danger');
                                             element.classList.add('bg-soft-success');
                                         }
                                     }
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var addAccountButton = document.querySelector('a[href="addac"]');
-            addAccountButton.setAttribute('data-bs-toggle', 'modal');
-            addAccountButton.setAttribute('data-bs-target', '#addAccountModal');
-        });
-    </script>
-
 </body>
 
 </html>

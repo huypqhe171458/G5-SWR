@@ -68,7 +68,7 @@
 <body>
     <div class="page-wrapper doctris-theme toggled">
         <!-- Header included here -->
-        <jsp:include page="../Common/header2.jsp"></jsp:include>
+        <jsp:include page="./Common/header2.jsp"></jsp:include>
 
         <div class="container-fluid">
             <div class="layout-specing">
@@ -107,7 +107,7 @@
                                                     </div>
                                                     <div class="row mb-3">
                                                          <div class="col-md-6">
-                                                            <label for="address" class="labels">View: Customer</label>
+                                                            <label for="address" class="labels">Department: Customer</label>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <label for="phonenumber" class="labels">Phone: 0987 654 321</label>

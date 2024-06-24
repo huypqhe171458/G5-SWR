@@ -31,7 +31,7 @@
 
 
         <div class="page-wrapper doctris-theme toggled">
-            <jsp:include page="../Common/header2.jsp"></jsp:include>
+            <jsp:include page="./Common/header2.jsp"></jsp:include>
 
 
                 <div class="container-fluid">

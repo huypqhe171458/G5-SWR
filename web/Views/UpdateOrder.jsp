@@ -41,128 +41,51 @@
             <!-- Hero End -->
 
             <!-- Start -->
-            <section class="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div><h2>Order History</h2></div>
-                        </div>
-                    </div>
+          <section class="section">
+    <div class="container">
+        <h2>Update Order</h2>
+        <form action="${pageContext.request.contextPath}/updateOrder" method="POST" class="row g-3">
+            <div class="col-md-6">
+                <label for="orderId" class="form-label">Order ID</label>
+                <input type="text" id="orderId" name="orderId" class="form-control" value="12312312321903" required>
+            </div>
+            <div class="col-md-6">
+                <label for="receiver" class="form-label">Receiver</label>
+                <input type="text" id="receiver" name="receiver" class="form-control" value="Nga" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" value="ngango123@gmail.com" required>
+            </div>
+            <div class="col-md-6">
+                <label for="mobile" class="form-label">Mobile</label>
+                <input type="tel" id="mobile" name="mobile" class="form-control" value="0988888888" required>
+            </div>
+            <div class="col-md-6">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="text" id="amount" name="amount" class="form-control" value="1.000.000.000" required>
+            </div>
+            <div class="col-md-6">
+                <label for="status" class="form-label">Status</label>
+                <input type="text" id="status" name="status" class="form-control" value="Submitted" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Update Order</button>
+                  <a href="./OrderHistory.jsp" class="btn btn-warning">Cancel</a>
+            </div>
+        </form>
+    </div><!--end container-->
+</section><!--end section-->
 
-                    <div class="row">
-                        <div class="row mb-3">
-                            <div class="col-md-3">
-                                <div class="input-group">
-                                    <span class="input-group-text">Status:</span>
-                                    <select class="form-select">
-                                        <option selected>All</option>
-                                        <option value="1">Submitted</option>
-                                        <option value="2">Processing</option>
-                                        <option value="3">Canceled</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-12 mt-4 pt-2">
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade bg-white show active shadow rounded p-4" id="orders" role="tabpanel" aria-labelledby="order-history">
-                                    <div class="table-responsive bg-white shadow rounded">
-                                        <table class="table mb-0 table-center table-nowrap">
-                                            <thead>
-                                                <tr>
-                                                    <th class="border-bottom p-3" scope="col">Order ID</th>
-                                                    <th class="border-bottom p-3" scope="col">Receiver</th>
-                                                    <th class="border-bottom p-3" scope="col">Email</th>
-                                                    <th class="border-bottom p-3" scope="col">Mobile</th>
-                                                    <th class="border-bottom p-3" scope="col">Amount</th>
-                                                    <th class="border-bottom p-3" scope="col">Status</th>
-                                                    <th class="border-bottom p-3" scope="col">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="p-3">12312312321903</td>
-                                                    <td class="p-3">Nga</td>
-                                                    <td class="p-3">ngango123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0988888888</td>
-                                                    <td class="p-3">1.000.000.000</td>
-                                                    <td class="text-success p-3">Submitted</td>
-                                                    <td class="p-3">
-                                                        <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>                                
-                                                        <a href="./UpdateOrder.jsp" class="text-warning" title="Update" style="margin-left: 10px;">
-                                                            <i class="fas fa-edit"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
 
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="p-3">1293821937128</td>
-                                                    <td class="p-3">Thw</td>
-                                                    <td class="p-3">thwngo123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0978888888</td>
-                                                    <td class="p-3">2.000.000.000</td>
-                                                    <td class="text-muted p-3">Processing</td>
-                                                    <td class="p-3">
-                                                         <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>                                
-                                                        <a href="./UpdateOrder.jsp" class="text-warning" title="Update" style="margin-left: 10px;">
-                                                            <i class="fas fa-edit"></i>
-                                                        </a>
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-3">312312837295</td>
-                                                    <td class="p-3">Hai</td>
-                                                    <td class="p-3">haipham123@gmail.com<span class="text-muted"></span></td>
-                                                    <td class="p-3">0843782331</td>
-                                                    <td class="p-3">10.000.000.000</td>
-                                                    <td class="text-danger p-3">Canceled</td>
-                                                    <td class="p-3">
-                                                         <a href="./DetailOrder.jsp" class="text-primary" title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a> 
-                                                        <a href="#" class="text-danger" title="Cancel" style="margin-left: 10px;">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade bg-white shadow rounded p-4" id="account" role="tabpanel" aria-labelledby="account-details">                                                                                    
-                                </div><!--end teb pane-->
-                            </div>
-                        </div><!--end col-->
-                    </div><!--end row-->
-                </div><!--end container-->
-            </section><!--end section-->
-            <!-- End -->
-            <!-- Start -->
-            <footer class="bg-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
-                            <a href="#" class="logo-footer">
-                                <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
+        <!-- End -->
+        <!-- Start -->
+        <footer class="bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-4 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="${pageContext.request.contextPath}/images/logo-light.png" height="22" alt="">
                         </a>
                         <p class="mt-4 me-xl-5">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
                     </div><!--end col-->
