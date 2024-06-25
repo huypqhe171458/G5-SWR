@@ -186,7 +186,7 @@
                                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                     <div class="card shop-list border-0">
                                         <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -211,7 +211,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -238,7 +238,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/pulse-oximeter.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/pulse-oximeter.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -263,7 +263,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medicine.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medicine.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -288,7 +288,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -313,7 +313,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/sanitizer.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/sanitizer.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -338,7 +338,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -363,7 +363,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -390,7 +390,7 @@
                                         <li><a href="javascript:void(0)" class="badge badge-pill badge-success">Featured</a></li>
                                     </ul>
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/masks.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/masks.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -414,7 +414,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/handwash.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/handwash.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -438,7 +438,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/herbal-care.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/herbal-care.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
@@ -462,7 +462,7 @@
                             <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                                 <div class="card shop-list border-0">
                                     <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                        <a href="detail"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medical-equptment.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./ShopDetail.jsp"><img src="${pageContext.request.contextPath}/images/pharmacy/shop/medical-equptment.jpg" class="img-fluid" alt=""></a>
                                         <div class="qty-icons">
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a>
                                             <a href="#" class="btn btn-icon btn-pills btn-soft-warning"><i data-feather="shopping-cart" class="icons"></i></a>
