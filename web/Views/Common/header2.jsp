@@ -20,7 +20,7 @@
                 <a href="javascript:void(0)"><i class="uil uil-wheelchair me-2 d-inline-block"></i>Product</a>
                 <div class="sidebar-submenu">
                     <ul>
-                        <li><a href="./Patient.jsp">All Product</a></li>
+                        <li><a href="./Product.jsp">All Product</a></li>
                     </ul>
                 </div>
             </li>

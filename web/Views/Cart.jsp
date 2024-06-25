@@ -173,7 +173,7 @@
                         </div>
                     </div><!--end col-->
                     <div class="col-lg-3 text-end">
-                        <a href="checkout" class="btn btn-primary">CHECKOUT</a>
+                        <a href="./Checkout.jsp" class="btn btn-primary">CHECKOUT</a>
                     </div>
                 </div>
                 <!--end row-->

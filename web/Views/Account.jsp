@@ -448,7 +448,7 @@
                 <div class="modal-body">
 
                     <div class="row">
-                        <div class="col-lg-8 mt-4">
+                        <div class="col-lg-12">
                             <div class="card border-0 p-4 rounded shadow">
                                 <div class="row align-items-center">
                                     <div class="col-lg-2 col-md-4">

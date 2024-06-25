@@ -129,32 +129,32 @@
                             <div class="types flex justify-space-between">
                                 <div class="type selected" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/mb.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/mb.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                                 <div class="type" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/vib.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/vib.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                                 <div class="type" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/techcombank.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/techcombank.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                                 <div class="type" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/vietcombank.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/vietcombank.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                                 <div class="type" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/bidv.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/bidv.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                                 <div class="type" style="background-color: #ffffff">
                                     <div class="img-fluid">
-                                        <img src="images/payment/agri.png" alt="alt" style="width: 100px"/>
+                                        <img src="${pageContext.request.contextPath}/images/payment/agri.png" alt="alt" style="width: 100px"/>
                                     </div>
                                 </div>
                             </div>
