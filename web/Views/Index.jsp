@@ -30,7 +30,6 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                border: 2px solid red; 
                 padding: 10px; 
             }
 

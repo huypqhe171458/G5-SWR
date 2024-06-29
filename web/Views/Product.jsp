@@ -79,7 +79,7 @@
                                                 <th class="border-bottom p-3" style="min-width: 50px;">Id</th>
                                                 <th class="border-bottom p-3" style="min-width: 180px;">Name</th>
                                                 <th class="border-bottom p-3">Price</th>
-                                                <th class="border-bottom p-3">Reduced Price</th>
+                                                <th class="border-bottom p-3">Discount</th>
                                                 <th class="border-bottom p-3">Quantity</th>
                                                 <th class="border-bottom p-3">Category</th>
                                                 <th class="border-bottom p-3">Status</th>
@@ -403,7 +403,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Reduced Price</label>
+                                                <label class="form-label">Discount</label>
                                                 <input name="name" id="name2" type="number" class="form-control" placeholder="Price:">
                                             </div>
                                         </div><!--end col-->

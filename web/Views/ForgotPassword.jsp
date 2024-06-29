@@ -45,7 +45,7 @@
         <!-- Loader -->
 
         <div class="back-to-home rounded d-none d-sm-block">
-            <a href="index" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
+            <a href="./Index.jsp" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
         </div>
 
         <!-- Hero Start -->
@@ -75,7 +75,7 @@
                                             </div>
                                         </div>
                                         <div class="mx-auto">
-                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Remember your password ?</small> <a href="login" class="text-dark h6 mb-0">Sign in</a></p>
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Remember your password ?</small> <a href="./Login.jsp" class="text-dark h6 mb-0">Sign in</a></p>
                                         </div>
                                     </div>
                                 </form>

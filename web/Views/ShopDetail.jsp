@@ -81,7 +81,7 @@
                                 <li class="list-inline-item me-2 h6 text-muted">(20 Ratting)</li>
                             </ul>
 
-                            <h5 class="mt-4 py-2">Overview :</h5>
+                            <h5 class="mt-4 py-2">Description :</h5>
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
 
                             <div class="d-flex shop-list align-items-center">
@@ -94,7 +94,6 @@
                             </div>
 
                             <div class="mt-4 pt-2">
-                                <a href="#" class="btn btn-primary">Shop Now</a>
                                 <a href="#" class="btn btn-soft-primary ms-2">Add to Cart</a>
                             </div>
                         </div>

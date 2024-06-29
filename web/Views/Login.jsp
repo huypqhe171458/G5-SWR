@@ -27,7 +27,7 @@
 
     <body>
         <div class="back-to-home rounded d-none d-sm-block">
-            <a href="index" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
+            <a href="./Index.jsp" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
         </div>
 
         <!-- Hero Start -->
@@ -63,7 +63,7 @@
                                                         <label class="form-check-label" for="remember-check">Remember me</label>
                                                     </div>
                                                 </div>
-                                                <a href="forgotpassword" class="text-dark h6 mb-0">Forgot password ?</a>
+                                                <a href="./ForgotPassword.jsp" class="text-dark h6 mb-0">Forgot password ?</a>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 mb-0">
@@ -85,7 +85,7 @@
                                         </div><!--end col-->
 
                                         <div class="col-12 text-center">
-                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="signup" class="text-dark fw-bold">Sign Up</a></p>
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="./Signup.jsp" class="text-dark fw-bold">Sign Up</a></p>
                                         </div>
                                     </div>
                                 </form>

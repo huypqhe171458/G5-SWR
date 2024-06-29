@@ -35,7 +35,7 @@
     <body>
        
         <div class="back-to-home rounded d-none d-sm-block">
-            <a href="index" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
+            <a href="./Index.jsp" class="btn btn-icon btn-primary"><i data-feather="home" class="icons"></i></a>
         </div>
 
         <!-- Hero Start -->
@@ -87,7 +87,7 @@
                                             </div>
                                         </div>                                                                          
                                         <div class="mx-auto">
-                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Already have an account ?</small> <a href="login" class="text-dark fw-bold">Sign in</a></p>
+                                            <p class="mb-0 mt-3"><small class="text-dark me-2">Already have an account ?</small> <a href="./Login.jsp" class="text-dark fw-bold">Sign in</a></p>
                                         </div>
                                     </div>
                                 </form>

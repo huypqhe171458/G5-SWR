@@ -65,7 +65,7 @@
                             </div><!--end col-->
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label">Reduced Price</label>
+                                    <label class="form-label">Discount</label>
                                     <input name="price" id="email" type="number" class="form-control" placeholder="Price">
                                 </div> 
                             </div><!--end col-->

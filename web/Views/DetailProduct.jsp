@@ -48,7 +48,7 @@
                                         <h5 class="card-title">Howard Tanner</h5>
                                         <p class="card-text">Category 1</p>
                                         <p class="card-text"><strong>Price:</strong> $20000</p>
-                                        <p class="card-text"><strong>Reduced Price:</strong> $9000</p>
+                                        <p class="card-text"><strong>Discount:</strong> $9000</p>
                                         <p class="card-text"><strong>Quantity:</strong> 10</p>
                                         <p class="card-text"><strong>Status:</strong> <span class="badge bg-success">Enable</span></p>
                                         <a href="./Product.jsp" class="btn btn-primary"><i class="fas fa-cart-plus me-2"></i>Back</a>

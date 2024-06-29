@@ -203,7 +203,7 @@
                                             <td class="p-3">Ha Dong, Ha Noi</td>
                                             <td class="p-3">0988 945 4568</td>
                                             <td class="p-3">Customer</td>
-                                            <td class="p-3">20th Dec 2020</td>
+                                            <td class="p-3">hien123@gmail.com</td>
                                             <td class="p-3">
                                                 <span class="badge bg-soft-success status-toggle" onclick="toggleStatus(this)">Active</span>
                                             </td>

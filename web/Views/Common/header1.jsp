@@ -72,7 +72,7 @@
             <!-- Navigation Menu-->   
             <ul class="navigation-menu nav-left">
                 <li class="has-submenu parent-menu-item">
-                    <a href="./Index.jsp">Home</a><span ></span>
+                    <a href="${pageContext.request.contextPath}/Views/Index.jsp">Home</a><span ></span>
 
                 </li>
 
@@ -89,14 +89,13 @@
                 <li class="has-submenu parent-menu-item">
                     <a href="javascript:void(0)">Product</a><span class="menu-arrow"></span>
                     <ul class="submenu">                             
-                        <li><a href="./Shop.jsp" class="sub-menu-item">Shop</a></li>                      
-                        <li><a href="./Cart.jsp" class="sub-menu-item">Shop Cart</a></li>
-                        <li><a href="./Checkout.jsp" class="sub-menu-item">Checkout</a></li>
+                        <li><a href="${pageContext.request.contextPath}/Views/Shop.jsp" class="sub-menu-item">Shop</a></li>                      
+                        <li><a href="${pageContext.request.contextPath}/Views/Cart.jsp" class="sub-menu-item">Shop Cart</a></li>
                     </ul>
                 </li>
 
 
-                <li><a href="./Dashboard.jsp" class="sub-menu-item" target="_blank">Admin</a></li>
+                <li><a href="${pageContext.request.contextPath}/Views/Dashboard.jsp" class="sub-menu-item" target="_blank">Admin</a></li>
             </ul>
         </div><!--end navigation-->
     </div><!--end container-->
