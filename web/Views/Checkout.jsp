@@ -113,12 +113,19 @@
                                             <div class="invalid-feedback"> Your username is required. </div>
                                         </div>
                                     </div>
+                                    <div class="col-12">
+                                        <label for="text" class="form-label">Email </label>
+                                        <input type="text" class="form-control" id="email" placeholder="Email">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address for shipping updates.
+                                        </div>
+                                    </div>
 
                                     <div class="col-12">
                                         <label for="text" class="form-label">Phone Number </label>
                                         <input type="text" class="form-control" id="email" placeholder="Phone number">
                                         <div class="invalid-feedback">
-                                            Please enter a valid email address for shipping updates.
+                                            Please enter a valid phone number address for shipping updates.
                                         </div>
                                     </div>
 

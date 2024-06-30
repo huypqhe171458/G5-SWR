@@ -83,7 +83,7 @@
                                                 <th class="border-bottom p-3" style="min-width: 50px;">Id</th>
                                                 <th class="border-bottom p-3" style="min-width: 180px;">Name</th>
 
-                                                <th class="border-bottom p-3">Address</th>
+                                                <th class="border-bottom p-3">Username</th>
                                                 <th class="border-bottom p-3">Phone</th>
                                                 <th class="border-bottom p-3">Role</th>
                                                 <th class="border-bottom p-3">Email</th>
@@ -103,7 +103,7 @@
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Thach Ha, Ha Tinh</td>
+                                            <td class="p-3">thwthw123@gmail.com</td>
                                             <td class="p-3">0984 567 987</td>
                                             <td class="p-3">Customer</td>
                                             <td class="p-3">20th Dec 2020</td>
@@ -128,7 +128,7 @@
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Thach That, Ha Noi</td>
+                                            <td class="p-3">haipq123@gamil.com</td>
                                             <td class="p-3">0912 345 678</td>
                                             <td class="p-3">Sale Staff</td>
                                             <td class="p-3">haipham@gmail.com</td>
@@ -152,7 +152,7 @@
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Dong Anh, Ha Noi</td>
+                                            <td class="p-3">huypq123@gmail.com</td>
                                             <td class="p-3">0909 876 543</td>
                                             <td class="p-3">Warehouse Staff</td>
                                             <td class="p-3">huypham@gmail.com</td>
@@ -176,7 +176,7 @@
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Dien Chau, Nghe An</td>
+                                            <td class="p-3">nganga123@gamil.com</td>
                                             <td class="p-3">0987 654 321</td>
                                             <td class="p-3">Manager</td>
                                             <td class="p-3">ngakiu@gmail.com</td>
@@ -200,7 +200,7 @@
                                                 </a>
                                             </td>
 
-                                            <td class="p-3">Ha Dong, Ha Noi</td>
+                                            <td class="p-3">anhhien123@gamil.com</td>
                                             <td class="p-3">0988 945 4568</td>
                                             <td class="p-3">Customer</td>
                                             <td class="p-3">hien123@gmail.com</td>
@@ -339,8 +339,8 @@
 
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label class="form-label">Address</label>
-                                    <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
+                                    <label class="form-label">Username</label>
+                                    <input name="name" id="name2" type="text" class="form-control" placeholder="Username :">
                                 </div>
                             </div><!--end col-->
 
@@ -477,8 +477,8 @@
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label class="form-label">Address</label>
-                                                <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
+                                                <label class="form-label">Username</label>
+                                                <input name="name" id="name2" type="text" class="form-control" placeholder="Username :">
                                             </div>
                                         </div>
 

@@ -51,8 +51,8 @@
 
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Address</label>
-                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Address :">
+                                        <label class="form-label">Username</label>
+                                        <input name="name" id="name2" type="text" class="form-control" placeholder="Username :">
                                     </div>
                                 </div><!--end col-->
 

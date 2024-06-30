@@ -102,9 +102,9 @@
 
                                                         </div>
                                                         <div class="col-md-6">
-                                                            <label class="labels">Email: thwww@gmail.com</label>
-
+                                                            <label for="address" class="labels">Username: thwthw123@gmail.com</label>
                                                         </div>
+                                                       
                                                     </div>
                                                     <div class="row mb-3">
                                                          <div class="col-md-6">
@@ -117,7 +117,8 @@
                                                     </div>
                                                     <div class="row mb-3">
                                                         <div class="col-md-6">
-                                                            <label for="address" class="labels">Adress: Thach Ha, Ha Tinh</label>
+                                                            <label class="labels">Email: thwww@gmail.com</label>
+
                                                         </div>
 
                                                         <div class="col-md-6">
