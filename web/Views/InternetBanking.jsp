@@ -199,10 +199,10 @@
                 </div>
                 <div class="card-actions flex justify-space-between">
                     <div class="flex-start">
-                        <button class="button button-secondary" onclick="location.href = 'shop'">Return to Store</button>
+                        <button class="button button-secondary" onclick="location.href = './Shop.jsp'">Return to Store</button>
                     </div>
                     <div class="flex-end">
-                        <button onclick="location.href = 'checkout'" class="button button-secondary">Back to checkout</button>
+                        <button onclick="location.href = './Checkout.jsp'" class="button button-secondary">Back to checkout</button>
                         <a href="#" class="button button-primary">Proceed</a>
                     </div>
                 </div>
