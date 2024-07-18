@@ -30,7 +30,7 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                padding: 10px; 
+                padding: 10px;
             }
 
             .swiper-wrapper {
@@ -38,7 +38,7 @@
             }
 
             .swiper-slide {
-                min-width: 300px; 
+                min-width: 300px;
                 box-sizing: border-box;
             }
 
@@ -50,502 +50,529 @@
 
     <body>
         <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
-
-          
-            <section class="section">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <div class="section-title text-center mb-4 pb-2">
-                                <h1>Best Selling Products</h1>
-                            </div>
-                        </div>
-
-                        <!-- Best Selling Products Section -->
-                        <section id="best-selling-items" class="position-relative padding-large">
-                            <div class="container">
-                                <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-                                    <h3 class="d-flex align-items-center"></h3>
-                                </div>
-
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <!-- Slide 1 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Thermometer</a>
-                                                  
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Slide 1 -->
-
-                                        <!-- Slide 2 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/pulse-oximeter.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Pulse oximeter</a>
-                                                   
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Slide 2 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medicine.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medicine pills</a>
-                                                   
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Smokill smoking habit</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/sanitizer.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Sanitizer</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Nicotex</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medigrip</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Repeat similar structure for other slides -->
-
-                                    </div>
-
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                </div>
-                            </div>
-                        </section>
+        
+             <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="${pageContext.request.contextPath}/images/bg/pharm01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="${pageContext.request.contextPath}/images/bg/pharm02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="${pageContext.request.contextPath}/images/bg/pharm03.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <!-- End Best Selling Products Section -->
-            </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                    
 
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h1>Best Selling Products</h1>
+                        </div>
+                    </div>
 
-            <!-- Featured Products Section -->
-            <section class="section">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <div class="section-title text-center mb-4 pb-2">
-                                <h1>Featured Products</h1>
+                    <!-- Best Selling Products Section -->
+                    <section id="best-selling-items" class="position-relative padding-large">
+                        <div class="container">
+                            <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
+                                <h3 class="d-flex align-items-center"></h3>
+                            </div>
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/stethoscope.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Thermometer</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1550 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Slide 1 -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/pulse-oximeter.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Pulse oximeter</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1500 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$13.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medicine.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medicine pills</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1400 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$14.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Smokill smoking habit</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1320 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$12.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/sanitizer.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Sanitizer</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1250 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$10.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Nicotex</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1200 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$22.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medigrip</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">1100 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$36.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat similar structure for other slides -->
+
+                                </div>
+
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
                             </div>
                         </div>
-
-                        <section id="best-selling-items" class="position-relative padding-large">
-                            <div class="container">
-                                <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
-                                    <h3 class="d-flex align-items-center"></h3>
-                                </div>
-
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <!-- Slide 1 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/masks.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Face masks</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Slide 1 -->
-
-                                        <!-- Slide 2 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/handwash.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Dettol handwash</a>
-                                                   
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Slide 2 -->
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/herbal-care.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Herbal care product</a>
-                                                   
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medical-equptment.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medical equptment</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medigrip</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                         <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Nicotex</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="card team border-0 rounded shadow overflow-hidden">
-                                                <div class="team-person position-relative overflow-hidden">
-                                                    <img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt="Product Image">
-                                                    <ul class="list-unstyled team-like">
-                                                        <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="card-body">
-                                                    <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Smokill smoking habit</a>
-                                                    
-                                                    <div class="d-flex justify-content-between align-items-center mt-2">
-                                                        <ul class="list-unstyled mb-0">
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
-                                                            <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
-                                                        </ul>
-                                                        <p class="text-muted mb-0">4.5 Star</p>
-                                                    </div>
-                                                    <ul class="list-unstyled mt-2 mb-0">
-                                                        <li class="d-flex mt-2">
-                                                            <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
-                                                            <small class="text-muted ms-2">$16.00</small>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Repeat similar structure for other slides -->
-
-                                    </div>
-
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
+                    </section>
                 </div>
-                <!-- End Best Selling Products Section -->
-            </section>
+            </div>
+            <!-- End Best Selling Products Section -->
+        </section>
+
+
+        <!-- Featured Products Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h1>Featured Products</h1>
+                        </div>
+                    </div>
+
+                    <section id="best-selling-items" class="position-relative padding-large">
+                        <div class="container">
+                            <div class="section-title d-md-flex justify-content-between align-items-center mb-4">
+                                <h3 class="d-flex align-items-center"></h3>
+                            </div>
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/masks.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Face masks</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">16 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Slide 1 -->
+
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/handwash.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Dettol handwash</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">14 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/herbal-care.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Herbal care product</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">12 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medical-equptment.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medical equptment</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">9 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/medigrip.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Medigrip</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">9 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/nicotex.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Nicotex</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">7 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card team border-0 rounded shadow overflow-hidden">
+                                            <div class="team-person position-relative overflow-hidden">
+                                                <img src="${pageContext.request.contextPath}/images/pharmacy/shop/smoking-habit.jpg" class="img-fluid" alt="Product Image">
+                                                <ul class="list-unstyled team-like">
+                                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><i data-feather="heart" class="icons"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="./ShopDetail.jsp" class="title text-dark h5 d-block mb-0">Smokill smoking habit</a>
+
+                                                <div class="d-flex justify-content-between align-items-center mt-2">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
+                                                        <li class="list-inline-item"><i class="mdi mdi-star-outline text-warning"></i></li>
+                                                    </ul>
+                                                    <p class="text-muted mb-0">5 sold</p>
+                                                </div>
+                                                <ul class="list-unstyled mt-2 mb-0">
+                                                    <li class="d-flex mt-2">
+                                                        <i class="ri-money-dollar-circle-line text-primary align-middle"></i>
+                                                        <small class="text-muted ms-2">$16.00</small>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Repeat similar structure for other slides -->
+
+                                </div>
+
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- End Best Selling Products Section -->
+        </section>
 
         <!-- End Featured Products Section -->
 

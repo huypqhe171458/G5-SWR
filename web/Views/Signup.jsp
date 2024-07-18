@@ -51,8 +51,14 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="mb-3">                                               
+                                                <label class="form-label">User name <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" placeholder="Name" name="s" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">                                               
                                                 <label class="form-label">Full name <span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" placeholder="First Name" name="s" required="">
+                                                <input type="text" class="form-control" placeholder="Full Name" name="s" required="">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -73,14 +79,7 @@
                                                 <input type="password" class="form-control" placeholder="Confirm Password" required="">
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input align-middle" type="checkbox" value="" id="accept-tnc-check">
-                                                    <label class="form-check-label" for="accept-tnc-check">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <div class="col-md-12">
                                             <div class="d-grid">
                                                 <button class="btn btn-primary">Register</button>
