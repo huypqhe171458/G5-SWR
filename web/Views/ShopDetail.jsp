@@ -39,7 +39,7 @@
     <body>
         <jsp:include page="../Views/Common/header1.jsp"></jsp:include>
 
-            
+
             <div class="position-relative">
                 <div class="shape overflow-hidden text-white">
                     <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,12 @@
 
                             <h5 class="mt-4 py-2">Description :</h5>
                             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem, unde molestiae sint quae inventore atque minima natus fugiat nihil quisquam voluptates ea omnis. Modi laborum soluta tempore unde accusantium.</p>
-
+                            <div class="d-flex shop-list align-items-center">
+                                <h6 class="mb-3">Category:</h6>
+                                <div class="qty-icons ms-3 mb-3">
+                                    Medicine 
+                                </div>
+                            </div>
                             <div class="d-flex shop-list align-items-center">
                                 <h6 class="mb-0">Quantity:</h6>
                                 <div class="qty-icons ms-3">
@@ -92,10 +97,16 @@
                                     <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-primary plus">+</button>
                                 </div>
                             </div>
-
+                            <div class="d-flex shop-list align-items-center mt-3">
+                                <div class="qty-icons">
+                                    In Stock: 20
+                                </div>
+                            </div>
                             <div class="mt-4 pt-2">
+                                <a href="${pageContext.request.contextPath}/Views/Checkout.jsp" class="btn btn-soft-danger ms-2">Buy now</a>
                                 <a href="#" class="btn btn-soft-primary ms-2">Add to Cart</a>
                             </div>
+
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->

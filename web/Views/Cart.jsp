@@ -54,18 +54,39 @@
                                 <table class="table table-center table-padding mb-0">
                                     <thead>
                                         <tr>
-                                            <th class="border-bottom p-3" style="min-width:20px "></th>
+                                            <th class="border-bottom p-3" style="min-width:50px"><input class="form-check-input" type="checkbox" id="selectAll" name="name"></th>
                                             <th class="border-bottom p-3" style="min-width: 300px;">Product</th>
                                             <th class="border-bottom text-center p-3" style="min-width: 160px;">Price</th>
                                             <th class="border-bottom text-center p-3" style="min-width: 190px;">Quantity</th>
                                             <th class="border-bottom text-end p-3" style="min-width: 50px;">Price</th>
                                         </tr>
                                     </thead>
+                                    <script>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const productSelects = document.querySelectorAll('.product-select');
+                                            const selectAllItems = document.getElementById('selectAll');
 
+                                            // Handle selectAllItems checkbox click
+                                            selectAllItems.addEventListener('click', function () {
+                                                const isChecked = selectAllItems.checked;
+                                                productSelects.forEach(function (checkbox) {
+                                                    checkbox.checked = isChecked;
+                                                });
+                                            });
+
+                                            // Listen for clicks on each product checkbox to check if all are selected
+                                            productSelects.forEach(function (checkbox) {
+                                                checkbox.addEventListener('click', function () {
+                                                    const allChecked = Array.from(productSelects).every(cb => cb.checked);
+                                                    selectAllItems.checked = allChecked;
+                                                });
+                                            });
+                                        });
+                                    </script>
                                     <tbody>
                                         <tr>
                                             <td class="h5 p-3 text-center">
-                                                <input class="form-check-input" type="checkbox" id="id" name="name">
+                                                <input class="form-check-input product-select" type="checkbox" id="id" name="selectItem">
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center">
@@ -77,7 +98,7 @@
                                         <td class="text-center shop-list p-3">
                                             <div class="qty-icons">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-primary minus">-</button>
-                                                <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-primary qty-btn quantity">
+                                                <input min="1" name="quantity" value="1" type="number" class="btn btn-icon btn-primary qty-btn quantity">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-primary plus">+</button>
                                             </div>
                                         </td>
@@ -87,7 +108,7 @@
 
                                     <tr>
                                         <td class="h5 p-3 text-center">
-                                            <input class="form-check-input" type="checkbox" id="id" name="name">
+                                            <input class="form-check-input product-select" type="checkbox" id="id" name="selectItem">
                                         </td>                                        <td class="p-3">
                                             <div class="d-flex align-items-center">
                                                 <img src="${pageContext.request.contextPath}/images/pharmacy/shop/diabend.jpg" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
@@ -98,7 +119,7 @@
                                         <td class="text-center shop-list p-3">
                                             <div class="qty-icons">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-primary minus">-</button>
-                                                <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-primary qty-btn quantity">
+                                                <input min="1" name="quantity" value="1" type="number" class="btn btn-icon btn-primary qty-btn quantity">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-primary plus">+</button>
                                             </div>
                                         </td>
@@ -109,7 +130,7 @@
 
                                     <tr>
                                         <td class="h5 p-3 text-center">
-                                            <input class="form-check-input" type="checkbox" id="id" name="name">
+                                            <input class="form-check-input product-select" type="checkbox" id="id" name="selectItem">
                                         </td>                                        <td class="p-3">
                                             <div class="d-flex align-items-center">
                                                 <img src="${pageContext.request.contextPath}/images/pharmacy/shop/facewash.jpg" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
@@ -120,7 +141,7 @@
                                         <td class="text-center shop-list p-3">
                                             <div class="qty-icons">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-primary minus">-</button>
-                                                <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-primary qty-btn quantity">
+                                                <input min="1" name="quantity" value="1" type="number" class="btn btn-icon btn-primary qty-btn quantity">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-primary plus">+</button>
                                             </div>
                                         </td>
@@ -131,7 +152,7 @@
 
                                     <tr>
                                         <td class="h5 p-3 text-center">
-                                            <input class="form-check-input" type="checkbox" id="id" name="name">
+                                            <input class="form-check-input product-select" type="checkbox" id="id" name="selectItem">
                                         </td>                                        <td class="p-3">
                                             <div class="d-flex align-items-center">
                                                 <img src="${pageContext.request.contextPath}/images/pharmacy/shop/handwash.jpg" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
@@ -142,7 +163,7 @@
                                         <td class="text-center shop-list p-3">
                                             <div class="qty-icons">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-icon btn-primary minus">-</button>
-                                                <input min="0" name="quantity" value="0" type="number" class="btn btn-icon btn-primary qty-btn quantity">
+                                                <input min="1" name="quantity" value="1" type="number" class="btn btn-icon btn-primary qty-btn quantity">
                                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-icon btn-primary plus">+</button>
                                             </div>
                                         </td>

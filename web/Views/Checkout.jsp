@@ -128,9 +128,32 @@
                                             Please enter a valid phone number address for shipping updates.
                                         </div>
                                     </div>
-
+                                    <div class="col-4">
+                                        <label for="address" class="form-label">City</label>
+                                        <select class="form-select">
+                                            <option value="first">New York</option>
+                                            <option value="second">Los Angeles</option>
+                                            <option value="third">San Francisco</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="address" class="form-label">District</label>
+                                        <select class="form-select">
+                                            <option value="first">Manhattan</option>
+                                            <option value="second">Hollywood</option>
+                                            <option value="third">Near North Side</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="address" class="form-label">Ward</label>
+                                        <select class="form-select">
+                                            <option value="first">Lower East Side</option>
+                                            <option value="second">Hollywood Hills</option>
+                                            <option value="third">River North</option>
+                                        </select>
+                                    </div>
                                     <div class="col-12">
-                                        <label for="address" class="form-label">Address</label>
+                                        <label for="address" class="form-label">Address Detail</label>
                                         <input type="text" class="form-control" id="address" placeholder="1234 Main St">
                                         <div class="invalid-feedback">
                                             Please enter your shipping address.
@@ -372,6 +395,7 @@
     <script src="${pageContext.request.contextPath}/js/feather.min.js"></script>
     <!-- Main Js -->
     <script src="${pageContext.request.contextPath}/js/app.js"></script>
+
 </body>
 
 </html>

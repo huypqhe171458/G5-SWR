@@ -47,7 +47,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="sidebar bg-light p-4 rounded">
+                            <div class="bg-white shadow rounded p-3">
 
                                 <!-- Product Categories -->
                                 <div class="widget-product-categories pt-3">
@@ -56,16 +56,16 @@
                                     </div>
                                     <ul class="product-categories mb-0 sidebar-list list-unstyled">
                                         <li class="cat-item mb-2">
-                                            <a href="#" class="text-dark">Category1</a>
+                                            <a href="#" class="text-dark">Medications</a>
                                         </li>
                                         <li class="cat-item mb-2">
-                                            <a href="#" class="text-dark">Category2</a>
+                                            <a href="#" class="text-dark">Medical Devices</a>
                                         </li>
                                         <li class="cat-item mb-2">
-                                            <a href="#" class="text-dark">Category3</a>
+                                            <a href="#" class="text-dark">Medical Supplies</a>
                                         </li>
                                         <li class="cat-item mb-2">
-                                            <a href="#" class="text-dark">Category4</a>
+                                            <a href="#" class="text-dark">Therapeutic Products</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -150,8 +150,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9 bg-light">
-                            <div class="row">
+                        <div class="col-md-9">
+                            <div class="row bg-white shadow rounded p-3">
                                 <div class="row mt-3">
                                     <div class="col-md-3">
                                         <div class="d-flex align-items-center">
