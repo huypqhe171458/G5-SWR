@@ -111,7 +111,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label class="form-label">User Role</label>
-                                                        <input name="userrole" id="userrole" type="text" class="form-control" placeholder="User Role :">
+                                                        <input name="userrole" id="userrole" type="text" class="form-control" placeholder="User Role" readonly>
                                                     </div>
                                                 </div>
                                             </div><!--end col-->                                    
